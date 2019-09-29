@@ -12,8 +12,14 @@ knitr::opts_chunk$set(echo = TRUE)
 #READ IN PACKAGES
 ```{r packages}
 if (!require("dplyr")) install.packages("dplyr",dependencies = T)
+if (!require("jsonlite")) installed.packages("jsonlite",dependencies = T)
+if (!require("curl")) installed.packages("curl",dependencies = T)
+if (!require("glue")) installed.packages("glue",dependencies = T)
 
 library(dplyr)
+library(jsonlite)
+library(curl)
+library(glue)
 ```
 
 #READ IN SONG DATASET
@@ -25,6 +31,8 @@ colnames(songs_raw) = c('Artist','Album','Track','Timestamp')
 #CLEANING
 ```{r cleaning}
 songs = songs_raw
+
+#Grouping Same Songs Together
 songs$Track[songs$Track =="starstrukk (feat. katyperry)"] = "Starstrukk (feat. Katy Perry)"
 songs$Track[songs$Track == "The Chipmunk Song (Christmas Don't Be Late) - Remastered" | 
                 songs$Track == "The Chipmunk Song (Christmas Don't Be Late) - Remastered 1999" ] = "The Chipmunk Song (Christmas Don't Be Late)"
@@ -150,13 +158,13 @@ songs$Track[songs$Track == "Bad Things - With Camila Cabello"] = "Bad Things"
 songs$Track[songs$Track == "I Won't Let You Walk Away (feat. Madison Beer) - Lost Kings Remix"] = "I Won't Let You Walk Away - Lost Kings Remix"
 songs$Track[songs$Track == "I Won't Let You Walk Away (feat. Madison Beer) - Radio Edit" |
             songs$Track == "I Won't Let You Walk Away (feat. Madison Beer) - Pop Radio Edit"] = "I Won't Let You Walk Away - Radio Edit"
-songs$Artist[songs$Artist == "Marina"] = "Marina & the Diamonds"
+songs$Artist[songs$Artist == "Marina & the Diamonds"] = "Marina"
 songs$Track[songs$Track == "She Will Be Loved - Radio Mix"] = "She Will Be Loved"
 songs$Artist[songs$Artist == "MGM Studio Orchestra"] = "MGM Studio Chorus"
 songs$Artist[songs$Artist == "Molly SandÃ©n"] = "Molly Sanden"
 songs$Track[songs$Track == "O Tannenbaum - Remastered 1999"] = "O Tannenbaum"
 songs$Track[songs$Track == "Hakuna Matata - From The Lion King/Soundtrack"] = "Hakuna Matata"
-songs$Artist[songs$Artist == "Owl City & Carly Rae Jepsen"] = "owl City"
+songs$Artist[songs$Artist == "Owl City & Carly Rae Jepsen"] = "Owl City"
 songs$Track[songs$Track == "Youâ€™re Not Alone"] = "You're Not Alone"
 songs$Track[songs$Track == "Can We Pretend (feat. Cash Cash)"] = "Can We Pretend"
 songs$Track[songs$Track == "Thereâ€™s A Honey"] = "There's A Honey"
@@ -184,7 +192,7 @@ songs$Track[songs$Track == "All My Friends (feat. Tinashe & Chance The Rapper)"]
 songs$Track[songs$Track == "Live Love Learn (feat. Peg Parnevik)"] = "Live Love Learn"
 songs$Track[songs$Track == "Wannabe - Radio Edit"] = "Wannabe"
 songs$Track[songs$Track == "I Won't Say (I'm In Love) - ã€Žãƒ˜ãƒ©ã‚¯ãƒ¬ã‚¹ã€ã‚ˆã‚Š" |
-            songs$Track == "I Won't Say (I'm In Love) - From Hercules"] = "	I Won't Say (I'm In Love)"
+            songs$Track == "I Won't Say (I'm In Love) - From Hercules"] = "I Won't Say (I'm In Love)"
 songs$Track[songs$Track == "Don't You Worry Child (Radio Edit) [feat. John Martin]" |
             songs$Track == "Don't You Worry Child (Radio Edit)"] = "Don't You Worry Child - Radio Edit"
 songs$Track[songs$Track == "...Ready for It?"] = "... Ready For It?"
@@ -205,22 +213,112 @@ songs$Track[songs$Track == "The Star Spangled Banner (feat. The Florida Orchestr
 songs$Track[songs$Track == "Clarity - feat. Foxes"] = "Clarity"
 songs$Track[songs$Track == "Happy Now (with Elley DuhÃ©)"] = "Happy Now"
 songs$Track[songs$Track == "I Want You to Know (feat. Selena Gomez)"] = "I Want You to Know"
+songs$Artist[songs$Artist == "D.H.T."] = "DHT"
+songs$Track[songs$Track == "Listen to Your Heart (featuring Edmee) - Furious F. EZ Radio Edit"] = "Listen To Your Heart (Furious F. EZ Radio Edit)"
+songs$Track[songs$Track == "You Are Loved (Don't Give Up) - Don't Give Up Album Version"] = "You Are Loved (Don't Give Up)"
+songs$Artist[songs$Artist == "Joshua Coleman"] = "Fifth Harmony"
+songs$Track[songs$Track == " I Won't Say (I'm In Love)"] = "I Won't Say (I'm In Love)"
+
+#Changing Search Song Title
+songs$Track[songs$Track == "Respect - Remastered"] = "Respect"
+songs$Track[songs$Track == "Mony Mony - 24-Bit Digitally Remastered 01"] = "Mony Mony"
+
 
 distincts = songs %>% 
   group_by(Artist,Track) %>%
   summarize(streams = n())
 
-qualifying = distincts %>% filter(streams >= 5)
+qualifying = distincts %>% 
+  filter(streams >= 5) %>%
+  filter(Artist != "Amy Guess") %>% #Doesn't Exist
+  filter(Track != "Almost Said It") %>% #Not in US Market
+  filter(Track != "Love Again") %>% #Not in US Market
+  filter(Track != "Anyone Of Us (Stupid Mistake)") %>%
+  filter(Track != "Goodness Gracious - The Chainsmokers Extended Remix") %>% #Not available anymore
+  filter(Artist != "f(x)") %>%
+  filter(Track != "Hawaiian Roller Coaster Ride - From Lilo & Stitch/Soundtrack Version") %>% #Causing problems for lookup
+  filter(Artist != "Rachel Bloom") %>% #Comedy
+  filter(Artist != "Rockie Gold") #Comedy
 
-qsongs = songs %>% inner_join(.,qualifying,by=c("Artist","Track")) %>% select(-c(streams))
+qsongs = songs %>% 
+  inner_join(.,qualifying,by=c("Artist","Track")) %>% 
+  select(-c(streams)) 
 ```
 
+#CREATE LIST FOR SPOTIFY LOOKUP
+```{r create lookup,results='hide'}
+#Change Artist Name For Lookup ---> Problem with escape characters in string
+qualifying$Artist[qualifying$Artist == "Axwell /\\ Ingrosso"] = "Axwell Ingrosso"
 
+song_lookup = qualifying %>%
+  mutate(temp=paste(Artist,Track,Sep=" ")) %>%
+  mutate(temp2=gsub("'","",temp)) %>%
+  mutate(Lookup=gsub(" ","%20",temp2)) %>%
+  select(-c(temp,temp2))
+song_lookup$id = NA
 
+#Change Artist Name Back
+qualifying$Artist[qualifying$Artist == "Axwell Ingrosso"] = "Axwell /\\ Ingrosso"
+song_lookup$Artist[song_lookup$Artist == "Axwell Ingrosso"] = "Axwell /\\ Ingrosso"
 
+#Change Lookup String
+song_lookup$Lookup[song_lookup$Lookup == "Britt%20Nicole%20Gold%20-%20Jason%20Nevins%20Rhythmic%20Remix/Bonus%20Track%20%20"] = "Britt%20Nicole%20Gold%20Jason%20Nevins"
+song_lookup$Lookup[song_lookup$Lookup == "Carly%20Rae%20Jepsen%20I%20Didnt%20Just%20Come%20Here%20To%20Dance%20%20"] = "Carly%20Rae%20Jepsen%20I%20Just%20Come%20Here%20To%20Dance"
+song_lookup$Lookup[song_lookup$Lookup == "Carly%20Rae%20Jepsen%20Lets%20Get%20Lost%20%20"] = "Carly%20Rae%20Jepsen%20Get%20Lost"
+song_lookup$Lookup[song_lookup$Lookup == "Celine%20Dion%20Beauty%20and%20the%20Beast%20-%20Duet%20with%20Peabo%20Bryson%20from%20the%20Soundtrack%20Beauty%20and%20the%20Beast%20%20"] = "Celine%20Dion%20Beauty%20and%20the%20Beast"
+song_lookup$Lookup[song_lookup$Lookup == "Christina%20Grimmie%20Cant%20Help%20Falling%20In%20Love%20-%20The%20Voice%20Performance%20%20"] = "Christina%20Grimmie%20Help%20Falling%20In%20Love"
+song_lookup$Lookup[song_lookup$Lookup == "Christina%20Grimmie%20Hold%20On%20Were%20Going%20Home%20-%20The%20Voice%20Performance%20%20"] = "Christina%20Grimmie%20Hold%20On%20Going%20Home%20-%20The%20Voice%20Performance%20%20"
+song_lookup$Lookup[song_lookup$Lookup == "David%20Guetta%20She%20Wolf%20(Falling%20to%20Pieces)%20[feat.%20Sia]%20%20"] = "David%20Guetta%20She%20Wolf"
+song_lookup$Lookup[song_lookup$Lookup == "Dead%20or%20Alive%20You%20Spin%20Me%20Round%20(Like%20a%20Record)%20%20"] = "Dead%20or%20Alive%20You%20Spin%20Me%20Round"
+song_lookup$Lookup[song_lookup$Lookup == "Def%20Leppard%20Pour%20Some%20Sugar%20On%20Me%20(2012)%20%20"] = "Def%20Leppard%20Pour%20Some%20Sugar%20On%20Me"
+song_lookup$Lookup[song_lookup$Lookup == "Eurythmics%20Sisters%20Are%20Doin%20It%20for%20Themselves%20(Than%20Never%20to%20Have%20Loved)%20%20"] = "Eurythmics%20Sisters%20Are%20It%20for%20Themselves"
+song_lookup$Lookup[song_lookup$Lookup == "Fergie%20M.I.L.F.%20$%20%20"] = "Fergie%20M.I.L.F."
+song_lookup$Lookup[song_lookup$Lookup == "Fergie%20L.A.LOVE%20(la%20la)%20%20"] = "Fergie%20L.A.LOVE"
+song_lookup$Lookup[song_lookup$Lookup == "Gareth%20Emery%20Saving%20Light%20(feat.%20Haliene)%20%20"] = "Gareth%20Emery%20Saving%20Light"
+song_lookup$Lookup[song_lookup$Lookup == "Gayla%20Peevey%20I%20Want%20a%20Hippopotamus%20for%20Christmas%20(Hippo%20the%20Hero)%20%20"] = "Gayla%20Peevey%20I%20Want%20a%20Hippopotamus%20for%20Christmas"
+song_lookup$Lookup[song_lookup$Lookup == "Jason%20Weaver%20I%20Just%20Cant%20Wait%20To%20Be%20King%20-%20From%20The%20Lion%20King/Soundtrack%20Version%20%20	"] = "Jason%20Weaver%20I%20Just%20Wait%20To%20Be%20King"
+song_lookup$Lookup[song_lookup$Lookup == "Jermaine%20Stewart%20We%20Dont%20Have%20To%20Take%20Our%20Clothes%20Off%20-%207%20Version%20%20"] = "Jermaine%20Stewart%20We%20Dont%20Have%20To%20Take%20Our%20Clothes%20Off"
+song_lookup$Lookup[song_lookup$Lookup == "John%20Lennon%20Happy%20Xmas%20(War%20Is%20Over)%20-%202010%20Digital%20Remaster%20%20"] = "John%20Lennon%20Happy%20Xmas"
+song_lookup$Lookup[song_lookup$Lookup == "John%20Parr%20St.%20Elmos%20Fire%20(Man%20in%20Motion)%20%20"] = "John%20Parr%20St.%20Elmos%20Fire"
+song_lookup$Lookup[song_lookup$Lookup == "Josh%20Groban%20All%20I%20Ask%20Of%20You%20(duet%20with%20Kelly%20Clarkson)%20-%20From%20The%20Phantom%20Of%20The%20Opera%20%20"] = "Josh%20Groban%20All%20I%20Ask%20Of%20You"
+song_lookup$Lookup[song_lookup$Lookup == "Josh%20Groban%20Angels%20We%20Have%20Heard%20On%20High%20-%20Duet%20With%20Brian%20Mcknight%20%20"] = "Josh%20Groban%20Angels%20We%20Have%20Heard%20On%20High"
+song_lookup$Lookup[song_lookup$Lookup == "Josh%20Groban%20O%20Come%20All%20Ye%20Faithful%20(with%20The%20Mormon%20Tabernacle%20Choir%20under%20the%20direction%20of%20Craig%20Jessop)%20%20"] = "Josh%20Groban%20O%20Come%20All%20Ye%20Faithful"
+song_lookup$Lookup[song_lookup$Lookup == "Josh%20Groban%20The%20First%20Noel%20-%20Duet%20With%20Faith%20Hill%20%20"] = "Josh%20Groban%20The%20First%20Noel"
+song_lookup$Lookup[song_lookup$Lookup == "Katy%20Perry%20California%20Gurls%20(feat.%20Snoop%20Dogg)%20%20"] = "Katy%20Perry%20California%20Gurls"
+song_lookup$Lookup[song_lookup$Lookup == "Genesis%20Invisible%20Touch%20-%202007%20Remastered%20Version%20%20"] = "Genesis%20Invisible%20Touch"
+song_lookup$Lookup[song_lookup$Lookup == "Havana%20Brown%20We%20Run%20The%20Night%20-%20Edited%20%20"] = "Havana%20Brown%20We%20Run%20The%20Night"
+song_lookup$Lookup[song_lookup$Lookup == "Idina%20Menzel%20Let%20It%20Go%20-%20From%20Frozen/Soundtrack%20Version%20%20"] = "Idina%20Menzel%20Let%20It%20Go"
+song_lookup$Lookup[song_lookup$Lookup == "Hannah%20Montana%20Rockstar%20-%20Original%20Version%20%20"] = "Hannah%20Montana%20Rockstar"
+song_lookup$Lookup[song_lookup$Lookup == "Macklemore%20&%20Ryan%20Lewis%20Thrift%20Shop%20(feat.%20Wanz)%20%20"] = "Macklemore%20&%20Ryan%20Lewis%20Thrift%20Shop"
+song_lookup$Lookup[song_lookup$Lookup == "Mako%20I%20Wont%20Let%20You%20Walk%20Away%20-%20Radio%20Edit%20%20"] = "Mako%20I%20Let%20You%20Walk%20Away"
+song_lookup$Lookup[song_lookup$Lookup == "Mako%20I%20Wont%20Let%20You%20Walk%20Away%20-%20Lost%20Kings%20Remix%20%20"] = "Mako%20I%20Let%20You%20Walk%20Away%20Lost%20Kings"
+song_lookup$Lookup[song_lookup$Lookup == "Mannheim%20Steamroller%20God%20Rest%20Ye%20Merry%20Gentlemen%20-%20Rock%20Version%20%20"] = "Mannheim%20Steamroller%20God%20Rest%20Ye%20Merry%20Gentlemen%20"
+song_lookup$Lookup[song_lookup$Lookup == "Mannheim%20Steamroller%20Lo%20How%20A%20Rose%20Eer%20Blooming%20%20"] = "Mannheim%20Steamroller%20Lo%20How%20A%20Rose%20Blooming%20%20"
+song_lookup$Lookup[song_lookup$Lookup == "Owl%20City%20Good%20Time%20-%20Wideboys%20Remix%20[Club]%20%20"] = "Owl%20City%20Good%20Time%20-%20Wideboys%20Remix"
+song_lookup$Lookup[song_lookup$Lookup == "Matt%20Redman%2010000%20Reasons%20(Bless%20the%20Lord)%20-%20Live%20%20"] = "Matt%20Redman%20Reasons"
+song_lookup$Lookup[song_lookup$Lookup == "Phil%20Collins%20You%20Cant%20Hurry%20Love%20-%202016%20Remastered%20%20"] = "Phil%20Collins%20You%20Cant%20Hurry%20Love"
+song_lookup$Lookup[song_lookup$Lookup == "Pierce%20Fulton%20Kuaga%20(Lost%20Time)%20(Radio%20Edit)%20%20"] = "Pierce%20Fulton%20Kuaga"
+song_lookup$Lookup[song_lookup$Lookup == "Queen%20Dont%20Stop%20Me%20Now%20-%20Remastered%20%20"] = "Queen%20Dont%20Stop%20Me%20Now"
+song_lookup$Lookup[song_lookup$Lookup == "Samuel%20E.%20Wright%20Under%20The%20Sea%20-%20From%20The%20Little%20Mermaid/%20Soundtrack%20Version%20%20"] = "Samuel%20Wright%20Under%20The%20Sea"
+song_lookup$Lookup[song_lookup$Lookup == "Rachel%20Platten%201000%20Ships%20%20"] = "Rachel%20Platten%20Ships"
+song_lookup$Lookup[song_lookup$Lookup == "RedOne%20Dont%20You%20Need%20Somebody%20(feat.%20Enrique%20Iglesias%20R.%20City%20Serayah%20&%20Shaggy)%20%20"] = "RedOne%20Dont%20You%20Need%20Somebody"
+song_lookup$Lookup[song_lookup$Lookup == "Rihanna%20Love%20The%20Way%20You%20Lie%20(Part%20II)%20-%20Pt.%202%20%20"] = "Rihanna%20Love%20The%20Way%20You%20Lie"
+song_lookup$Lookup[song_lookup$Lookup == "Raven-Symone%20Thats%20So%20Raven%20(Theme%20Song)%20%20"] = "Raven-Symone%20So%20Raven"
+song_lookup$Lookup[song_lookup$Lookup == "Rufus%20The%20Naked%20Mole%20Rap%20-%20From%20Kim%20Possible%20%20"] = "Rufus%20The%20Naked%20Mole%20Rap"
+song_lookup$Lookup[song_lookup$Lookup == "Susan%20Egan%20I%20Wont%20Say%20(Im%20In%20Love)%20%20"] = "Susan%20Egan%20I%20Wont%20Say"
 
+```
 
+#USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
+```{r get those ids}
+OAuth_Token = "BQAbXmqabLXNUoqnyIjQo75WVD_lwI9IBIYS1upnJBnDfx1uRVokse3uP-rpvyTapg2mKnt9OIpisleSBZyVvpk68TpAWr0L63czRABAWw21aQNZY6ztULRUP_pxIF2nyif4TCNDviNNp6j1uNeV9IzlAHSdfQ"
 
+for(i in seq(1:dim(song_lookup)[1])){
+  theLookup = song_lookup[i,"Lookup"]
+  temp = glue('\'curl -X "GET" "https://api.spotify.com/v1/search?q={theLookup}&type=track&limit=1" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {OAuth_Token}"\'')
+  song_lookup[i,"id"] = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))$tracks$items$id
+}
 
+```
 
 
