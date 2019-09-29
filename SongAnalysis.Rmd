@@ -218,6 +218,8 @@ songs$Track[songs$Track == "Listen to Your Heart (featuring Edmee) - Furious F. 
 songs$Track[songs$Track == "You Are Loved (Don't Give Up) - Don't Give Up Album Version"] = "You Are Loved (Don't Give Up)"
 songs$Artist[songs$Artist == "Joshua Coleman"] = "Fifth Harmony"
 songs$Track[songs$Track == " I Won't Say (I'm In Love)"] = "I Won't Say (I'm In Love)"
+songs$Track[songs$Track == "Friday Nightâ€¬â€¬â€¬"] = "Friday Night"
+songs$Track[songs$Track == "I Have Nothing - Remastered"] = "I Have Nothing"
 
 #Changing Search Song Title
 songs$Track[songs$Track == "Respect - Remastered"] = "Respect"
@@ -238,7 +240,9 @@ qualifying = distincts %>%
   filter(Artist != "f(x)") %>%
   filter(Track != "Hawaiian Roller Coaster Ride - From Lilo & Stitch/Soundtrack Version") %>% #Causing problems for lookup
   filter(Artist != "Rachel Bloom") %>% #Comedy
-  filter(Artist != "Rockie Gold") #Comedy
+  filter(Artist != "Rockie Gold") %>% #Comedy
+  filter(Track != "I2I") %>% #No Longer Available
+  filter(Track != "We're the Same") #Can't Find It
 
 qsongs = songs %>% 
   inner_join(.,qualifying,by=c("Artist","Track")) %>% 
@@ -306,12 +310,33 @@ song_lookup$Lookup[song_lookup$Lookup == "Rihanna%20Love%20The%20Way%20You%20Lie
 song_lookup$Lookup[song_lookup$Lookup == "Raven-Symone%20Thats%20So%20Raven%20(Theme%20Song)%20%20"] = "Raven-Symone%20So%20Raven"
 song_lookup$Lookup[song_lookup$Lookup == "Rufus%20The%20Naked%20Mole%20Rap%20-%20From%20Kim%20Possible%20%20"] = "Rufus%20The%20Naked%20Mole%20Rap"
 song_lookup$Lookup[song_lookup$Lookup == "Susan%20Egan%20I%20Wont%20Say%20(Im%20In%20Love)%20%20"] = "Susan%20Egan%20I%20Wont%20Say"
+song_lookup$Lookup[song_lookup$Lookup == "Nicole%20Scherzinger%20Dont%20Hold%20Your%20Breath"] = "Nicole%20Scherzinger%20Hold%20Your%20Breath"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Barden%20Bellas%20Bellas%20Finals:%20Price%20Tag/Dont%20You%20(Forget%20About%20Me)/Give%20Me%20Everything/Just%20The%20Way%20You%20Are/Party%20In%20The%20U.S.A./Turn%20The%20Beat%20Around%20%20"] = "The%20Barden%20Bellas%20Bellas%20Finals"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Barden%20Bellas%20Bellas%20Regionals:%20The%20Sign/Eternal%20Flame/Turn%20The%20Beat%20Around%20%20"] = "The%20Barden%20Bellas%20Bellas%20Regionals"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Barden%20Bellas%20Cups%20(When%20Im%20Gone)%20-%20Campfire%20Version%20%20"] = "The%20Barden%20Bellas%20Cups"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Barden%20Bellas%20Pool%20Mashup:%20Just%20The%20Way%20You%20Are/Just%20A%20Dream%20%20"] = "The%20Barden%20Bellas%20Pool"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Disney%20Afternoon%20Studio%20Chorus%20Chip%20N%20Dales%20Rescue%20Rangers%20Theme%20Song%20-%20From%20Chip%20n%20Dales%20Rescue%20Rangers%20%20"] = "The%20Disney%20Afternoon%20Studio%20Chorus%20Chip%20N%20Dales%20Rescue%20Rangers"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Disney%20Afternoon%20Studio%20Chorus%20Duck%20Tales%20Theme%20-%20From%20Duck%20Tales%20%20"] = "The%20Disney%20Afternoon%20Studio%20Chorus%20Duck%20Tales"
+song_lookup$Lookup[song_lookup$Lookup == "The%20J.%20Geils%20Band%20Centerfold%20-%202006%20-%20Remaster%20%20"] = "The%20J.%20Geils%20Band%20Centerfold"
+song_lookup$Lookup[song_lookup$Lookup == "Thomas%20Helmore%20A%20Christmas%20Festival%20Medley:%20Joy%20To%20The%20World%20/%20Deck%20The%20Halls%20/%20Good%20King%20Wenceslas%20/%20God%20Rest%20Ye%20Merry%20Gentlemen%20/%20Hark!%20The%20Herald%20Angels%20Sing%20/%20The%20First%20Noel%20/%20Silent%20Night%20/%20Jingle%20Bells%20/%20O%20Come%20All%20Ye%20Faithful%20%20"] = "Thomas%20Helmore%20A%20Christmas%20Festival"
+song_lookup$Lookup[song_lookup$Lookup == "Tori%20Kelly%20Colors%20Of%20The%20Wind%20-%20From%20Pocahontas%20%20"] = "Tori%20Kelly%20Colors%20Of%20The%20Wind"
+song_lookup$Lookup[song_lookup$Lookup == "Two%20Friends%20Brighter%20(feat.%20Jeff%20Sontag%20&%20I%20Am%20Lightyear)%20[Radio%20Edit]%20%20"] = "Two%20Friends%20Brighter"
+song_lookup$Lookup[song_lookup$Lookup == "tyDi%20Redefined%20(feat.%20Melanie%20Fontana%20&%20Novaspace)%20[Club%20Edit]%20%20"] = "tyDi%20Redefined"
+song_lookup$Lookup[song_lookup$Lookup == "Van%20Halen%20Jump%20-%202015%20Remastered%20Version%20%20"] = "Van%20Halen%20Jump"
+song_lookup$Lookup[song_lookup$Lookup == "Van%20McCoy%20The%20Hustle%20-%20Original%20Mix%20%20"] = "Van%20McCoy%20The%20Hustle"
+song_lookup$Lookup[song_lookup$Lookup == "The%20Chainsmokers%20Takeaway%20(with%20ILLENIUM%20&%20Lennon%20Stella)%20%20"] = "The%20Chainsmokers%20Takeaway"
+song_lookup$Lookup[song_lookup$Lookup == "Vigiland%20Were%20the%20Same%20%20"] = "Vigiland%20Same"
+song_lookup$Lookup[song_lookup$Lookup == "Vince%20Guaraldi%20Trio%20Christmas%20Time%20Is%20Here%20-%20Vocal%20%20"] = "Vince%20Guaraldi%20Trio%20Christmas%20Time%20Is%20Here"
+song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20I%20Wanna%20Dance%20with%20Somebody%20(Who%20Loves%20Me)%20%20"] = "Whitney%20Houston%20I%20Wanna%20Dance%20with%20Somebody"
+song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20The%20Star%20Spangled%20Banner%20-%20Live%20from%20Super%20Bowl%20XXV%20%20"] = "Whitney%20Houston%20The%20Star%20Spangled%20Banner"
+song_lookup$Lookup[song_lookup$Lookup == "Zara%20Larsson%20Aint%20My%20Fault%20%20"] = "Zara%20Larsson%20My%20Fault%20%20"
 
 ```
 
 #USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
+## Can get OAuth_Token at: https://developer.spotify.com/console/get-search-item/?q=Carly%20Rae%20Jepsen%20Run%20Away%20With%20Me&type=track&market=&limit=1&offset=
 ```{r get those ids}
-OAuth_Token = "BQAbXmqabLXNUoqnyIjQo75WVD_lwI9IBIYS1upnJBnDfx1uRVokse3uP-rpvyTapg2mKnt9OIpisleSBZyVvpk68TpAWr0L63czRABAWw21aQNZY6ztULRUP_pxIF2nyif4TCNDviNNp6j1uNeV9IzlAHSdfQ"
+OAuth_Token = "BQBcJ_8KlMaNoahot3hwzj0ArMX09BExoUDHWWlXbSeZAxOM7AIIYLTL6yNKAvqSHjOQAlF4PDIUoJ-Np1bpg4a17h-zbGKR2I2Y0w56KJosSEOf_MnF3fAZxykjafGHCQha95rVnYrEbtJ17RBsCBYmY74FRw"
 
 for(i in seq(1:dim(song_lookup)[1])){
   theLookup = song_lookup[i,"Lookup"]
@@ -319,6 +344,54 @@ for(i in seq(1:dim(song_lookup)[1])){
   song_lookup[i,"id"] = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))$tracks$items$id
 }
 
+attributes_lookup = song_lookup
 ```
+
+#Look up attributes of songs
+```{r attribute lookup}
+options(scipen=999)
+
+attributes_lookup$danceability = NA
+attributes_lookup$energy = NA
+attributes_lookup$key = NA
+attributes_lookup$loudness = NA
+attributes_lookup$mode = NA
+attributes_lookup$speechiness = NA
+attributes_lookup$acousticness = NA
+attributes_lookup$instrumentalness = NA
+attributes_lookup$liveness = NA
+attributes_lookup$valence = NA
+attributes_lookup$tempo = NA
+attributes_lookup$duration_ms = NA
+attributes_lookup$time_signature = NA
+
+for(i in seq(1:dim(song_lookup)[1])){
+  theLookup = attributes_lookup[i,"id"]
+  temp = glue('\'curl -X "GET" "https://api.spotify.com/v1/audio-features/{theLookup}" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {OAuth_Token}"\'')
+  holder = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))
+  attributes_lookup[i,"danceability"] = holder$danceability
+  attributes_lookup[i,"energy"] = holder$energy
+  attributes_lookup[i,"key"] = holder$key
+  attributes_lookup[i,"loudness"] = holder$loudness
+  attributes_lookup[i,"mode"] = holder$mode
+  attributes_lookup[i,"speechiness"] = holder$speechiness
+  attributes_lookup[i,"acousticness"] = holder$acousticness
+  attributes_lookup[i,"instrumentalness"] = holder$instrumentalness
+  attributes_lookup[i,"liveness"] = holder$liveness
+  attributes_lookup[i,"valence"] = holder$valence
+  attributes_lookup[i,"tempo"] = holder$tempo
+  attributes_lookup[i,"duration_ms"] = holder$duration_ms
+  attributes_lookup[i,"time_signature"] = holder$time_signature
+}
+
+attributes_lookup$key = as.factor(attributes_lookup$key)
+attributes_lookup$mode = as.factor(attributes_lookup$mode)
+attributes_lookup$time_signature = as.factor(attributes_lookup$time_signature)
+
+write.csv(attributes_lookup,"song_data.csv",row.names = F)
+```
+
+
+
 
 
