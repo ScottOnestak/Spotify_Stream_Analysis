@@ -15,11 +15,15 @@ if (!require("dplyr")) install.packages("dplyr",dependencies = T)
 if (!require("jsonlite")) installed.packages("jsonlite",dependencies = T)
 if (!require("curl")) installed.packages("curl",dependencies = T)
 if (!require("glue")) installed.packages("glue",dependencies = T)
+if (!require("FactoMineR")) installed.packages("FactoMineR",dependencies = T)
+if (!require("ggplot2")) installed.packages("ggplot2",dependencies = T)
 
 library(dplyr)
 library(jsonlite)
 library(curl)
 library(glue)
+library(FactoMineR)
+library(ggplot2)
 ```
 
 #READ IN SONG DATASET
@@ -387,11 +391,102 @@ for(i in seq(1:dim(song_lookup)[1])){
 attributes_lookup$key = as.factor(attributes_lookup$key)
 attributes_lookup$mode = as.factor(attributes_lookup$mode)
 attributes_lookup$time_signature = as.factor(attributes_lookup$time_signature)
-
-write.csv(attributes_lookup,"song_data.csv",row.names = F)
 ```
 
+#Cluster Songs
+```{r clustering}
+attrs = attributes_lookup
+norm = cbind(as.data.frame(attrs[,c(1:5,10)]),as.data.frame(scale(attrs[,c(6,7,9,11:17)])))
+norm$mode = as.numeric(as.character(norm$mode))
 
+plot(norm[,c(6:16)],pch=20)
 
+pcs = princomp(norm[,c(6:16)])
+plot(pcs)
+plot(pcs, type='l')
+summary(pcs)
 
+pcs2 = prcomp(norm[c(6:16)])
+comp <- data.frame(pcs2$x[,1:10])
+plot(comp, pch=16)
+
+set.seed(412)
+km = matrix(nrow=10,ncol=2)
+for(i in seq(1:10)){
+  kmeans = kmeans(comp,centers = i,iter.max = 1000,nstart=25)
+  km[i,1] = i
+  km[i,2] = kmeans$tot.withinss
+}
+km = as.data.frame(km)
+colnames(km) = c("Clusters","TotWithinSS")
+plot(km$Clusters,km$TotWithinSS,type = "b")
+
+##choose 8
+kmeans = kmeans(comp,centers = 8,iter.max = 1000,nstart=25)
+norm$cluster = kmeans$cluster
+```
+
+#Cluster Plots
+```{r cluster plots}
+palette(c("blue","green","skyblue","purple","orange","red","gold"))
+plot(norm[,c(6:16)],col=norm$cluster,pch=16)
+
+#Less Busy - Only select songs with 50+ plays
+norm_subset = norm %>% filter(streams >= 50)
+plot(norm_subset[,c(6:16)],col=norm$cluster,pch=16)
+```
+
+#Re-attach clusters so non-normalized dataset
+```{r reattach}
+attrs$cluster = as.factor(norm$cluster)
+write.csv(attrs,"song_data.csv",row.names = F)
+```
+
+#Plot by Cluster
+```{r plots by cluster}
+ggplot(attrs, aes(x=cluster, y=danceability,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Danceability") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=energy,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Energy") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=loudness,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Loudness") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=speechiness,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Speechiness") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=acousticness,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Acousticness") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=instrumentalness,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Instrumentalness") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=liveness,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Liveness") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=valence,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Valence") + theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(attrs, aes(x=cluster, y=tempo,col=cluster)) + 
+  geom_boxplot() + 
+  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  ggtitle("Tempo") + theme(plot.title = element_text(hjust = 0.5))
+```
 
