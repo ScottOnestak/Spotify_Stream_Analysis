@@ -95,20 +95,21 @@ songs$Track[songs$Track == "Gregâ€™s Drinking Song"] = "Greg's Drinking Son
 songs$Track[songs$Track == "Iâ€™m A Good Person" |
             songs$Track == "I'm a Good Person (feat. Rachel Bloom)"] = "I'm A Good Person"
 songs$Artist[songs$Artist == "Ð’ÐµÑ€ÐºÐ° Ð¡ÐµÑ€Ð´ÑŽÑ‡ÐºÐ°"] = "Verka Serduchka"
-songs$Track[songs$Track == "	Hey Mama (feat. Nicki Minaj & Afrojack)"] = "Hey Mama (feat. Nicki Minaj Bebe Rexha & Afrojack)"
+songs$Track[songs$Track == "Hey Mama (feat. Nicki Minaj & Afrojack)"] = "Hey Mama (feat. Nicki Minaj Bebe Rexha & Afrojack)"
 songs$Track[songs$Track == "Titanium"] = "Titanium (feat. Sia)"
 songs$Track[songs$Track == "When Love Takes Over (feat. Kelly Rowland) - feat. Kelly Rowland"] = "When Love Takes Over (feat. Kelly Rowland)"
 songs$Track[songs$Track == "Where Them Girls At - feat. Nicki Minaj & Flo Rida"] = "Where Them Girls At (feat. Nicki Minaj & Flo Rida)"
 songs$Track[songs$Track == "Pour Some Sugar On Me - Remastered 2017"] = "You Spin Me Round (Like a Record)"
 songs$Track[songs$Track == "Listen To Your Heart (EdmÃ©e's Unplugged Vocal)"] = "Listen To Your Heart (Edmee's Unplugged Vocal)"
-songs$Track[songs$Track == "Cake By The Ocean - ã‚¯ãƒªãƒ¼ãƒ³ãƒ»ãƒ´ã‚¡ãƒ¼ã‚¸ãƒ§ãƒ³"] = "Cake by The Ocean"
+songs$Track[songs$Track == "Cake By The Ocean - ã‚¯ãƒªãƒ¼ãƒ³ãƒ»ãƒ´ã‚¡ãƒ¼ã‚¸ãƒ§ãƒ³"] = "Cake by the Ocean"
 songs$Track[songs$Track == "Stereo Love Featuring Vika Jigulina - Radio Edit"] = "Stereo Love - Radio Edit"
 songs$Track[songs$Track == "Hanging On - Edit"] = "Hanging On"
 songs$Track[songs$Track == "Still Falling For You - From Bridget Jones's Baby Original Motion Picture Soundtrack"] = "Still Falling For You - From Bridget Jones's Baby"
 songs$Track[songs$Track == "Can You Feel The Love Tonight - End Title / From The Lion King"] = "Can You Feel the Love Tonight"
 songs$Track[songs$Track == "When Iâ€™m Alone"] = "When I'm Alone"
 songs$Track[songs$Track == "There You'll Be - Remastered Version"] = "There You'll Be - Remastered"
-songs$Track[songs$Track == "Work from Home (feat. Ty Dolla $ign)"] = "Work From Home"
+songs$Track[songs$Track == "Work from Home (feat. Ty Dolla $ign)" |
+            songs$Track == "Work from Home"] = "Work From Home"
 songs$Track[songs$Track == "100 Years: Music Video"] = "100 Years"
 songs$Track[songs$Track == "Right Round - US"] = "Right Round"
 songs$Track[songs$Track == "Say It"] = "Say It (feat. Tove Lo)"
@@ -224,6 +225,13 @@ songs$Artist[songs$Artist == "Joshua Coleman"] = "Fifth Harmony"
 songs$Track[songs$Track == " I Won't Say (I'm In Love)"] = "I Won't Say (I'm In Love)"
 songs$Track[songs$Track == "Friday Nightâ€¬â€¬â€¬"] = "Friday Night"
 songs$Track[songs$Track == "I Have Nothing - Remastered"] = "I Have Nothing"
+songs$Track[songs$Track == "Ashes - from Deadpool 2"] = "Ashes"
+songs$Artist[songs$Artist == "Emeli SandÃ©"] = "Emeli Sande"
+songs$Track[songs$Track == "Anywhere For You"] = "Anywhere For You - Radio Edit"
+songs$Track[songs$Track == "You Keep Me Hangin' On"] = "You Keep Me Hangin On"
+songs$Artist[songs$Artist == "Bethel Music"] = "Kristene DiMarco"
+songs$Artist[songs$Artist == "Mama Cass"] = "Cass Elliot"
+songs$Track[songs$Track == "Jump - 2015 Remastered Version"] = "Jump"
 
 #Changing Search Song Title
 songs$Track[songs$Track == "Respect - Remastered"] = "Respect"
@@ -246,7 +254,8 @@ qualifying = distincts %>%
   filter(Artist != "Rachel Bloom") %>% #Comedy
   filter(Artist != "Rockie Gold") %>% #Comedy
   filter(Track != "I2I") %>% #No Longer Available
-  filter(Track != "We're the Same") #Can't Find It
+  filter(Track != "We're the Same") %>% #Can't Find It
+  filter(Artist != "Crazy Ex-Girlfriend Cast") #Comedy
 
 qsongs = songs %>% 
   inner_join(.,qualifying,by=c("Artist","Track")) %>% 
@@ -257,6 +266,8 @@ qsongs = songs %>%
 ```{r create lookup,results='hide'}
 #Change Artist Name For Lookup ---> Problem with escape characters in string
 qualifying$Artist[qualifying$Artist == "Axwell /\\ Ingrosso"] = "Axwell Ingrosso"
+qualifying$Artist[qualifying$Artist == "Aly & AJ"] = "Aly AJ"
+qualifying$Artist[qualifying$Artist == "Earth Wind & Fire"] = "Earth Wind Fire"
 
 song_lookup = qualifying %>%
   mutate(temp=paste(Artist,Track,Sep=" ")) %>%
@@ -268,6 +279,10 @@ song_lookup$id = NA
 #Change Artist Name Back
 qualifying$Artist[qualifying$Artist == "Axwell Ingrosso"] = "Axwell /\\ Ingrosso"
 song_lookup$Artist[song_lookup$Artist == "Axwell Ingrosso"] = "Axwell /\\ Ingrosso"
+qualifying$Artist[qualifying$Artist == "Aly AJ"] = "Aly & AJ"
+song_lookup$Artist[song_lookup$Artist == "Aly AJ"] = "Aly & AJ"
+qualifying$Artist[qualifying$Artist == "Earth Wind Fire"] = "Earth Wind & Fire"
+song_lookup$Artist[song_lookup$Artist == "Earth Wind Fire"] = "Earth Wind & Fire"
 
 #Change Lookup String
 song_lookup$Lookup[song_lookup$Lookup == "Britt%20Nicole%20Gold%20-%20Jason%20Nevins%20Rhythmic%20Remix/Bonus%20Track%20%20"] = "Britt%20Nicole%20Gold%20Jason%20Nevins"
@@ -334,21 +349,62 @@ song_lookup$Lookup[song_lookup$Lookup == "Vince%20Guaraldi%20Trio%20Christmas%20
 song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20I%20Wanna%20Dance%20with%20Somebody%20(Who%20Loves%20Me)%20%20"] = "Whitney%20Houston%20I%20Wanna%20Dance%20with%20Somebody"
 song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20The%20Star%20Spangled%20Banner%20-%20Live%20from%20Super%20Bowl%20XXV%20%20"] = "Whitney%20Houston%20The%20Star%20Spangled%20Banner"
 song_lookup$Lookup[song_lookup$Lookup == "Zara%20Larsson%20Aint%20My%20Fault%20%20"] = "Zara%20Larsson%20My%20Fault%20%20"
+song_lookup$Lookup[song_lookup$Lookup == "Earth%20Wind%20Fire%20Lets%20Groove%20%20"] = "Earth%20Wind%20Fire%20Groove%20%20"
 
 ```
 
 #USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
 ## Can get OAuth_Token at: https://developer.spotify.com/console/get-search-item/?q=Carly%20Rae%20Jepsen%20Run%20Away%20With%20Me&type=track&market=&limit=1&offset=
 ```{r get those ids}
-OAuth_Token = "BQBcJ_8KlMaNoahot3hwzj0ArMX09BExoUDHWWlXbSeZAxOM7AIIYLTL6yNKAvqSHjOQAlF4PDIUoJ-Np1bpg4a17h-zbGKR2I2Y0w56KJosSEOf_MnF3fAZxykjafGHCQha95rVnYrEbtJ17RBsCBYmY74FRw"
+OAuth_Token = "BQC9ctUBB_OHLjcjjE3Gyf8UUPb9JiK7yUuhx1xdmbthydW60JjasLfHCd7mOZRXE60jWzSGBA6XGmd7co04vWcWyzZYDDlZke-_90v6U6SNUgbNP7gJmIAfNRYopa8ZQh6x4HlELvT0j-hHv99PVHcLcX0I6Q"
 
 for(i in seq(1:dim(song_lookup)[1])){
+  
   theLookup = song_lookup[i,"Lookup"]
   temp = glue('\'curl -X "GET" "https://api.spotify.com/v1/search?q={theLookup}&type=track&limit=1" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {OAuth_Token}"\'')
   song_lookup[i,"id"] = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))$tracks$items$id
 }
 
+#Manual Override - mapping to wrong id (such as title tracks of albums or studio v live version)
+#CHECK - No Duplicates
+song_lookup[song_lookup$Artist=="Carly Rae Jepsen" & song_lookup$Track=="Emotion","id"] = "6f8dVDn1vWbWIfUouv9iJp"
+song_lookup[song_lookup$Artist=="Carrie Underwood" & song_lookup$Track=="Some Hearts","id"] = "4VsMvUldyABTPUodYRI6uX"
+song_lookup[song_lookup$Artist=="Ellie Goulding" & song_lookup$Track=="Halcyon","id"] = "5f1BYfuMovgQPuYPIGfESE"
+song_lookup[song_lookup$Artist=="Jessie J" & song_lookup$Track=="Who You Are","id"] = "65lIGCfW59BxcEJnnIOCq3"
+song_lookup[song_lookup$Artist=="Karmin" & song_lookup$Track=="Pulses","id"] = "7lHkU78B86mdBbU0WIVswi"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Breakaway","id"] = "61Qhe2mHSLhUE04QeK4lkD"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Piece by Piece","id"] = "2NELtMgQ8HSdrGrYQPLnC3"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Wrapped in Red","id"] = "5fclVBnzaGrbucvVMC228o"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="The Fame","id"] = "7pMCNNB9wYprg892vwySYC"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Monster","id"] = "1K9jK8EHkgOTjLokIbIxPq"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Born This Way","id"] = "6r2BECwMgEoRb5yLfp0Hca"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="ARTPOP","id"] = "73zDQykFwu3yT5VQ6MwYbh"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Joanne","id"] = "2kecdnlyueotEMC8rdNlf6"
+song_lookup[song_lookup$Artist=="Mako" & song_lookup$Track=="I Won't Let You Walk Away - Radio Edit","id"] = "02luOsVJEhcVH5Zf3n7Gq6"
+song_lookup[song_lookup$Artist=="Molly Sanden" & song_lookup$Track=="Like No One's Watching","id"] = "0seWbF1zqWCa0dkMupdd0S"
+song_lookup[song_lookup$Artist=="The Barden Bellas" & song_lookup$Track=="Party In The U.S.A.","id"] = "7c2KF18pPpaN8Hy5MiNNWs"
+song_lookup[song_lookup$Artist=="Cardiknox" & song_lookup$Track=="On My Way","id"] = "5spSDPY097Y2PwXQYIFyZb"
+song_lookup[song_lookup$Artist=="Selena Gomez & The Scene" & song_lookup$Track=="Naturally","id"] = "1YaVmBh7EAeR54FIjuFcb5"
+song_lookup[song_lookup$Artist=="Selena Gomez & The Scene" & song_lookup$Track=="Hit the Lights","id"] = "6ciLLh4TkPYDUfNxn2Z0KO"
+song_lookup[song_lookup$Artist=="Elmo & Patsy" & song_lookup$Track=="Grandma Got Run Over By A Reindeer","id"] = "49iHYFjT5yO6WEw6KerX9o"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Beautiful Disaster","id"] = "6bcnBvXEsaqFxO5jkgwPwR"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Gone","id"] = "5Canmwvufsc7bMM3v2c286"
+song_lookup[song_lookup$Artist=="Kool & The Gang" & song_lookup$Track=="Celebration - Single Version","id"] = "3K7Q9PHUWPTaknlbFPThn2"
+song_lookup[song_lookup$Artist=="Kool & The Gang" & song_lookup$Track=="Get Down On It","id"] = "4yKZACkuudvfd600H2dQie"
+song_lookup[song_lookup$Artist=="Vigiland" & song_lookup$Track=="Shots & Squats - SoMo Vocal Mix","id"] = "40l5cmtb4BpqwNxwrQZkt8"
+song_lookup[song_lookup$Artist=="Sia" & song_lookup$Track=="Move Your Body","id"] = "73Mfgc0HTZeNCoNrDI46sJ"
+song_lookup[song_lookup$Artist=="Ryn Weaver" & song_lookup$Track=="The Fool","id"] = "5VF6OStYFWd5QTpxTvDXCU"
+
+
 attributes_lookup = song_lookup
+```
+
+#CHECK - No Duplicates
+```{r check}
+check = attributes_lookup %>%
+  group_by(id) %>%
+  summarize(count = n()) %>%
+  arrange(desc(count))
 ```
 
 #Look up attributes of songs
