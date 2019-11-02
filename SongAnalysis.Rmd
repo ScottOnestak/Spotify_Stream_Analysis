@@ -17,9 +17,7 @@ if (!require("curl")) installed.packages("curl",dependencies = T)
 if (!require("glue")) installed.packages("glue",dependencies = T)
 if (!require("FactoMineR")) installed.packages("FactoMineR",dependencies = T)
 if (!require("ggplot2")) installed.packages("ggplot2",dependencies = T)
-if (!require("zoo")) installed.packages("zoo",dependencies = T)
-if(!require('plotly')) install.packages('plotly',dependencies = T)
-
+if (!require("tidyr")) installed.packages("tidyr",dependencies = T)
 
 library(dplyr)
 library(jsonlite)
@@ -27,8 +25,7 @@ library(curl)
 library(glue)
 library(FactoMineR)
 library(ggplot2)
-library(zoo)
-library(plotly)
+library(tidyr)
 
 Sys.setenv("plotly_username"="sonestak")
 Sys.setenv("plotly_api_key"="Qp9opKSaakBjxxvMK1DK")
@@ -42,7 +39,7 @@ colnames(songs_raw) = c('Artist','Album','Track','Timestamp')
 
 #CLEANING
 ```{r cleaning}
-songs = songs_raw
+songs = songs_raw %>% filter(Timestamp != '')
 
 #Grouping Same Songs Together
 songs$Track[songs$Track =="starstrukk (feat. katyperry)"] = "Starstrukk (feat. Katy Perry)"
@@ -240,6 +237,8 @@ songs$Track[songs$Track == "You Keep Me Hangin' On"] = "You Keep Me Hangin On"
 songs$Artist[songs$Artist == "Bethel Music"] = "Kristene DiMarco"
 songs$Artist[songs$Artist == "Mama Cass"] = "Cass Elliot"
 songs$Track[songs$Track == "Jump - 2015 Remastered Version"] = "Jump"
+songs$Track[songs$Track == "doN'T StArT nOw"] = "Don't Start Now"
+songs$Artist[songs$Artist == "RedOne"] = "Red One"
 
 #Changing Search Song Title
 songs$Track[songs$Track == "Respect - Remastered"] = "Respect"
@@ -332,7 +331,7 @@ song_lookup$Lookup[song_lookup$Lookup == "Pierce%20Fulton%20Kuaga%20(Lost%20Time
 song_lookup$Lookup[song_lookup$Lookup == "Queen%20Dont%20Stop%20Me%20Now%20-%20Remastered%20%20"] = "Queen%20Dont%20Stop%20Me%20Now"
 song_lookup$Lookup[song_lookup$Lookup == "Samuel%20E.%20Wright%20Under%20The%20Sea%20-%20From%20The%20Little%20Mermaid/%20Soundtrack%20Version%20%20"] = "Samuel%20Wright%20Under%20The%20Sea"
 song_lookup$Lookup[song_lookup$Lookup == "Rachel%20Platten%201000%20Ships%20%20"] = "Rachel%20Platten%20Ships"
-song_lookup$Lookup[song_lookup$Lookup == "RedOne%20Dont%20You%20Need%20Somebody%20(feat.%20Enrique%20Iglesias%20R.%20City%20Serayah%20&%20Shaggy)%20%20"] = "RedOne%20Dont%20You%20Need%20Somebody"
+song_lookup$Lookup[song_lookup$Lookup == "Red%20One%20Dont%20You%20Need%20Somebody%20(feat.%20Enrique%20Iglesias%20R.%20City%20Serayah%20&%20Shaggy)%20%20"] = "RedOne%20You%20Need%20Somebody"
 song_lookup$Lookup[song_lookup$Lookup == "Rihanna%20Love%20The%20Way%20You%20Lie%20(Part%20II)%20-%20Pt.%202%20%20"] = "Rihanna%20Love%20The%20Way%20You%20Lie"
 song_lookup$Lookup[song_lookup$Lookup == "Raven-Symone%20Thats%20So%20Raven%20(Theme%20Song)%20%20"] = "Raven-Symone%20So%20Raven"
 song_lookup$Lookup[song_lookup$Lookup == "Rufus%20The%20Naked%20Mole%20Rap%20-%20From%20Kim%20Possible%20%20"] = "Rufus%20The%20Naked%20Mole%20Rap"
@@ -358,13 +357,28 @@ song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20I%20Wanna%20Dance%
 song_lookup$Lookup[song_lookup$Lookup == "Whitney%20Houston%20The%20Star%20Spangled%20Banner%20-%20Live%20from%20Super%20Bowl%20XXV%20%20"] = "Whitney%20Houston%20The%20Star%20Spangled%20Banner"
 song_lookup$Lookup[song_lookup$Lookup == "Zara%20Larsson%20Aint%20My%20Fault%20%20"] = "Zara%20Larsson%20My%20Fault%20%20"
 song_lookup$Lookup[song_lookup$Lookup == "Earth%20Wind%20Fire%20Lets%20Groove%20%20"] = "Earth%20Wind%20Fire%20Groove%20%20"
+song_lookup$Lookup[song_lookup$Lookup == "Dua%20Lipa%20Dont%20Start%20Now%20%20"] = "Dua%20Lipa%20Start%20Now%20%20"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20All%20You%20Need%20To%20Know%20(feat.%20Calle%20Lehmann)%20%20"] = "Gryffin%20All%20You%20Need%20To%20Know"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Baggage%20(with%20AlunaGeorge)%20%20"] = "Gryffin%20Baggage"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Body%20Back%20(feat.%20Maia%20Wright)%20%20"] = "Gryffin%20Body%20Back"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Bye%20Bye%20(feat.%20Ivy%20Adara)%20%20"] = "Gryffin%20Bye%20Bye"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20If%20I%20Left%20The%20World%20(feat.%20MARINA%20&%20Model%20Child)%20%20"] = "Gryffin%20If%20I%20Left%20The%20World"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Just%20For%20A%20Moment%20(feat.%20Iselin)%20%20"] = "Gryffin%20Just%20For%20A%20Moment"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Need%20Your%20Love%20(with%20Noah%20Kahan)%20%20"] = "Gryffin%20Need%20Your%20Love"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Nobody%20Compares%20to%20You%20(feat.%20Katie%20Pearlman)%20%20"] = "Gryffin%20Nobody%20Compares%20to%20You"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20OMG%20(with%20Carly%20Rae%20Jepsen)%20%20"] = "Gryffin%20OMG"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20OMG%20(with%20Carly%20Rae%20Jepsen)%20-%20Anki%20Remix%20%20"] = "Gryffin%20OMG%20Anki%20Remix"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Tie%20Me%20Down%20(with%20Elley%20DuhÃ©)%20%20"] = "Gryffin%20Tie%20Me%20Down"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20You%20Remind%20Me%20(feat.%20Stanaj)%20%20"] = "Gryffin%20You%20Remind%20Me"
+song_lookup$Lookup[song_lookup$Lookup == "Elle%20Fanning%20Wildflowers%20-%20From%20â€œTeen%20Spiritâ€%20Soundtrack%20%20"] = "Elle%20Fanning%20Wildflowers"
+song_lookup$Lookup[song_lookup$Lookup == "Lana%20Del%20Rey%20Summertime%20Sadness%20(Lana%20Del%20Rey%20Vs.%20Cedric%20Gervais)%20-%20Cedric%20Gervais%20Remix%20/%20Radio%20Edit%20%20"] = "Lana%20Del%20Rey%20Summertime%20Sadness%20Cedric%20Gervais%20Remix"
 
 ```
 
 #USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
 ## Can get OAuth_Token at: https://developer.spotify.com/console/get-search-item/?q=Carly%20Rae%20Jepsen%20Run%20Away%20With%20Me&type=track&market=&limit=1&offset=
 ```{r get those ids}
-OAuth_Token = "BQC9ctUBB_OHLjcjjE3Gyf8UUPb9JiK7yUuhx1xdmbthydW60JjasLfHCd7mOZRXE60jWzSGBA6XGmd7co04vWcWyzZYDDlZke-_90v6U6SNUgbNP7gJmIAfNRYopa8ZQh6x4HlELvT0j-hHv99PVHcLcX0I6Q"
+OAuth_Token = "BQASx6SJs6LqApa-o4hnSpPz48m1ZKv5UGaV8-KwxZxSjgcJ3qXmd17kIDEXY8FS2b36O82EElnKSUM3x5uam-iydPh8lxYYAHbxWtTl-qKja3K1Xg6Yv8XjyHdWY0OwM4sva2cCSVTMd1bIAv9UxOvm47liaQ"
 
 for(i in seq(1:dim(song_lookup)[1])){
   
@@ -402,7 +416,8 @@ song_lookup[song_lookup$Artist=="Kool & The Gang" & song_lookup$Track=="Get Down
 song_lookup[song_lookup$Artist=="Vigiland" & song_lookup$Track=="Shots & Squats - SoMo Vocal Mix","id"] = "40l5cmtb4BpqwNxwrQZkt8"
 song_lookup[song_lookup$Artist=="Sia" & song_lookup$Track=="Move Your Body","id"] = "73Mfgc0HTZeNCoNrDI46sJ"
 song_lookup[song_lookup$Artist=="Ryn Weaver" & song_lookup$Track=="The Fool","id"] = "5VF6OStYFWd5QTpxTvDXCU"
-
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Dope","id"] = "37yshWNelgzYqQunLz4hEL"
+song_lookup[song_lookup$Artist=="Stevie Wonder" & song_lookup$Track=="What Christmas Means to Me","id"] = "3h1EREJfCwyv6cG7CGak5d"
 
 attributes_lookup = song_lookup
 ```
@@ -640,64 +655,93 @@ for(i in seq(1:8)){
 cluster_counts$cluster = as.factor(cluster_counts$cluster)
 
 listening_trends = song_final %>%
-  filter(is.na(quarters) == F)
+  filter(is.na(quarters) == F  & (monthyear != "Nov 2019" | monthyear != "Dec 2019"))
 
 #total listening
 total_listening = listening_trends %>%
-  group_by(quarters) %>%
+  group_by(monthyear) %>%
   summarise(total_streams = n())
 
 #listening by cluster
 listening_by_cluster = listening_trends %>%
-  group_by(quarters,cluster) %>%
+  group_by(monthyear,cluster) %>%
   summarise(streams = n()) %>%
-  left_join(.,total_listening,by="quarters") %>%
+  spread(.,cluster,streams)
+
+listening_by_cluster[is.na(listening_by_cluster)] = 0
+
+listening_by_cluster = listening_by_cluster %>%
+  gather(.,cluster,streams,2:9,factor_key = T) %>%
+  left_join(.,total_listening,by="monthyear") %>%
   left_join(.,cluster_counts,by="cluster") %>%
   mutate(percent = streams/total_streams,
          index = streams/(total_streams*(songs/totalsongs))*100) %>%
   select(-c("total_streams","songs","totalsongs"))
 
 #listening by major artists
-artist_total = song_final %>%
+artist_total = listening_trends %>%
   group_by(Artist) %>%
   summarise(total_artist_streams = n()) %>%
   arrange(desc(total_artist_streams))
 
 top_artists = artist_total %>% filter(total_artist_streams >= 300)
 
-artist_quarterly = song_final %>%
-  filter(is.na(quarters) == F) %>%
-  group_by(quarters,Artist) %>%
-  summarise(streams = n()) %>%
+artist_monthly = listening_trends %>%
+  group_by(monthyear,Artist) %>%
+  summarise(streams = n())  %>%
+  spread(.,Artist,streams)
+
+artist_monthly[is.na(artist_monthly)] = 0
+
+artist_monthly = artist_monthly %>% 
+  gather(.,Artist,streams,2:dim(artist_monthly)[2],factor_key = T) %>%
   inner_join(.,top_artists,by="Artist") %>%
-  left_join(.,total_listening,by="quarters") %>%
+  left_join(.,total_listening,by="monthyear") %>%
   mutate(percent=streams/total_streams*100) %>%
-  select(c("Artist","quarters","streams","percent")) %>%
-  arrange(Artist,quarters)
+  select(c("Artist","monthyear","streams","percent")) %>%
+  arrange(Artist,monthyear)
 
 #listening by top tracks
-track_total = song_final %>%
+track_total = listening_trends
   group_by(Artist,Track,cluster) %>%
   summarise(total_track_streams = n()) %>%
   arrange(desc(total_track_streams))
 
 top_tracks = track_total %>% filter(total_track_streams >= 300)
 
-track_quarterly = song_final %>%
-  filter(is.na(quarters) == F) %>%
-  group_by(quarters,Artist,Track) %>%
-  summarise(streams = n()) %>%
+track_monthly = listening_trends %>%
+  group_by(monthyear,Artist,Track) %>%
+  summarise(streams = n()) %>% 
+  mutate(ArtistTrack = paste(Artist,Track,sep="#"))
+
+track_monthly = track_monthly[,-c(2,3)] %>%
+  spread(.,ArtistTrack,streams)
+track_monthly[is.na(track_monthly)] = 0
+
+track_monthly = track_monthly %>% 
+  gather(.,ArtistTrack,streams,2:dim(track_monthly)[2],factor_key = F)
+
+track_monthly$Artist = NA
+track_monthly$Track = NA
+
+for(i in seq(from=1,to=dim(track_monthly)[1],by=1)){
+  track_monthly[i,"Artist"] = strsplit(as.character(track_monthly[i,"ArtistTrack"]), "[#]")[[1]][1]
+  track_monthly[i,"Track"] = strsplit(as.character(track_monthly[i,"ArtistTrack"]), "[#]")[[1]][2]
+}
+  
+track_monthly = track_monthly %>%
+  select(-c("ArtistTrack")) %>% 
   inner_join(.,top_tracks,by=c("Artist","Track")) %>%
-  left_join(.,total_listening,by="quarters") %>%
+  left_join(.,total_listening,by="monthyear") %>%
   mutate(percent=streams/total_streams*100,
          ArtistTrack = paste(Artist,Track,sep=" - ")) %>%
-  select(c("Artist","ArtistTrack","quarters","streams","percent")) %>%
-  arrange(ArtistTrack,quarters)
+  select(c("Artist","ArtistTrack","monthyear","streams","percent")) %>%
+  arrange(ArtistTrack,monthyear)
 
 write.csv(total_listening,"Output_Files/total_listening_trends.csv")
 write.csv(listening_by_cluster,"Output_Files/cluster_listening_trends.csv")
-write.csv(artist_quarterly,"Output_Files/artist_listening_trends.csv")
-write.csv(track_quarterly,"Output_Files/track_listening_trends.csv")
+write.csv(artist_monthly,"Output_Files/artist_listening_trends.csv")
+write.csv(track_monthly,"Output_Files/track_listening_trends.csv")
 write.csv(artist_total,"Output_Files/artist.csv")
 write.csv(track_total,"Output_Files/tracks.csv")
 ```
