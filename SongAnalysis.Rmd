@@ -18,6 +18,7 @@ if (!require("glue")) installed.packages("glue",dependencies = T)
 if (!require("FactoMineR")) installed.packages("FactoMineR",dependencies = T)
 if (!require("ggplot2")) installed.packages("ggplot2",dependencies = T)
 if (!require("tidyr")) installed.packages("tidyr",dependencies = T)
+if (!require("zoo")) installed.packages("zoo",dependencies = T)
 
 library(dplyr)
 library(jsonlite)
@@ -26,6 +27,7 @@ library(glue)
 library(FactoMineR)
 library(ggplot2)
 library(tidyr)
+library(zoo)
 
 Sys.setenv("plotly_username"="sonestak")
 Sys.setenv("plotly_api_key"="Qp9opKSaakBjxxvMK1DK")
@@ -378,7 +380,7 @@ song_lookup$Lookup[song_lookup$Lookup == "Lana%20Del%20Rey%20Summertime%20Sadnes
 #USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
 ## Can get OAuth_Token at: https://developer.spotify.com/console/get-search-item/?q=Carly%20Rae%20Jepsen%20Run%20Away%20With%20Me&type=track&market=&limit=1&offset=
 ```{r get those ids}
-OAuth_Token = "BQASx6SJs6LqApa-o4hnSpPz48m1ZKv5UGaV8-KwxZxSjgcJ3qXmd17kIDEXY8FS2b36O82EElnKSUM3x5uam-iydPh8lxYYAHbxWtTl-qKja3K1Xg6Yv8XjyHdWY0OwM4sva2cCSVTMd1bIAv9UxOvm47liaQ"
+OAuth_Token = "BQD7_WH7gKy-45Mu_rUSzoeiojNspQQsF5-PswCn00NwAlQmuc18vxhhYQ4uFsL2gyFWCoHhUr3qDVNUI-eEgxHO5utS3Ljrak7Q4Ioqzg-S-pUEEbJykTScyqXsoXmtoPovN-oig6PtJ3xKOypCJ5VoeAL0kQ"
 
 for(i in seq(1:dim(song_lookup)[1])){
   
@@ -639,23 +641,45 @@ song_final[song_final$monthyear=="Oct 2019" |
 song_final$monthyear = as.yearmon(paste(song_final$month,substr(song_final$year,3,4),sep="-"),"%b-%y")
 song_final$count = 1
 
+song_final$cluster = as.character(song_final$cluster)
+
+for(i in seq(from=1,to=dim(song_final)[1],by=1)){
+  if (song_final[i,"cluster"] == 1) { song_final[i,"cluster"] = "1: Instrumental Songs"}
+  else if (song_final[i,"cluster"] == 2) { song_final[i,"cluster"] = "6: Energy Pop"}
+  else if (song_final[i,"cluster"] == 3) { song_final[i,"cluster"] = "7: Dance Songs"}
+  else if (song_final[i,"cluster"] == 4) { song_final[i,"cluster"] = '2: "The Feels"'}
+  else if (song_final[i,"cluster"] == 5) { song_final[i,"cluster"] = "4: Sad Bops"}
+  else if (song_final[i,"cluster"] == 6) { song_final[i,"cluster"] = "5: Live Songs"}
+  else if (song_final[i,"cluster"] == 7) { song_final[i,"cluster"] = "8: Anthem Songs"}
+  else if (song_final[i,"cluster"] == 8) { song_final[i,"cluster"] = '3: "Speak" Pop'}
+}
+
 write.csv(song_final,"song_final.csv",row.names = F)
 ```
 
 #Lets make some plots
 ```{r lets make some plots}
 #create table with cluster counts
-cluster_counts = as.data.frame(matrix(NA,nrow=8,ncol=3))
-colnames(cluster_counts) = c("cluster","songs","totalsongs")
+cluster_counts = as.data.frame(matrix(NA,nrow=8,ncol=4))
+colnames(cluster_counts) = c("clusternum","cluster","songs","totalsongs")
 for(i in seq(1:8)){
-  cluster_counts[i,"cluster"] = i
+  cluster_counts[i,"clusternum"] = i
+  if (cluster_counts[i,"clusternum"] == 1) { cluster_counts[i,"cluster"] = "1: Instrumental Songs"}
+  else if (cluster_counts[i,"clusternum"] == 2) { cluster_counts[i,"cluster"] = "6: Energy Pop"}
+  else if (cluster_counts[i,"clusternum"] == 3) { cluster_counts[i,"cluster"] = "7: Dance Songs"}
+  else if (cluster_counts[i,"clusternum"] == 4) { cluster_counts[i,"cluster"] = '2: "The Feels"'}
+  else if (cluster_counts[i,"clusternum"] == 5) { cluster_counts[i,"cluster"] = "4: Sad Bops"}
+  else if (cluster_counts[i,"clusternum"] == 6) { cluster_counts[i,"cluster"] = "5: Live Songs"}
+  else if (cluster_counts[i,"clusternum"] == 7) { cluster_counts[i,"cluster"] = "8: Anthem Songs"}
+  else if (cluster_counts[i,"clusternum"] == 8) { cluster_counts[i,"cluster"] = '3: "Speak" Pop'}
   cluster_counts[i,"songs"] = dim(attrs[attrs$cluster==i,"Track"])[1]
   cluster_counts[i,"totalsongs"] = 1437
 }
-cluster_counts$cluster = as.factor(cluster_counts$cluster)
+cluster_counts = cluster_counts[,-c(1)]
 
 listening_trends = song_final %>%
-  filter(is.na(quarters) == F  & (monthyear != "Nov 2019" | monthyear != "Dec 2019"))
+  filter(is.na(quarters) == F) %>%
+  filter(monthyear != "Nov 2019")
 
 #total listening
 total_listening = listening_trends %>%
@@ -671,7 +695,7 @@ listening_by_cluster = listening_trends %>%
 listening_by_cluster[is.na(listening_by_cluster)] = 0
 
 listening_by_cluster = listening_by_cluster %>%
-  gather(.,cluster,streams,2:9,factor_key = T) %>%
+  gather(.,cluster,streams,2:9,factor_key = F) %>%
   left_join(.,total_listening,by="monthyear") %>%
   left_join(.,cluster_counts,by="cluster") %>%
   mutate(percent = streams/total_streams,
@@ -702,7 +726,7 @@ artist_monthly = artist_monthly %>%
   arrange(Artist,monthyear)
 
 #listening by top tracks
-track_total = listening_trends
+track_total = listening_trends %>%
   group_by(Artist,Track,cluster) %>%
   summarise(total_track_streams = n()) %>%
   arrange(desc(total_track_streams))
@@ -738,11 +762,11 @@ track_monthly = track_monthly %>%
   select(c("Artist","ArtistTrack","monthyear","streams","percent")) %>%
   arrange(ArtistTrack,monthyear)
 
-write.csv(total_listening,"Output_Files/total_listening_trends.csv")
-write.csv(listening_by_cluster,"Output_Files/cluster_listening_trends.csv")
-write.csv(artist_monthly,"Output_Files/artist_listening_trends.csv")
-write.csv(track_monthly,"Output_Files/track_listening_trends.csv")
-write.csv(artist_total,"Output_Files/artist.csv")
-write.csv(track_total,"Output_Files/tracks.csv")
+write.csv(total_listening,"Output_Files/total_listening_trends.csv",row.names = F)
+write.csv(listening_by_cluster,"Output_Files/cluster_listening_trends.csv",row.names = F)
+write.csv(artist_monthly,"Output_Files/artist_listening_trends.csv",row.names = F)
+write.csv(track_monthly,"Output_Files/track_listening_trends.csv",row.names = F)
+write.csv(artist_total,"Output_Files/artist.csv",row.names = F)
+write.csv(track_total,"Output_Files/tracks.csv",row.names = F)
 ```
 
