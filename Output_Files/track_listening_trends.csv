@@ -1,372 +1,1317 @@
-"","Artist","ArtistTrack","quarters","streams","percent"
-"1","Ariana Grande","Ariana Grande - Into You","2016Q2",108,2.96458962393632
-"2","Ariana Grande","Ariana Grande - Into You","2016Q3",25,0.891583452211127
-"3","Ariana Grande","Ariana Grande - Into You","2016Q4",10,0.267952840300107
-"4","Ariana Grande","Ariana Grande - Into You","2017Q1",3,0.100704934541793
-"5","Ariana Grande","Ariana Grande - Into You","2017Q2",2,0.0439463854098
-"6","Ariana Grande","Ariana Grande - Into You","2017Q3",3,0.125786163522013
-"7","Ariana Grande","Ariana Grande - Into You","2017Q4",17,0.438483363425329
-"8","Ariana Grande","Ariana Grande - Into You","2018Q1",57,0.757676458859498
-"9","Ariana Grande","Ariana Grande - Into You","2018Q2",73,1.03590180218533
-"10","Ariana Grande","Ariana Grande - Into You","2018Q3",47,0.664404862878145
-"11","Ariana Grande","Ariana Grande - Into You","2018Q4",27,0.441176470588235
-"12","Ariana Grande","Ariana Grande - Into You","2019Q1",22,0.455109640049648
-"13","Ariana Grande","Ariana Grande - Into You","2019Q2",36,0.72
-"14","Ariana Grande","Ariana Grande - Into You","2019Q3",10,0.298418382572366
-"15","Ariana Grande","Ariana Grande - no tears left to cry","2018Q2",208,2.95161061444586
-"16","Ariana Grande","Ariana Grande - no tears left to cry","2018Q3",77,1.0884930732259
-"17","Ariana Grande","Ariana Grande - no tears left to cry","2018Q4",44,0.718954248366013
-"18","Ariana Grande","Ariana Grande - no tears left to cry","2019Q1",10,0.206868018204386
-"19","Ariana Grande","Ariana Grande - no tears left to cry","2019Q2",33,0.66
-"20","Ariana Grande","Ariana Grande - no tears left to cry","2019Q3",7,0.208892867800657
-"21","Ariana Grande","Ariana Grande - Touch It","2016Q2",28,0.768597309909415
-"22","Ariana Grande","Ariana Grande - Touch It","2016Q3",10,0.356633380884451
-"23","Ariana Grande","Ariana Grande - Touch It","2016Q4",14,0.37513397642015
-"24","Ariana Grande","Ariana Grande - Touch It","2017Q1",3,0.100704934541793
-"25","Ariana Grande","Ariana Grande - Touch It","2017Q2",6,0.1318391562294
-"26","Ariana Grande","Ariana Grande - Touch It","2017Q3",5,0.209643605870021
-"27","Ariana Grande","Ariana Grande - Touch It","2017Q4",22,0.567449058550426
-"28","Ariana Grande","Ariana Grande - Touch It","2018Q1",25,0.332314236341885
-"29","Ariana Grande","Ariana Grande - Touch It","2018Q2",81,1.14942528735632
-"30","Ariana Grande","Ariana Grande - Touch It","2018Q3",34,0.480633305060786
-"31","Ariana Grande","Ariana Grande - Touch It","2018Q4",21,0.343137254901961
-"32","Ariana Grande","Ariana Grande - Touch It","2019Q1",40,0.827472072817542
-"33","Ariana Grande","Ariana Grande - Touch It","2019Q2",3,0.06
-"34","Ariana Grande","Ariana Grande - Touch It","2019Q3",20,0.596836765144733
-"35","Ava Max","Ava Max - Sweet but Psycho","2018Q4",133,2.17320261437908
-"36","Ava Max","Ava Max - Sweet but Psycho","2019Q1",121,2.50310302027307
-"37","Ava Max","Ava Max - Sweet but Psycho","2019Q2",75,1.5
-"38","Ava Max","Ava Max - Sweet but Psycho","2019Q3",46,1.37272455983289
-"39","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2016Q4",34,0.911039657020364
-"40","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2017Q1",5,0.167841557569654
-"41","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2017Q2",10,0.219731927049
-"42","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2017Q3",1,0.0419287211740042
-"43","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2017Q4",8,0.206345112200155
-"44","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2018Q1",22,0.292436527980859
-"45","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2018Q2",22,0.312189584220236
-"46","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2018Q3",7,0.0989539157478089
-"47","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2018Q4",120,1.96078431372549
-"48","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2019Q1",59,1.22052130740587
-"49","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2019Q2",39,0.78
-"50","Cardiknox","Cardiknox - On My Way - Lost Kings Remix","2019Q3",8,0.238734706057893
-"51","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2017Q2",215,4.7242364315535
-"52","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2017Q3",66,2.76729559748428
-"53","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2017Q4",65,1.67655403662626
-"54","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2018Q1",98,1.30267180646019
-"55","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2018Q2",115,1.63190009933305
-"56","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2018Q3",79,1.11676562058241
-"57","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2018Q4",65,1.06209150326797
-"58","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2019Q1",44,0.910219280099297
-"59","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2019Q2",53,1.06
-"60","Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling","2019Q3",53,1.58161742763354
-"61","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2016Q1",9,1.26582278481013
-"62","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2016Q2",7,0.192149327477354
-"63","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2016Q3",36,1.28388017118402
-"64","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2016Q4",80,2.14362272240086
-"65","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2017Q1",3,0.100704934541793
-"66","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2017Q2",16,0.3515710832784
-"67","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2017Q3",34,1.42557651991614
-"68","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2017Q4",51,1.31545009027599
-"69","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2018Q1",164,2.17998139040276
-"70","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2018Q2",140,1.98666099049241
-"71","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2018Q3",101,1.4277636415041
-"72","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2018Q4",87,1.42156862745098
-"73","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2019Q1",57,1.179147703765
-"74","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2019Q2",61,1.22
-"75","Carly Rae Jepsen","Carly Rae Jepsen - Fever","2019Q3",48,1.43240823634736
-"76","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2015Q4",111,2.90499869144203
-"77","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2016Q1",8,1.12517580872011
-"78","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2016Q2",11,0.301948943178699
-"79","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2016Q3",15,0.534950071326676
-"80","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2016Q4",9,0.241157556270096
-"81","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2017Q1",30,1.00704934541793
-"82","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2017Q2",5,0.1098659635245
-"83","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2017Q3",16,0.670859538784067
-"84","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2017Q4",25,0.644828475625484
-"85","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2018Q1",38,0.505117639239665
-"86","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2018Q2",34,0.482474811976728
-"87","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2018Q3",9,0.127226463104326
-"88","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2018Q4",20,0.326797385620915
-"89","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2019Q1",5,0.103434009102193
-"90","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2019Q2",2,0.04
-"91","Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love","2019Q3",14,0.417785735601313
-"92","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2015Q4",83,2.17220622873593
-"93","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2016Q1",4,0.562587904360056
-"94","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2016Q2",8,0.21959923140269
-"95","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2016Q3",10,0.356633380884451
-"96","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2016Q4",4,0.107181136120043
-"97","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2017Q1",34,1.14132259147365
-"98","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2017Q2",14,0.3076246978686
-"99","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2017Q3",9,0.377358490566038
-"100","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2017Q4",11,0.283724529275213
-"101","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2018Q1",54,0.717798750498471
-"102","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2018Q2",72,1.02171136653895
-"103","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2018Q3",15,0.212044105173876
-"104","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2018Q4",24,0.392156862745098
-"105","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2019Q1",21,0.43442283822921
-"106","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2019Q2",53,1.06
-"107","Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You","2019Q3",13,0.387943897344076
-"108","Carly Rae Jepsen","Carly Rae Jepsen - Party for One","2018Q4",441,7.20588235294118
-"109","Carly Rae Jepsen","Carly Rae Jepsen - Party for One","2019Q1",138,2.85477865122052
-"110","Carly Rae Jepsen","Carly Rae Jepsen - Party for One","2019Q2",86,1.72
-"111","Carly Rae Jepsen","Carly Rae Jepsen - Party for One","2019Q3",66,1.96956132497762
-"112","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2015Q4",39,1.02067521591206
-"113","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2016Q1",9,1.26582278481013
-"114","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2016Q2",19,0.521548174581389
-"115","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2016Q3",45,1.60485021398003
-"116","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2016Q4",34,0.911039657020364
-"117","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2017Q1",73,2.45048674051695
-"118","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2017Q2",98,2.1533728850802
-"119","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2017Q3",21,0.880503144654088
-"120","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2017Q4",61,1.57338148052618
-"121","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2018Q1",47,0.624750764322744
-"122","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2018Q2",140,1.98666099049241
-"123","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2018Q3",94,1.32880972575629
-"124","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2018Q4",85,1.38888888888889
-"125","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2019Q1",93,1.92387256930079
-"126","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2019Q2",81,1.62
-"127","Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me","2019Q3",58,1.73082661891973
-"128","Carly Rae Jepsen","Carly Rae Jepsen - The One","2016Q3",134,4.77888730385164
-"129","Carly Rae Jepsen","Carly Rae Jepsen - The One","2016Q4",81,2.17041800643087
-"130","Carly Rae Jepsen","Carly Rae Jepsen - The One","2017Q1",27,0.906344410876133
-"131","Carly Rae Jepsen","Carly Rae Jepsen - The One","2017Q2",59,1.2964183695891
-"132","Carly Rae Jepsen","Carly Rae Jepsen - The One","2017Q3",13,0.545073375262054
-"133","Carly Rae Jepsen","Carly Rae Jepsen - The One","2017Q4",58,1.49600206345112
-"134","Carly Rae Jepsen","Carly Rae Jepsen - The One","2018Q1",86,1.14316097301608
-"135","Carly Rae Jepsen","Carly Rae Jepsen - The One","2018Q2",65,0.922378317014332
-"136","Carly Rae Jepsen","Carly Rae Jepsen - The One","2018Q3",48,0.678541136556404
-"137","Carly Rae Jepsen","Carly Rae Jepsen - The One","2018Q4",35,0.571895424836601
-"138","Carly Rae Jepsen","Carly Rae Jepsen - The One","2019Q1",7,0.14480761274307
-"139","Carly Rae Jepsen","Carly Rae Jepsen - The One","2019Q2",4,0.08
-"140","Carly Rae Jepsen","Carly Rae Jepsen - The One","2019Q3",45,1.34288272157565
-"141","Delta Goodrem","Delta Goodrem - Dear Life","2016Q3",131,4.67189728958631
-"142","Delta Goodrem","Delta Goodrem - Dear Life","2016Q4",83,2.22400857449089
-"143","Delta Goodrem","Delta Goodrem - Dear Life","2017Q1",23,0.772071164820409
-"144","Delta Goodrem","Delta Goodrem - Dear Life","2017Q2",97,2.1313996923753
-"145","Delta Goodrem","Delta Goodrem - Dear Life","2017Q3",27,1.13207547169811
-"146","Delta Goodrem","Delta Goodrem - Dear Life","2017Q4",7,0.180551973175135
-"147","Delta Goodrem","Delta Goodrem - Dear Life","2018Q1",54,0.717798750498471
-"148","Delta Goodrem","Delta Goodrem - Dear Life","2018Q2",59,0.837235703136086
-"149","Delta Goodrem","Delta Goodrem - Dear Life","2018Q3",42,0.593723494486853
-"150","Delta Goodrem","Delta Goodrem - Dear Life","2018Q4",53,0.866013071895425
-"151","Delta Goodrem","Delta Goodrem - Dear Life","2019Q1",42,0.868845676458419
-"152","Delta Goodrem","Delta Goodrem - Dear Life","2019Q2",7,0.14
-"153","Delta Goodrem","Delta Goodrem - Dear Life","2019Q3",31,0.925096985974336
-"154","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2016Q2",119,3.26653856711501
-"155","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2016Q3",41,1.46219686162625
-"156","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2016Q4",35,0.937834941050375
-"157","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2017Q1",4,0.134273246055723
-"158","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2017Q2",42,0.922874093605801
-"159","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2017Q3",9,0.377358490566038
-"160","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2017Q4",8,0.206345112200155
-"161","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2018Q1",67,0.890602153396251
-"162","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2018Q2",93,1.31971051511281
-"163","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2018Q3",38,0.53717839977382
-"164","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2018Q4",83,1.3562091503268
-"165","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2019Q1",36,0.744724865535788
-"166","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2019Q2",15,0.3
-"167","Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit","2019Q3",8,0.238734706057893
-"168","Fickle Friends","Fickle Friends - Lovesick","2018Q1",111,1.47547520935797
-"169","Fickle Friends","Fickle Friends - Lovesick","2018Q2",94,1.33390095075919
-"170","Fickle Friends","Fickle Friends - Lovesick","2018Q3",8,0.113090189426067
-"171","Fickle Friends","Fickle Friends - Lovesick","2018Q4",41,0.669934640522876
-"172","Fickle Friends","Fickle Friends - Lovesick","2019Q1",38,0.786098469176665
-"173","Fickle Friends","Fickle Friends - Lovesick","2019Q2",6,0.12
-"174","Fickle Friends","Fickle Friends - Lovesick","2019Q3",7,0.208892867800657
-"175","Fickle Friends","Fickle Friends - Say No More","2018Q1",216,2.87119500199389
-"176","Fickle Friends","Fickle Friends - Say No More","2018Q2",161,2.28466013906627
-"177","Fickle Friends","Fickle Friends - Say No More","2018Q3",69,0.97540288379983
-"178","Fickle Friends","Fickle Friends - Say No More","2018Q4",95,1.55228758169935
-"179","Fickle Friends","Fickle Friends - Say No More","2019Q1",53,1.09640049648324
-"180","Fickle Friends","Fickle Friends - Say No More","2019Q2",57,1.14
-"181","Fickle Friends","Fickle Friends - Say No More","2019Q3",57,1.70098478066249
-"182","Fifth Harmony","Fifth Harmony - Work From Home","2016Q1",44,6.18846694796062
-"183","Fifth Harmony","Fifth Harmony - Work From Home","2016Q2",86,2.36069173757892
-"184","Fifth Harmony","Fifth Harmony - Work From Home","2016Q3",31,1.1055634807418
-"185","Fifth Harmony","Fifth Harmony - Work From Home","2016Q4",34,0.911039657020364
-"186","Fifth Harmony","Fifth Harmony - Work From Home","2017Q1",51,1.71198388721047
-"187","Fifth Harmony","Fifth Harmony - Work From Home","2017Q2",54,1.1865524060646
-"188","Fifth Harmony","Fifth Harmony - Work From Home","2017Q3",1,0.0419287211740042
-"189","Fifth Harmony","Fifth Harmony - Work From Home","2017Q4",5,0.128965695125097
-"190","Fifth Harmony","Fifth Harmony - Work From Home","2018Q1",31,0.412069653063937
-"191","Fifth Harmony","Fifth Harmony - Work From Home","2018Q2",7,0.0993330495246204
-"192","Fifth Harmony","Fifth Harmony - Work From Home","2018Q3",44,0.62199604184337
-"193","Fifth Harmony","Fifth Harmony - Work From Home","2018Q4",9,0.147058823529412
-"194","Fifth Harmony","Fifth Harmony - Work From Home","2019Q1",14,0.28961522548614
-"195","Fifth Harmony","Fifth Harmony - Work From Home","2019Q2",15,0.3
-"196","Kelly Clarkson","Kelly Clarkson - Breakaway","2015Q4",2,0.0523423187647213
-"197","Kelly Clarkson","Kelly Clarkson - Breakaway","2016Q1",1,0.140646976090014
-"198","Kelly Clarkson","Kelly Clarkson - Breakaway","2016Q2",11,0.301948943178699
-"199","Kelly Clarkson","Kelly Clarkson - Breakaway","2016Q3",9,0.320970042796006
-"200","Kelly Clarkson","Kelly Clarkson - Breakaway","2016Q4",3,0.0803858520900322
-"201","Kelly Clarkson","Kelly Clarkson - Breakaway","2017Q1",9,0.302114803625378
-"202","Kelly Clarkson","Kelly Clarkson - Breakaway","2017Q2",19,0.4174906613931
-"203","Kelly Clarkson","Kelly Clarkson - Breakaway","2017Q3",11,0.461215932914046
-"204","Kelly Clarkson","Kelly Clarkson - Breakaway","2017Q4",12,0.309517668300232
-"205","Kelly Clarkson","Kelly Clarkson - Breakaway","2018Q1",29,0.385484514156586
-"206","Kelly Clarkson","Kelly Clarkson - Breakaway","2018Q2",81,1.14942528735632
-"207","Kelly Clarkson","Kelly Clarkson - Breakaway","2018Q3",88,1.24399208368674
-"208","Kelly Clarkson","Kelly Clarkson - Breakaway","2018Q4",77,1.25816993464052
-"209","Kelly Clarkson","Kelly Clarkson - Breakaway","2019Q1",46,0.951592883740174
-"210","Kelly Clarkson","Kelly Clarkson - Breakaway","2019Q2",51,1.02
-"211","Kelly Clarkson","Kelly Clarkson - Breakaway","2019Q3",16,0.477469412115786
-"212","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2015Q4",1,0.0261711593823606
-"213","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2016Q1",3,0.421940928270042
-"214","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2016Q2",21,0.576447982432061
-"215","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2016Q3",1,0.0356633380884451
-"216","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2016Q4",2,0.0535905680600214
-"217","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2017Q1",4,0.134273246055723
-"218","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2017Q2",10,0.219731927049
-"219","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2017Q4",13,0.335310807325251
-"220","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2018Q1",69,0.917187292303602
-"221","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2018Q2",45,0.638569604086845
-"222","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2018Q3",93,1.31467345207803
-"223","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2018Q4",64,1.04575163398693
-"224","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2019Q1",45,0.930906081919735
-"225","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2019Q2",69,1.38
-"226","Kelly Clarkson","Kelly Clarkson - Since U Been Gone","2019Q3",23,0.686362279916443
-"227","Lady Gaga","Lady Gaga - Applause","2015Q4",7,0.183198115676524
-"228","Lady Gaga","Lady Gaga - Applause","2016Q1",2,0.281293952180028
-"229","Lady Gaga","Lady Gaga - Applause","2016Q2",8,0.21959923140269
-"230","Lady Gaga","Lady Gaga - Applause","2016Q3",8,0.285306704707561
-"231","Lady Gaga","Lady Gaga - Applause","2016Q4",4,0.107181136120043
-"232","Lady Gaga","Lady Gaga - Applause","2017Q1",14,0.469956361195032
-"233","Lady Gaga","Lady Gaga - Applause","2017Q2",4,0.0878927708196001
-"234","Lady Gaga","Lady Gaga - Applause","2017Q3",11,0.461215932914046
-"235","Lady Gaga","Lady Gaga - Applause","2017Q4",12,0.309517668300232
-"236","Lady Gaga","Lady Gaga - Applause","2018Q1",89,1.18303868137711
-"237","Lady Gaga","Lady Gaga - Applause","2018Q2",13,0.184475663402866
-"238","Lady Gaga","Lady Gaga - Applause","2018Q3",63,0.89058524173028
-"239","Lady Gaga","Lady Gaga - Applause","2018Q4",12,0.196078431372549
-"240","Lady Gaga","Lady Gaga - Applause","2019Q1",55,1.13777410012412
-"241","Lady Gaga","Lady Gaga - Applause","2019Q2",37,0.74
-"242","Lady Gaga","Lady Gaga - Applause","2019Q3",42,1.25335720680394
-"243","Lady Gaga","Lady Gaga - Just Dance","2015Q4",3,0.0785134781470819
-"244","Lady Gaga","Lady Gaga - Just Dance","2016Q1",1,0.140646976090014
-"245","Lady Gaga","Lady Gaga - Just Dance","2016Q2",11,0.301948943178699
-"246","Lady Gaga","Lady Gaga - Just Dance","2016Q3",18,0.641940085592011
-"247","Lady Gaga","Lady Gaga - Just Dance","2016Q4",21,0.562700964630225
-"248","Lady Gaga","Lady Gaga - Just Dance","2017Q1",7,0.234978180597516
-"249","Lady Gaga","Lady Gaga - Just Dance","2017Q2",9,0.1977587343441
-"250","Lady Gaga","Lady Gaga - Just Dance","2017Q3",7,0.293501048218029
-"251","Lady Gaga","Lady Gaga - Just Dance","2017Q4",4,0.103172556100077
-"252","Lady Gaga","Lady Gaga - Just Dance","2018Q1",99,1.31596437591386
-"253","Lady Gaga","Lady Gaga - Just Dance","2018Q2",56,0.794664396196963
-"254","Lady Gaga","Lady Gaga - Just Dance","2018Q3",78,1.10262934690416
-"255","Lady Gaga","Lady Gaga - Just Dance","2018Q4",36,0.588235294117647
-"256","Lady Gaga","Lady Gaga - Just Dance","2019Q1",20,0.413736036408771
-"257","Lady Gaga","Lady Gaga - Just Dance","2019Q2",66,1.32
-"258","Lady Gaga","Lady Gaga - Just Dance","2019Q3",30,0.895255147717099
-"259","Lady Gaga","Lady Gaga - Poker Face","2015Q4",2,0.0523423187647213
-"260","Lady Gaga","Lady Gaga - Poker Face","2016Q1",2,0.281293952180028
-"261","Lady Gaga","Lady Gaga - Poker Face","2016Q2",4,0.109799615701345
-"262","Lady Gaga","Lady Gaga - Poker Face","2016Q3",6,0.21398002853067
-"263","Lady Gaga","Lady Gaga - Poker Face","2016Q4",2,0.0535905680600214
-"264","Lady Gaga","Lady Gaga - Poker Face","2017Q1",11,0.369251426653239
-"265","Lady Gaga","Lady Gaga - Poker Face","2017Q2",11,0.2417051197539
-"266","Lady Gaga","Lady Gaga - Poker Face","2017Q3",4,0.167714884696017
-"267","Lady Gaga","Lady Gaga - Poker Face","2017Q4",5,0.128965695125097
-"268","Lady Gaga","Lady Gaga - Poker Face","2018Q1",87,1.15645354246976
-"269","Lady Gaga","Lady Gaga - Poker Face","2018Q2",89,1.26294877252732
-"270","Lady Gaga","Lady Gaga - Poker Face","2018Q3",49,0.692677410234662
-"271","Lady Gaga","Lady Gaga - Poker Face","2018Q4",37,0.604575163398693
-"272","Lady Gaga","Lady Gaga - Poker Face","2019Q1",20,0.413736036408771
-"273","Lady Gaga","Lady Gaga - Poker Face","2019Q2",75,1.5
-"274","Lady Gaga","Lady Gaga - Poker Face","2019Q3",21,0.62667860340197
-"275","Lady Gaga","Lady Gaga - The Cure","2017Q2",268,5.88881564491321
-"276","Lady Gaga","Lady Gaga - The Cure","2017Q3",10,0.419287211740042
-"277","Lady Gaga","Lady Gaga - The Cure","2017Q4",44,1.13489811710085
-"278","Lady Gaga","Lady Gaga - The Cure","2018Q1",46,0.611458194869068
-"279","Lady Gaga","Lady Gaga - The Cure","2018Q2",35,0.496665247623102
-"280","Lady Gaga","Lady Gaga - The Cure","2018Q3",42,0.593723494486853
-"281","Lady Gaga","Lady Gaga - The Cure","2018Q4",9,0.147058823529412
-"282","Lady Gaga","Lady Gaga - The Cure","2019Q1",6,0.124120810922631
-"283","Lady Gaga","Lady Gaga - The Cure","2019Q2",33,0.66
-"284","Lady Gaga","Lady Gaga - The Cure","2019Q3",1,0.0298418382572366
-"285","Lost Kings","Lost Kings - Quit You","2017Q1",32,1.07418596844579
-"286","Lost Kings","Lost Kings - Quit You","2017Q2",68,1.4941771039332
-"287","Lost Kings","Lost Kings - Quit You","2017Q3",7,0.293501048218029
-"288","Lost Kings","Lost Kings - Quit You","2017Q4",34,0.876966726850658
-"289","Lost Kings","Lost Kings - Quit You","2018Q1",12,0.159510833444105
-"290","Lost Kings","Lost Kings - Quit You","2018Q2",49,0.695331346672343
-"291","Lost Kings","Lost Kings - Quit You","2018Q3",11,0.155499010460843
-"292","Lost Kings","Lost Kings - Quit You","2018Q4",8,0.130718954248366
-"293","Lost Kings","Lost Kings - Quit You","2019Q1",40,0.827472072817542
-"294","Lost Kings","Lost Kings - Quit You","2019Q2",7,0.14
-"295","Lost Kings","Lost Kings - Quit You","2019Q3",10,0.298418382572366
-"296","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2015Q4",54,1.41324260664747
-"297","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2016Q2",14,0.384298654954708
-"298","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2016Q3",12,0.427960057061341
-"299","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2016Q4",64,1.71489817792069
-"300","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2017Q2",1,0.0219731927049
-"301","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2017Q3",9,0.377358490566038
-"302","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2017Q4",64,1.65076089760124
-"303","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2018Q1",1,0.0132925694536754
-"304","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2018Q2",3,0.042571306939123
-"305","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2018Q3",27,0.381679389312977
-"306","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2018Q4",53,0.866013071895425
-"307","Mariah Carey","Mariah Carey - All I Want for Christmas Is You","2019Q3",8,0.238734706057893
-"308","Sia","Sia - Cheap Thrills","2016Q1",25,3.51617440225035
-"309","Sia","Sia - Cheap Thrills","2016Q2",23,0.631347790282734
-"310","Sia","Sia - Cheap Thrills","2016Q3",65,2.31811697574893
-"311","Sia","Sia - Cheap Thrills","2016Q4",91,2.43837084673098
-"312","Sia","Sia - Cheap Thrills","2017Q1",17,0.570661295736824
-"313","Sia","Sia - Cheap Thrills","2017Q2",23,0.5053834322127
-"314","Sia","Sia - Cheap Thrills","2017Q3",5,0.209643605870021
-"315","Sia","Sia - Cheap Thrills","2017Q4",9,0.232138251225174
-"316","Sia","Sia - Cheap Thrills","2018Q1",49,0.651335903230094
-"317","Sia","Sia - Cheap Thrills","2018Q2",14,0.198666099049241
-"318","Sia","Sia - Cheap Thrills","2018Q3",33,0.466497031382528
-"319","Sia","Sia - Cheap Thrills","2018Q4",26,0.42483660130719
-"320","Sia","Sia - Cheap Thrills","2019Q1",16,0.330988829127017
-"321","Sia","Sia - Cheap Thrills","2019Q2",1,0.02
-"322","Sia","Sia - Cheap Thrills","2019Q3",7,0.208892867800657
-"323","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2016Q2",46,1.26269558056547
-"324","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2016Q3",64,2.28245363766049
-"325","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2016Q4",71,1.90246516613076
-"326","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2017Q1",22,0.738502853306479
-"327","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2017Q2",22,0.4834102395078
-"328","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2017Q3",5,0.209643605870021
-"329","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2017Q4",16,0.41269022440031
-"330","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2018Q1",30,0.398777083610262
-"331","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2018Q2",57,0.808854831843338
-"332","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2018Q3",64,0.904721515408538
-"333","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2018Q4",19,0.310457516339869
-"334","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2019Q1",23,0.475796441870087
-"335","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2019Q2",7,0.14
-"336","The Chainsmokers","The Chainsmokers - Don't Let Me Down","2019Q3",25,0.746045956430916
-"337","The Chainsmokers","The Chainsmokers - Side Effects","2018Q3",261,3.68956743002544
-"338","The Chainsmokers","The Chainsmokers - Side Effects","2018Q4",31,0.506535947712418
-"339","The Chainsmokers","The Chainsmokers - Side Effects","2019Q1",11,0.227554820024824
-"340","The Chainsmokers","The Chainsmokers - Side Effects","2019Q2",4,0.08
-"341","The Chainsmokers","The Chainsmokers - Side Effects","2019Q3",3,0.0895255147717099
-"342","The Killers","The Killers - Mr. Brightside","2015Q4",1,0.0261711593823606
-"343","The Killers","The Killers - Mr. Brightside","2016Q2",2,0.0548998078506725
-"344","The Killers","The Killers - Mr. Brightside","2016Q3",1,0.0356633380884451
-"345","The Killers","The Killers - Mr. Brightside","2016Q4",1,0.0267952840300107
-"346","The Killers","The Killers - Mr. Brightside","2017Q1",7,0.234978180597516
-"347","The Killers","The Killers - Mr. Brightside","2017Q2",45,0.988793671720501
-"348","The Killers","The Killers - Mr. Brightside","2017Q3",2,0.0838574423480084
-"349","The Killers","The Killers - Mr. Brightside","2017Q4",15,0.38689708537529
-"350","The Killers","The Killers - Mr. Brightside","2018Q1",25,0.332314236341885
-"351","The Killers","The Killers - Mr. Brightside","2018Q2",58,0.823045267489712
-"352","The Killers","The Killers - Mr. Brightside","2018Q3",10,0.141362736782584
-"353","The Killers","The Killers - Mr. Brightside","2018Q4",29,0.473856209150327
-"354","The Killers","The Killers - Mr. Brightside","2019Q1",51,1.05502689284237
-"355","The Killers","The Killers - Mr. Brightside","2019Q2",5,0.1
-"356","The Killers","The Killers - Mr. Brightside","2019Q3",36,1.07430617726052
-"357","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2016Q1",6,0.843881856540084
-"358","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2016Q2",12,0.329398847104035
-"359","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2016Q3",24,0.855920114122682
-"360","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2016Q4",41,1.09860664523044
-"361","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2017Q1",32,1.07418596844579
-"362","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2017Q2",56,1.2304987914744
-"363","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2017Q3",12,0.50314465408805
-"364","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2017Q4",13,0.335310807325251
-"365","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2018Q1",144,1.91413000132926
-"366","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2018Q2",146,2.07180360437065
-"367","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2018Q3",69,0.97540288379983
-"368","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2018Q4",48,0.784313725490196
-"369","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2019Q1",51,1.05502689284237
-"370","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2019Q2",24,0.48
-"371","The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)","2019Q3",33,0.984780662488809
+"Artist","ArtistTrack","monthyear","streams","percent"
+"Ariana Grande","Ariana Grande - Into You",Oct 2015,0,0
+"Ariana Grande","Ariana Grande - Into You",Nov 2015,0,0
+"Ariana Grande","Ariana Grande - Into You",Dec 2015,0,0
+"Ariana Grande","Ariana Grande - Into You",Jan 2016,0,0
+"Ariana Grande","Ariana Grande - Into You",Feb 2016,0,0
+"Ariana Grande","Ariana Grande - Into You",Mar 2016,0,0
+"Ariana Grande","Ariana Grande - Into You",Apr 2016,0,0
+"Ariana Grande","Ariana Grande - Into You",May 2016,105,5.88235294117647
+"Ariana Grande","Ariana Grande - Into You",Jun 2016,6,0.688073394495413
+"Ariana Grande","Ariana Grande - Into You",Jul 2016,7,1.1744966442953
+"Ariana Grande","Ariana Grande - Into You",Aug 2016,11,1.14345114345114
+"Ariana Grande","Ariana Grande - Into You",Sep 2016,7,0.561347233360064
+"Ariana Grande","Ariana Grande - Into You",Oct 2016,2,0.160642570281124
+"Ariana Grande","Ariana Grande - Into You",Nov 2016,3,0.304568527918782
+"Ariana Grande","Ariana Grande - Into You",Dec 2016,5,0.332005312084993
+"Ariana Grande","Ariana Grande - Into You",Mar 2017,3,0.178359096313912
+"Ariana Grande","Ariana Grande - Into You",Apr 2017,1,0.0583771161704612
+"Ariana Grande","Ariana Grande - Into You",May 2017,1,0.0632911392405063
+"Ariana Grande","Ariana Grande - Into You",Jun 2017,0,0
+"Ariana Grande","Ariana Grande - Into You",Jul 2017,2,0.200601805416249
+"Ariana Grande","Ariana Grande - Into You",Aug 2017,1,0.161812297734628
+"Ariana Grande","Ariana Grande - Into You",Sep 2017,0,0
+"Ariana Grande","Ariana Grande - Into You",Oct 2017,11,1.26874279123414
+"Ariana Grande","Ariana Grande - Into You",Nov 2017,4,0.279329608938547
+"Ariana Grande","Ariana Grande - Into You",Dec 2017,2,0.126742712294043
+"Ariana Grande","Ariana Grande - Into You",Jan 2018,1,0.0405186385737439
+"Ariana Grande","Ariana Grande - Into You",Feb 2018,26,1.1348756001746
+"Ariana Grande","Ariana Grande - Into You",Mar 2018,30,1.08420672208168
+"Ariana Grande","Ariana Grande - Into You",Apr 2018,12,0.492610837438424
+"Ariana Grande","Ariana Grande - Into You",May 2018,35,1.5493581230633
+"Ariana Grande","Ariana Grande - Into You",Jun 2018,26,1.10450297366185
+"Ariana Grande","Ariana Grande - Into You",Jul 2018,19,0.813008130081301
+"Ariana Grande","Ariana Grande - Into You",Aug 2018,24,0.978393803505911
+"Ariana Grande","Ariana Grande - Into You",Sep 2018,4,0.174978127734033
+"Ariana Grande","Ariana Grande - Into You",Oct 2018,1,0.0464684014869888
+"Ariana Grande","Ariana Grande - Into You",Nov 2018,1,0.0521648408972353
+"Ariana Grande","Ariana Grande - Into You",Dec 2018,25,1.21773015099854
+"Ariana Grande","Ariana Grande - Into You",Jan 2019,11,0.701978302488832
+"Ariana Grande","Ariana Grande - Into You",Feb 2019,7,0.43050430504305
+"Ariana Grande","Ariana Grande - Into You",Mar 2019,4,0.243605359317905
+"Ariana Grande","Ariana Grande - Into You",Apr 2019,4,0.21978021978022
+"Ariana Grande","Ariana Grande - Into You",May 2019,15,0.887049083382614
+"Ariana Grande","Ariana Grande - Into You",Jun 2019,17,1.14093959731544
+"Ariana Grande","Ariana Grande - Into You",Jul 2019,7,0.485100485100485
+"Ariana Grande","Ariana Grande - Into You",Aug 2019,0,0
+"Ariana Grande","Ariana Grande - Into You",Sep 2019,3,0.311203319502075
+"Ariana Grande","Ariana Grande - Into You",Oct 2019,1,0.0709219858156028
+"Ariana Grande","Ariana Grande - no tears left to cry",Oct 2015,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Nov 2015,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Dec 2015,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jan 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Feb 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Mar 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Apr 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",May 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jun 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jul 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Aug 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Sep 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Oct 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Nov 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Dec 2016,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Mar 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Apr 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",May 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jun 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jul 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Aug 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Sep 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Oct 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Nov 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Dec 2017,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Jan 2018,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Feb 2018,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Mar 2018,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Apr 2018,125,5.13136288998358
+"Ariana Grande","Ariana Grande - no tears left to cry",May 2018,44,1.94776449756529
+"Ariana Grande","Ariana Grande - no tears left to cry",Jun 2018,39,1.65675446049278
+"Ariana Grande","Ariana Grande - no tears left to cry",Jul 2018,33,1.41206675224647
+"Ariana Grande","Ariana Grande - no tears left to cry",Aug 2018,29,1.18222584590298
+"Ariana Grande","Ariana Grande - no tears left to cry",Sep 2018,15,0.656167979002625
+"Ariana Grande","Ariana Grande - no tears left to cry",Oct 2018,10,0.464684014869888
+"Ariana Grande","Ariana Grande - no tears left to cry",Nov 2018,18,0.938967136150235
+"Ariana Grande","Ariana Grande - no tears left to cry",Dec 2018,16,0.779347296639065
+"Ariana Grande","Ariana Grande - no tears left to cry",Jan 2019,2,0.127632418634333
+"Ariana Grande","Ariana Grande - no tears left to cry",Feb 2019,6,0.3690036900369
+"Ariana Grande","Ariana Grande - no tears left to cry",Mar 2019,2,0.121802679658952
+"Ariana Grande","Ariana Grande - no tears left to cry",Apr 2019,1,0.0549450549450549
+"Ariana Grande","Ariana Grande - no tears left to cry",May 2019,18,1.06445890005914
+"Ariana Grande","Ariana Grande - no tears left to cry",Jun 2019,14,0.939597315436242
+"Ariana Grande","Ariana Grande - no tears left to cry",Jul 2019,6,0.415800415800416
+"Ariana Grande","Ariana Grande - no tears left to cry",Aug 2019,0,0
+"Ariana Grande","Ariana Grande - no tears left to cry",Sep 2019,1,0.103734439834025
+"Ariana Grande","Ariana Grande - no tears left to cry",Oct 2019,0,0
+"Ariana Grande","Ariana Grande - Touch It",Oct 2015,0,0
+"Ariana Grande","Ariana Grande - Touch It",Nov 2015,0,0
+"Ariana Grande","Ariana Grande - Touch It",Dec 2015,0,0
+"Ariana Grande","Ariana Grande - Touch It",Jan 2016,0,0
+"Ariana Grande","Ariana Grande - Touch It",Feb 2016,0,0
+"Ariana Grande","Ariana Grande - Touch It",Mar 2016,0,0
+"Ariana Grande","Ariana Grande - Touch It",Apr 2016,0,0
+"Ariana Grande","Ariana Grande - Touch It",May 2016,19,1.06442577030812
+"Ariana Grande","Ariana Grande - Touch It",Jun 2016,11,1.26146788990826
+"Ariana Grande","Ariana Grande - Touch It",Jul 2016,7,1.1744966442953
+"Ariana Grande","Ariana Grande - Touch It",Aug 2016,1,0.103950103950104
+"Ariana Grande","Ariana Grande - Touch It",Sep 2016,2,0.160384923817161
+"Ariana Grande","Ariana Grande - Touch It",Oct 2016,1,0.0803212851405622
+"Ariana Grande","Ariana Grande - Touch It",Nov 2016,3,0.304568527918782
+"Ariana Grande","Ariana Grande - Touch It",Dec 2016,10,0.664010624169987
+"Ariana Grande","Ariana Grande - Touch It",Mar 2017,3,0.178359096313912
+"Ariana Grande","Ariana Grande - Touch It",Apr 2017,2,0.116754232340922
+"Ariana Grande","Ariana Grande - Touch It",May 2017,2,0.126582278481013
+"Ariana Grande","Ariana Grande - Touch It",Jun 2017,2,0.158982511923688
+"Ariana Grande","Ariana Grande - Touch It",Jul 2017,1,0.100300902708124
+"Ariana Grande","Ariana Grande - Touch It",Aug 2017,1,0.161812297734628
+"Ariana Grande","Ariana Grande - Touch It",Sep 2017,3,0.389105058365759
+"Ariana Grande","Ariana Grande - Touch It",Oct 2017,14,1.61476355247982
+"Ariana Grande","Ariana Grande - Touch It",Nov 2017,0,0
+"Ariana Grande","Ariana Grande - Touch It",Dec 2017,8,0.506970849176172
+"Ariana Grande","Ariana Grande - Touch It",Jan 2018,6,0.243111831442464
+"Ariana Grande","Ariana Grande - Touch It",Feb 2018,14,0.611086861632475
+"Ariana Grande","Ariana Grande - Touch It",Mar 2018,5,0.180701120346946
+"Ariana Grande","Ariana Grande - Touch It",Apr 2018,31,1.27257799671593
+"Ariana Grande","Ariana Grande - Touch It",May 2018,44,1.94776449756529
+"Ariana Grande","Ariana Grande - Touch It",Jun 2018,6,0.254885301614274
+"Ariana Grande","Ariana Grande - Touch It",Jul 2018,1,0.0427899015832264
+"Ariana Grande","Ariana Grande - Touch It",Aug 2018,19,0.774561761108846
+"Ariana Grande","Ariana Grande - Touch It",Sep 2018,14,0.612423447069116
+"Ariana Grande","Ariana Grande - Touch It",Oct 2018,1,0.0464684014869888
+"Ariana Grande","Ariana Grande - Touch It",Nov 2018,1,0.0521648408972353
+"Ariana Grande","Ariana Grande - Touch It",Dec 2018,19,0.925474914758889
+"Ariana Grande","Ariana Grande - Touch It",Jan 2019,23,1.46777281429483
+"Ariana Grande","Ariana Grande - Touch It",Feb 2019,14,0.861008610086101
+"Ariana Grande","Ariana Grande - Touch It",Mar 2019,3,0.182704019488429
+"Ariana Grande","Ariana Grande - Touch It",Apr 2019,0,0
+"Ariana Grande","Ariana Grande - Touch It",May 2019,3,0.177409816676523
+"Ariana Grande","Ariana Grande - Touch It",Jun 2019,0,0
+"Ariana Grande","Ariana Grande - Touch It",Jul 2019,17,1.17810117810118
+"Ariana Grande","Ariana Grande - Touch It",Aug 2019,1,0.0938967136150235
+"Ariana Grande","Ariana Grande - Touch It",Sep 2019,2,0.20746887966805
+"Ariana Grande","Ariana Grande - Touch It",Oct 2019,3,0.212765957446809
+"Ava Max","Ava Max - Sweet but Psycho",Oct 2015,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Nov 2015,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Dec 2015,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jan 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Feb 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Mar 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Apr 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",May 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jun 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jul 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Aug 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Sep 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Oct 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Nov 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Dec 2016,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Mar 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Apr 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",May 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jun 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jul 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Aug 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Sep 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Oct 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Nov 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Dec 2017,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jan 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Feb 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Mar 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Apr 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",May 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jun 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Jul 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Aug 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Sep 2018,0,0
+"Ava Max","Ava Max - Sweet but Psycho",Oct 2018,46,2.13754646840149
+"Ava Max","Ava Max - Sweet but Psycho",Nov 2018,66,3.44287949921753
+"Ava Max","Ava Max - Sweet but Psycho",Dec 2018,21,1.02289332683877
+"Ava Max","Ava Max - Sweet but Psycho",Jan 2019,38,2.42501595405233
+"Ava Max","Ava Max - Sweet but Psycho",Feb 2019,51,3.13653136531365
+"Ava Max","Ava Max - Sweet but Psycho",Mar 2019,32,1.94884287454324
+"Ava Max","Ava Max - Sweet but Psycho",Apr 2019,30,1.64835164835165
+"Ava Max","Ava Max - Sweet but Psycho",May 2019,21,1.24186871673566
+"Ava Max","Ava Max - Sweet but Psycho",Jun 2019,24,1.61073825503356
+"Ava Max","Ava Max - Sweet but Psycho",Jul 2019,19,1.31670131670132
+"Ava Max","Ava Max - Sweet but Psycho",Aug 2019,15,1.40845070422535
+"Ava Max","Ava Max - Sweet but Psycho",Sep 2019,12,1.2448132780083
+"Ava Max","Ava Max - Sweet but Psycho",Oct 2019,9,0.638297872340425
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Oct 2015,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Nov 2015,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Dec 2015,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jan 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Feb 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Mar 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Apr 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",May 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jun 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jul 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Aug 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Sep 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Oct 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Nov 2016,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Dec 2016,34,2.25763612217796
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Mar 2017,5,0.297265160523187
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Apr 2017,3,0.175131348511384
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",May 2017,6,0.379746835443038
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jun 2017,1,0.0794912559618442
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jul 2017,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Aug 2017,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Sep 2017,1,0.12970168612192
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Oct 2017,0,0
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Nov 2017,1,0.0698324022346369
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Dec 2017,7,0.443599493029151
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jan 2018,4,0.162074554294976
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Feb 2018,2,0.0872981230903535
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Mar 2018,16,0.578243585110228
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Apr 2018,18,0.738916256157635
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",May 2018,2,0.0885347498893316
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jun 2018,2,0.0849617672047579
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jul 2018,2,0.0855798031664527
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Aug 2018,3,0.122299225438239
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Sep 2018,2,0.0874890638670166
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Oct 2018,76,3.53159851301115
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Nov 2018,15,0.782472613458529
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Dec 2018,29,1.4125669751583
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jan 2019,34,2.16975111678366
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Feb 2019,16,0.984009840098401
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Mar 2019,9,0.548112058465286
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Apr 2019,19,1.04395604395604
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",May 2019,15,0.887049083382614
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jun 2019,5,0.335570469798658
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Jul 2019,5,0.346500346500347
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Aug 2019,1,0.0938967136150235
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Sep 2019,2,0.20746887966805
+"Cardiknox","Cardiknox - On My Way - Lost Kings Remix",Oct 2019,4,0.283687943262411
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Oct 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Nov 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Dec 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jan 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Feb 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Mar 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Apr 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",May 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jun 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jul 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Aug 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Sep 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Oct 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Nov 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Dec 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Mar 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Apr 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",May 2017,162,10.253164556962
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jun 2017,53,4.21303656597774
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jul 2017,27,2.70812437311936
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Aug 2017,27,4.36893203883495
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Sep 2017,12,1.55642023346304
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Oct 2017,15,1.73010380622837
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Nov 2017,25,1.74581005586592
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Dec 2017,25,1.58428390367554
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jan 2018,34,1.37763371150729
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Feb 2018,36,1.57136621562636
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Mar 2018,28,1.0119262739429
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Apr 2018,50,2.05254515599343
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",May 2018,45,1.99203187250996
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jun 2018,20,0.849617672047579
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jul 2018,35,1.49764655541292
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Aug 2018,22,0.896860986547085
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Sep 2018,22,0.962379702537183
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Oct 2018,18,0.836431226765799
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Nov 2018,22,1.14762649973918
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Dec 2018,25,1.21773015099854
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jan 2019,20,1.27632418634333
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Feb 2019,16,0.984009840098401
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Mar 2019,8,0.48721071863581
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Apr 2019,20,1.0989010989011
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",May 2019,19,1.12359550561798
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jun 2019,14,0.939597315436242
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Jul 2019,32,2.21760221760222
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Aug 2019,13,1.22065727699531
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Sep 2019,9,0.933609958506224
+"Carly Rae Jepsen","Carly Rae Jepsen - Cut to the Feeling",Oct 2019,12,0.851063829787234
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Oct 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Nov 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Dec 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jan 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Feb 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Mar 2016,9,1.26582278481013
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Apr 2016,4,0.339270568278202
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",May 2016,3,0.168067226890756
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jun 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jul 2016,1,0.167785234899329
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Aug 2016,14,1.45530145530146
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Sep 2016,21,1.68404170008019
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Oct 2016,31,2.48995983935743
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Nov 2016,21,2.13197969543147
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Dec 2016,28,1.85922974767596
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Mar 2017,3,0.178359096313912
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Apr 2017,5,0.291885580852306
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",May 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jun 2017,11,0.874403815580286
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jul 2017,17,1.70511534603811
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Aug 2017,7,1.13268608414239
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Sep 2017,10,1.2970168612192
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Oct 2017,10,1.15340253748558
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Nov 2017,25,1.74581005586592
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Dec 2017,16,1.01394169835234
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jan 2018,54,2.18800648298217
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Feb 2018,50,2.18245307725884
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Mar 2018,60,2.16841344416335
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Apr 2018,60,2.46305418719212
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",May 2018,52,2.30190349712262
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jun 2018,28,1.18946474086661
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jul 2018,20,0.855798031664527
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Aug 2018,41,1.67142274765593
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Sep 2018,40,1.74978127734033
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Oct 2018,20,0.929368029739777
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Nov 2018,32,1.66927490871153
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Dec 2018,35,1.70482221139795
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jan 2019,21,1.3401403956605
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Feb 2019,22,1.3530135301353
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Mar 2019,14,0.852618757612667
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Apr 2019,30,1.64835164835165
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",May 2019,18,1.06445890005914
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jun 2019,13,0.87248322147651
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Jul 2019,18,1.24740124740125
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Aug 2019,19,1.78403755868545
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Sep 2019,15,1.55601659751037
+"Carly Rae Jepsen","Carly Rae Jepsen - Fever",Oct 2019,14,0.99290780141844
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Oct 2015,66,4.31937172774869
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Nov 2015,39,2.33812949640288
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Dec 2015,6,0.958466453674121
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jan 2016,13,1.56062424969988
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Feb 2016,7,1.50862068965517
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Mar 2016,8,1.12517580872011
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Apr 2016,7,0.593723494486853
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",May 2016,2,0.112044817927171
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jun 2016,2,0.229357798165138
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jul 2016,8,1.34228187919463
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Aug 2016,1,0.103950103950104
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Sep 2016,6,0.481154771451484
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Oct 2016,1,0.0803212851405622
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Nov 2016,6,0.609137055837563
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Dec 2016,2,0.132802124833997
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Mar 2017,10,0.594530321046373
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Apr 2017,2,0.116754232340922
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",May 2017,2,0.126582278481013
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jun 2017,1,0.0794912559618442
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jul 2017,9,0.902708124373119
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Aug 2017,4,0.647249190938511
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Sep 2017,3,0.389105058365759
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Oct 2017,1,0.115340253748558
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Nov 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Dec 2017,24,1.52091254752852
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jan 2018,7,0.283630470016207
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Feb 2018,2,0.0872981230903535
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Mar 2018,29,1.04806649801229
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Apr 2018,28,1.14942528735632
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",May 2018,5,0.221336874723329
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jun 2018,1,0.0424808836023789
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jul 2018,2,0.0855798031664527
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Aug 2018,4,0.163065633917652
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Sep 2018,3,0.131233595800525
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Oct 2018,7,0.325278810408922
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Nov 2018,12,0.625978090766823
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Dec 2018,1,0.0487092060399415
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jan 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Feb 2019,1,0.0615006150061501
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Mar 2019,4,0.243605359317905
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Apr 2019,1,0.0549450549450549
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",May 2019,1,0.0591366055588409
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jun 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Jul 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Aug 2019,11,1.03286384976526
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Sep 2019,3,0.311203319502075
+"Carly Rae Jepsen","Carly Rae Jepsen - Gimmie Love",Oct 2019,1,0.0709219858156028
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Oct 2015,41,2.68324607329843
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Nov 2015,31,1.85851318944844
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Dec 2015,11,1.75718849840256
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jan 2016,4,0.480192076830732
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Feb 2016,3,0.646551724137931
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Mar 2016,4,0.562587904360056
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Apr 2016,1,0.0848176420695505
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",May 2016,5,0.280112044817927
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jun 2016,2,0.229357798165138
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jul 2016,6,1.00671140939597
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Aug 2016,1,0.103950103950104
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Sep 2016,3,0.240577385725742
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Oct 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Nov 2016,1,0.101522842639594
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Dec 2016,3,0.199203187250996
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Mar 2017,27,1.60523186682521
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Apr 2017,10,0.583771161704612
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",May 2017,2,0.126582278481013
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jun 2017,2,0.158982511923688
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jul 2017,6,0.601805416248746
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Aug 2017,1,0.161812297734628
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Sep 2017,2,0.259403372243839
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Oct 2017,4,0.461361014994233
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Nov 2017,3,0.209497206703911
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Dec 2017,4,0.253485424588086
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jan 2018,4,0.162074554294976
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Feb 2018,35,1.52771715408119
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Mar 2018,15,0.542103361040838
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Apr 2018,38,1.55993431855501
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",May 2018,15,0.664010624169987
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jun 2018,19,0.8071367884452
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jul 2018,9,0.385109114249037
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Aug 2018,1,0.040766408479413
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Sep 2018,5,0.218722659667542
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Oct 2018,6,0.278810408921933
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Nov 2018,6,0.312989045383412
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Dec 2018,12,0.584510472479299
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jan 2019,3,0.1914486279515
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Feb 2019,7,0.43050430504305
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Mar 2019,11,0.669914738124239
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Apr 2019,32,1.75824175824176
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",May 2019,11,0.65050266114725
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jun 2019,10,0.671140939597315
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Jul 2019,9,0.623700623700624
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Aug 2019,2,0.187793427230047
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Sep 2019,2,0.20746887966805
+"Carly Rae Jepsen","Carly Rae Jepsen - I Really Like You",Oct 2019,2,0.141843971631206
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Oct 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Nov 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Dec 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jan 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Feb 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Mar 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Apr 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",May 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jun 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jul 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Aug 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Sep 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Oct 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Nov 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Dec 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Mar 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Apr 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",May 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jun 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jul 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Aug 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Sep 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Oct 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Nov 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Dec 2017,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jan 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Feb 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Mar 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Apr 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",May 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jun 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jul 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Aug 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Sep 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Oct 2018,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Nov 2018,338,17.6317162232655
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Dec 2018,103,5.01704822211398
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jan 2019,53,3.38225909380983
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Feb 2019,43,2.64452644526445
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Mar 2019,42,2.557856272838
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Apr 2019,28,1.53846153846154
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",May 2019,29,1.71496156120639
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jun 2019,29,1.94630872483221
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Jul 2019,25,1.73250173250173
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Aug 2019,20,1.87793427230047
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Sep 2019,25,2.59336099585062
+"Carly Rae Jepsen","Carly Rae Jepsen - Party for One",Oct 2019,15,1.06382978723404
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Oct 2015,18,1.17801047120419
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Nov 2015,14,0.839328537170264
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Dec 2015,7,1.11821086261981
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jan 2016,29,3.48139255702281
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Feb 2016,16,3.44827586206897
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Mar 2016,9,1.26582278481013
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Apr 2016,13,1.10262934690416
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",May 2016,2,0.112044817927171
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jun 2016,4,0.458715596330275
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jul 2016,6,1.00671140939597
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Aug 2016,17,1.76715176715177
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Sep 2016,22,1.76423416198877
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Oct 2016,15,1.20481927710843
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Nov 2016,1,0.101522842639594
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Dec 2016,18,1.19521912350598
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Mar 2017,28,1.66468489892985
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Apr 2017,30,1.75131348511384
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",May 2017,36,2.27848101265823
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jun 2017,32,2.54372019077901
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jul 2017,11,1.10330992978937
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Aug 2017,5,0.809061488673139
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Sep 2017,5,0.648508430609598
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Oct 2017,15,1.73010380622837
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Nov 2017,25,1.74581005586592
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Dec 2017,21,1.33079847908745
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jan 2018,27,1.09400324149109
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Feb 2018,13,0.567437800087298
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Mar 2018,7,0.252981568485725
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Apr 2018,52,2.13464696223317
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",May 2018,53,2.34617087206729
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jun 2018,35,1.48683092608326
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jul 2018,26,1.11253744116389
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Aug 2018,35,1.42682429677945
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Sep 2018,33,1.44356955380577
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Oct 2018,23,1.06877323420074
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Nov 2018,25,1.30412102243088
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Dec 2018,37,1.80224062347784
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jan 2019,42,2.680280791321
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Feb 2019,33,2.02952029520295
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Mar 2019,18,1.09622411693057
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Apr 2019,32,1.75824175824176
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",May 2019,22,1.3010053222945
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jun 2019,27,1.81208053691275
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Jul 2019,24,1.66320166320166
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Aug 2019,19,1.78403755868545
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Sep 2019,16,1.6597510373444
+"Carly Rae Jepsen","Carly Rae Jepsen - Run Away with Me",Oct 2019,17,1.20567375886525
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Oct 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Nov 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Dec 2015,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jan 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Feb 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Mar 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Apr 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",May 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jun 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jul 2016,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Aug 2016,63,6.54885654885655
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Sep 2016,71,5.69366479550922
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Oct 2016,36,2.89156626506024
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Nov 2016,17,1.7258883248731
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Dec 2016,28,1.85922974767596
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Mar 2017,27,1.60523186682521
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Apr 2017,12,0.700525394045534
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",May 2017,13,0.822784810126582
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jun 2017,34,2.7027027027027
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jul 2017,5,0.501504513540622
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Aug 2017,3,0.485436893203883
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Sep 2017,5,0.648508430609598
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Oct 2017,18,2.07612456747405
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Nov 2017,25,1.74581005586592
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Dec 2017,15,0.950570342205323
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jan 2018,17,0.688816855753647
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Feb 2018,39,1.70231340026189
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Mar 2018,30,1.08420672208168
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Apr 2018,12,0.492610837438424
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",May 2018,34,1.50509074811864
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jun 2018,19,0.8071367884452
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jul 2018,2,0.0855798031664527
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Aug 2018,9,0.366897676314717
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Sep 2018,37,1.61854768153981
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Oct 2018,11,0.511152416356877
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Nov 2018,17,0.886802295253
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Dec 2018,7,0.340964442279591
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jan 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Feb 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Mar 2019,7,0.426309378806334
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Apr 2019,3,0.164835164835165
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",May 2019,0,0
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jun 2019,1,0.0671140939597315
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Jul 2019,28,1.94040194040194
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Aug 2019,13,1.22065727699531
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Sep 2019,5,0.518672199170124
+"Carly Rae Jepsen","Carly Rae Jepsen - The One",Oct 2019,1,0.0709219858156028
+"Delta Goodrem","Delta Goodrem - Dear Life",Oct 2015,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Nov 2015,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Dec 2015,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Jan 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Feb 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Mar 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Apr 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",May 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Jun 2016,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Jul 2016,47,7.88590604026846
+"Delta Goodrem","Delta Goodrem - Dear Life",Aug 2016,34,3.53430353430353
+"Delta Goodrem","Delta Goodrem - Dear Life",Sep 2016,50,4.00962309542903
+"Delta Goodrem","Delta Goodrem - Dear Life",Oct 2016,37,2.9718875502008
+"Delta Goodrem","Delta Goodrem - Dear Life",Nov 2016,19,1.92893401015228
+"Delta Goodrem","Delta Goodrem - Dear Life",Dec 2016,27,1.79282868525896
+"Delta Goodrem","Delta Goodrem - Dear Life",Mar 2017,23,1.36741973840666
+"Delta Goodrem","Delta Goodrem - Dear Life",Apr 2017,15,0.875656742556918
+"Delta Goodrem","Delta Goodrem - Dear Life",May 2017,77,4.87341772151899
+"Delta Goodrem","Delta Goodrem - Dear Life",Jun 2017,5,0.397456279809221
+"Delta Goodrem","Delta Goodrem - Dear Life",Jul 2017,13,1.30391173520562
+"Delta Goodrem","Delta Goodrem - Dear Life",Aug 2017,11,1.77993527508091
+"Delta Goodrem","Delta Goodrem - Dear Life",Sep 2017,3,0.389105058365759
+"Delta Goodrem","Delta Goodrem - Dear Life",Oct 2017,3,0.346020761245675
+"Delta Goodrem","Delta Goodrem - Dear Life",Nov 2017,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Dec 2017,4,0.253485424588086
+"Delta Goodrem","Delta Goodrem - Dear Life",Jan 2018,25,1.0129659643436
+"Delta Goodrem","Delta Goodrem - Dear Life",Feb 2018,29,1.26582278481013
+"Delta Goodrem","Delta Goodrem - Dear Life",Mar 2018,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Apr 2018,3,0.123152709359606
+"Delta Goodrem","Delta Goodrem - Dear Life",May 2018,35,1.5493581230633
+"Delta Goodrem","Delta Goodrem - Dear Life",Jun 2018,21,0.892098555649957
+"Delta Goodrem","Delta Goodrem - Dear Life",Jul 2018,2,0.0855798031664527
+"Delta Goodrem","Delta Goodrem - Dear Life",Aug 2018,20,0.815328169588259
+"Delta Goodrem","Delta Goodrem - Dear Life",Sep 2018,20,0.874890638670166
+"Delta Goodrem","Delta Goodrem - Dear Life",Oct 2018,22,1.02230483271375
+"Delta Goodrem","Delta Goodrem - Dear Life",Nov 2018,16,0.834637454355764
+"Delta Goodrem","Delta Goodrem - Dear Life",Dec 2018,15,0.730638090599123
+"Delta Goodrem","Delta Goodrem - Dear Life",Jan 2019,16,1.02105934907467
+"Delta Goodrem","Delta Goodrem - Dear Life",Feb 2019,14,0.861008610086101
+"Delta Goodrem","Delta Goodrem - Dear Life",Mar 2019,12,0.730816077953715
+"Delta Goodrem","Delta Goodrem - Dear Life",Apr 2019,6,0.32967032967033
+"Delta Goodrem","Delta Goodrem - Dear Life",May 2019,0,0
+"Delta Goodrem","Delta Goodrem - Dear Life",Jun 2019,1,0.0671140939597315
+"Delta Goodrem","Delta Goodrem - Dear Life",Jul 2019,17,1.17810117810118
+"Delta Goodrem","Delta Goodrem - Dear Life",Aug 2019,13,1.22065727699531
+"Delta Goodrem","Delta Goodrem - Dear Life",Sep 2019,1,0.103734439834025
+"Delta Goodrem","Delta Goodrem - Dear Life",Oct 2019,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Oct 2015,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Nov 2015,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Dec 2015,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jan 2016,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Feb 2016,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Mar 2016,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Apr 2016,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",May 2016,117,6.5546218487395
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jun 2016,5,0.573394495412844
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jul 2016,11,1.84563758389262
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Aug 2016,12,1.24740124740125
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Sep 2016,18,1.44346431435445
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Oct 2016,13,1.04417670682731
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Nov 2016,1,0.101522842639594
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Dec 2016,21,1.39442231075697
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Mar 2017,4,0.237812128418549
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Apr 2017,4,0.233508464681845
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",May 2017,31,1.9620253164557
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jun 2017,7,0.556438791732909
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jul 2017,2,0.200601805416249
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Aug 2017,3,0.485436893203883
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Sep 2017,4,0.518806744487678
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Oct 2017,2,0.230680507497116
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Nov 2017,1,0.0698324022346369
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Dec 2017,5,0.316856780735108
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jan 2018,5,0.20259319286872
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Feb 2018,34,1.48406809253601
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Mar 2018,28,1.0119262739429
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Apr 2018,36,1.47783251231527
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",May 2018,36,1.59362549800797
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jun 2018,21,0.892098555649957
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jul 2018,20,0.855798031664527
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Aug 2018,16,0.652262535670607
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Sep 2018,2,0.0874890638670166
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Oct 2018,50,2.32342007434944
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Nov 2018,18,0.938967136150235
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Dec 2018,15,0.730638090599123
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jan 2019,17,1.08487555839183
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Feb 2019,14,0.861008610086101
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Mar 2019,5,0.304506699147381
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Apr 2019,14,0.769230769230769
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",May 2019,0,0
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jun 2019,1,0.0671140939597315
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Jul 2019,3,0.207900207900208
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Aug 2019,3,0.28169014084507
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Sep 2019,3,0.311203319502075
+"Disco Fries","Disco Fries - Born Ready - Halogen Radio Edit",Oct 2019,16,1.13475177304965
+"Fickle Friends","Fickle Friends - Lovesick",Oct 2015,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Nov 2015,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Dec 2015,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jan 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Feb 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Mar 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Apr 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",May 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jun 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jul 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Aug 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Sep 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Oct 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Nov 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Dec 2016,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Mar 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Apr 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",May 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jun 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jul 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Aug 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Sep 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Oct 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Nov 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Dec 2017,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Jan 2018,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Feb 2018,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Mar 2018,111,4.0115648717022
+"Fickle Friends","Fickle Friends - Lovesick",Apr 2018,41,1.68308702791461
+"Fickle Friends","Fickle Friends - Lovesick",May 2018,33,1.46082337317397
+"Fickle Friends","Fickle Friends - Lovesick",Jun 2018,20,0.849617672047579
+"Fickle Friends","Fickle Friends - Lovesick",Jul 2018,6,0.256739409499358
+"Fickle Friends","Fickle Friends - Lovesick",Aug 2018,1,0.040766408479413
+"Fickle Friends","Fickle Friends - Lovesick",Sep 2018,1,0.0437445319335083
+"Fickle Friends","Fickle Friends - Lovesick",Oct 2018,4,0.185873605947955
+"Fickle Friends","Fickle Friends - Lovesick",Nov 2018,3,0.156494522691706
+"Fickle Friends","Fickle Friends - Lovesick",Dec 2018,34,1.65611300535801
+"Fickle Friends","Fickle Friends - Lovesick",Jan 2019,25,1.59540523292916
+"Fickle Friends","Fickle Friends - Lovesick",Feb 2019,10,0.615006150061501
+"Fickle Friends","Fickle Friends - Lovesick",Mar 2019,3,0.182704019488429
+"Fickle Friends","Fickle Friends - Lovesick",Apr 2019,2,0.10989010989011
+"Fickle Friends","Fickle Friends - Lovesick",May 2019,1,0.0591366055588409
+"Fickle Friends","Fickle Friends - Lovesick",Jun 2019,3,0.201342281879195
+"Fickle Friends","Fickle Friends - Lovesick",Jul 2019,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Aug 2019,7,0.657276995305164
+"Fickle Friends","Fickle Friends - Lovesick",Sep 2019,0,0
+"Fickle Friends","Fickle Friends - Lovesick",Oct 2019,0,0
+"Fickle Friends","Fickle Friends - Say No More",Oct 2015,0,0
+"Fickle Friends","Fickle Friends - Say No More",Nov 2015,0,0
+"Fickle Friends","Fickle Friends - Say No More",Dec 2015,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jan 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Feb 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Mar 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Apr 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",May 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jun 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jul 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Aug 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Sep 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Oct 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Nov 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Dec 2016,0,0
+"Fickle Friends","Fickle Friends - Say No More",Mar 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Apr 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",May 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jun 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jul 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Aug 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Sep 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Oct 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Nov 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Dec 2017,0,0
+"Fickle Friends","Fickle Friends - Say No More",Jan 2018,0,0
+"Fickle Friends","Fickle Friends - Say No More",Feb 2018,0,0
+"Fickle Friends","Fickle Friends - Say No More",Mar 2018,216,7.80628839898807
+"Fickle Friends","Fickle Friends - Say No More",Apr 2018,59,2.42200328407225
+"Fickle Friends","Fickle Friends - Say No More",May 2018,54,2.39043824701195
+"Fickle Friends","Fickle Friends - Say No More",Jun 2018,48,2.03908241291419
+"Fickle Friends","Fickle Friends - Say No More",Jul 2018,26,1.11253744116389
+"Fickle Friends","Fickle Friends - Say No More",Aug 2018,29,1.18222584590298
+"Fickle Friends","Fickle Friends - Say No More",Sep 2018,14,0.612423447069116
+"Fickle Friends","Fickle Friends - Say No More",Oct 2018,6,0.278810408921933
+"Fickle Friends","Fickle Friends - Say No More",Nov 2018,38,1.98226395409494
+"Fickle Friends","Fickle Friends - Say No More",Dec 2018,51,2.48416950803702
+"Fickle Friends","Fickle Friends - Say No More",Jan 2019,29,1.85067007019783
+"Fickle Friends","Fickle Friends - Say No More",Feb 2019,12,0.738007380073801
+"Fickle Friends","Fickle Friends - Say No More",Mar 2019,12,0.730816077953715
+"Fickle Friends","Fickle Friends - Say No More",Apr 2019,23,1.26373626373626
+"Fickle Friends","Fickle Friends - Say No More",May 2019,17,1.0053222945003
+"Fickle Friends","Fickle Friends - Say No More",Jun 2019,17,1.14093959731544
+"Fickle Friends","Fickle Friends - Say No More",Jul 2019,22,1.52460152460152
+"Fickle Friends","Fickle Friends - Say No More",Aug 2019,20,1.87793427230047
+"Fickle Friends","Fickle Friends - Say No More",Sep 2019,17,1.76348547717842
+"Fickle Friends","Fickle Friends - Say No More",Oct 2019,9,0.638297872340425
+"Fifth Harmony","Fifth Harmony - Work From Home",Oct 2015,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Nov 2015,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Dec 2015,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Jan 2016,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Feb 2016,42,9.05172413793103
+"Fifth Harmony","Fifth Harmony - Work From Home",Mar 2016,44,6.18846694796062
+"Fifth Harmony","Fifth Harmony - Work From Home",Apr 2016,47,3.98642917726887
+"Fifth Harmony","Fifth Harmony - Work From Home",May 2016,37,2.07282913165266
+"Fifth Harmony","Fifth Harmony - Work From Home",Jun 2016,5,0.573394495412844
+"Fifth Harmony","Fifth Harmony - Work From Home",Jul 2016,10,1.67785234899329
+"Fifth Harmony","Fifth Harmony - Work From Home",Aug 2016,15,1.55925155925156
+"Fifth Harmony","Fifth Harmony - Work From Home",Sep 2016,6,0.481154771451484
+"Fifth Harmony","Fifth Harmony - Work From Home",Oct 2016,3,0.240963855421687
+"Fifth Harmony","Fifth Harmony - Work From Home",Nov 2016,5,0.50761421319797
+"Fifth Harmony","Fifth Harmony - Work From Home",Dec 2016,26,1.72642762284197
+"Fifth Harmony","Fifth Harmony - Work From Home",Mar 2017,9,0.535077288941736
+"Fifth Harmony","Fifth Harmony - Work From Home",Apr 2017,18,1.0507880910683
+"Fifth Harmony","Fifth Harmony - Work From Home",May 2017,16,1.0126582278481
+"Fifth Harmony","Fifth Harmony - Work From Home",Jun 2017,20,1.58982511923688
+"Fifth Harmony","Fifth Harmony - Work From Home",Jul 2017,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Aug 2017,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Sep 2017,1,0.12970168612192
+"Fifth Harmony","Fifth Harmony - Work From Home",Oct 2017,2,0.230680507497116
+"Fifth Harmony","Fifth Harmony - Work From Home",Nov 2017,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Dec 2017,3,0.190114068441065
+"Fifth Harmony","Fifth Harmony - Work From Home",Jan 2018,19,0.769854132901134
+"Fifth Harmony","Fifth Harmony - Work From Home",Feb 2018,10,0.436490615451768
+"Fifth Harmony","Fifth Harmony - Work From Home",Mar 2018,2,0.0722804481387785
+"Fifth Harmony","Fifth Harmony - Work From Home",Apr 2018,3,0.123152709359606
+"Fifth Harmony","Fifth Harmony - Work From Home",May 2018,3,0.132802124833997
+"Fifth Harmony","Fifth Harmony - Work From Home",Jun 2018,1,0.0424808836023789
+"Fifth Harmony","Fifth Harmony - Work From Home",Jul 2018,1,0.0427899015832264
+"Fifth Harmony","Fifth Harmony - Work From Home",Aug 2018,43,1.75295556461476
+"Fifth Harmony","Fifth Harmony - Work From Home",Sep 2018,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Oct 2018,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Nov 2018,2,0.104329681794471
+"Fifth Harmony","Fifth Harmony - Work From Home",Dec 2018,7,0.340964442279591
+"Fifth Harmony","Fifth Harmony - Work From Home",Jan 2019,3,0.1914486279515
+"Fifth Harmony","Fifth Harmony - Work From Home",Feb 2019,7,0.43050430504305
+"Fifth Harmony","Fifth Harmony - Work From Home",Mar 2019,4,0.243605359317905
+"Fifth Harmony","Fifth Harmony - Work From Home",Apr 2019,1,0.0549450549450549
+"Fifth Harmony","Fifth Harmony - Work From Home",May 2019,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Jun 2019,14,0.939597315436242
+"Fifth Harmony","Fifth Harmony - Work From Home",Jul 2019,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Aug 2019,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Sep 2019,0,0
+"Fifth Harmony","Fifth Harmony - Work From Home",Oct 2019,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Oct 2015,2,0.130890052356021
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Nov 2015,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Dec 2015,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jan 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Feb 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Mar 2016,1,0.140646976090014
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Apr 2016,2,0.169635284139101
+"Kelly Clarkson","Kelly Clarkson - Breakaway",May 2016,3,0.168067226890756
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jun 2016,6,0.688073394495413
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jul 2016,6,1.00671140939597
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Aug 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Sep 2016,3,0.240577385725742
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Oct 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Nov 2016,1,0.101522842639594
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Dec 2016,2,0.132802124833997
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Mar 2017,9,0.535077288941736
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Apr 2017,5,0.291885580852306
+"Kelly Clarkson","Kelly Clarkson - Breakaway",May 2017,14,0.886075949367089
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jun 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jul 2017,1,0.100300902708124
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Aug 2017,2,0.323624595469256
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Sep 2017,8,1.03761348897536
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Oct 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Nov 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Dec 2017,12,0.760456273764259
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jan 2018,24,0.972447325769854
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Feb 2018,4,0.174596246180707
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Mar 2018,1,0.0361402240693892
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Apr 2018,48,1.97044334975369
+"Kelly Clarkson","Kelly Clarkson - Breakaway",May 2018,4,0.177069499778663
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jun 2018,29,1.23194562446899
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jul 2018,21,0.898587933247754
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Aug 2018,29,1.18222584590298
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Sep 2018,38,1.66229221347332
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Oct 2018,36,1.6728624535316
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Nov 2018,25,1.30412102243088
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Dec 2018,16,0.779347296639065
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jan 2019,23,1.46777281429483
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Feb 2019,12,0.738007380073801
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Mar 2019,11,0.669914738124239
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Apr 2019,20,1.0989010989011
+"Kelly Clarkson","Kelly Clarkson - Breakaway",May 2019,19,1.12359550561798
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jun 2019,12,0.805369127516779
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Jul 2019,15,1.03950103950104
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Aug 2019,0,0
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Sep 2019,1,0.103734439834025
+"Kelly Clarkson","Kelly Clarkson - Breakaway",Oct 2019,1,0.0709219858156028
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Oct 2015,1,0.0654450261780105
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Nov 2015,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Dec 2015,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jan 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Feb 2016,1,0.21551724137931
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Mar 2016,3,0.421940928270042
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Apr 2016,19,1.61153519932146
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",May 2016,2,0.112044817927171
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jun 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jul 2016,1,0.167785234899329
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Aug 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Sep 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Oct 2016,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Nov 2016,1,0.101522842639594
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Dec 2016,1,0.0664010624169987
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Mar 2017,3,0.178359096313912
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Apr 2017,7,0.408639813193228
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",May 2017,3,0.189873417721519
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jun 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jul 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Aug 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Sep 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Oct 2017,1,0.115340253748558
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Nov 2017,0,0
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Dec 2017,12,0.760456273764259
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jan 2018,42,1.70178282009724
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Feb 2018,4,0.174596246180707
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Mar 2018,23,0.831225153595952
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Apr 2018,41,1.68308702791461
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",May 2018,2,0.0885347498893316
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jun 2018,2,0.0849617672047579
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jul 2018,3,0.128369704749679
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Aug 2018,2,0.0815328169588259
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Sep 2018,88,3.84951881014873
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Oct 2018,16,0.743494423791822
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Nov 2018,24,1.25195618153365
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Dec 2018,24,1.1690209449586
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jan 2019,22,1.40395660497766
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Feb 2019,16,0.984009840098401
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Mar 2019,7,0.426309378806334
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Apr 2019,24,1.31868131868132
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",May 2019,22,1.3010053222945
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jun 2019,23,1.54362416107383
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Jul 2019,20,1.38600138600139
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Aug 2019,1,0.0938967136150235
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Sep 2019,3,0.311203319502075
+"Kelly Clarkson","Kelly Clarkson - Since U Been Gone",Oct 2019,3,0.212765957446809
+"Lady Gaga","Lady Gaga - Applause",Oct 2015,6,0.392670157068063
+"Lady Gaga","Lady Gaga - Applause",Nov 2015,1,0.0599520383693046
+"Lady Gaga","Lady Gaga - Applause",Dec 2015,0,0
+"Lady Gaga","Lady Gaga - Applause",Jan 2016,4,0.480192076830732
+"Lady Gaga","Lady Gaga - Applause",Feb 2016,5,1.07758620689655
+"Lady Gaga","Lady Gaga - Applause",Mar 2016,2,0.281293952180028
+"Lady Gaga","Lady Gaga - Applause",Apr 2016,3,0.254452926208651
+"Lady Gaga","Lady Gaga - Applause",May 2016,5,0.280112044817927
+"Lady Gaga","Lady Gaga - Applause",Jun 2016,0,0
+"Lady Gaga","Lady Gaga - Applause",Jul 2016,2,0.335570469798658
+"Lady Gaga","Lady Gaga - Applause",Aug 2016,2,0.207900207900208
+"Lady Gaga","Lady Gaga - Applause",Sep 2016,4,0.320769847634322
+"Lady Gaga","Lady Gaga - Applause",Oct 2016,1,0.0803212851405622
+"Lady Gaga","Lady Gaga - Applause",Nov 2016,3,0.304568527918782
+"Lady Gaga","Lady Gaga - Applause",Dec 2016,0,0
+"Lady Gaga","Lady Gaga - Applause",Mar 2017,5,0.297265160523187
+"Lady Gaga","Lady Gaga - Applause",Apr 2017,3,0.175131348511384
+"Lady Gaga","Lady Gaga - Applause",May 2017,1,0.0632911392405063
+"Lady Gaga","Lady Gaga - Applause",Jun 2017,0,0
+"Lady Gaga","Lady Gaga - Applause",Jul 2017,5,0.501504513540622
+"Lady Gaga","Lady Gaga - Applause",Aug 2017,5,0.809061488673139
+"Lady Gaga","Lady Gaga - Applause",Sep 2017,1,0.12970168612192
+"Lady Gaga","Lady Gaga - Applause",Oct 2017,1,0.115340253748558
+"Lady Gaga","Lady Gaga - Applause",Nov 2017,2,0.139664804469274
+"Lady Gaga","Lady Gaga - Applause",Dec 2017,9,0.570342205323194
+"Lady Gaga","Lady Gaga - Applause",Jan 2018,35,1.41815235008104
+"Lady Gaga","Lady Gaga - Applause",Feb 2018,42,1.83326058489742
+"Lady Gaga","Lady Gaga - Applause",Mar 2018,12,0.433682688832671
+"Lady Gaga","Lady Gaga - Applause",Apr 2018,5,0.205254515599343
+"Lady Gaga","Lady Gaga - Applause",May 2018,3,0.132802124833997
+"Lady Gaga","Lady Gaga - Applause",Jun 2018,5,0.212404418011895
+"Lady Gaga","Lady Gaga - Applause",Jul 2018,7,0.299529311082585
+"Lady Gaga","Lady Gaga - Applause",Aug 2018,39,1.58988993069711
+"Lady Gaga","Lady Gaga - Applause",Sep 2018,17,0.743657042869641
+"Lady Gaga","Lady Gaga - Applause",Oct 2018,1,0.0464684014869888
+"Lady Gaga","Lady Gaga - Applause",Nov 2018,0,0
+"Lady Gaga","Lady Gaga - Applause",Dec 2018,11,0.535801266439357
+"Lady Gaga","Lady Gaga - Applause",Jan 2019,33,2.1059349074665
+"Lady Gaga","Lady Gaga - Applause",Feb 2019,16,0.984009840098401
+"Lady Gaga","Lady Gaga - Applause",Mar 2019,6,0.365408038976857
+"Lady Gaga","Lady Gaga - Applause",Apr 2019,1,0.0549450549450549
+"Lady Gaga","Lady Gaga - Applause",May 2019,3,0.177409816676523
+"Lady Gaga","Lady Gaga - Applause",Jun 2019,33,2.21476510067114
+"Lady Gaga","Lady Gaga - Applause",Jul 2019,21,1.45530145530146
+"Lady Gaga","Lady Gaga - Applause",Aug 2019,4,0.375586854460094
+"Lady Gaga","Lady Gaga - Applause",Sep 2019,17,1.76348547717842
+"Lady Gaga","Lady Gaga - Applause",Oct 2019,13,0.921985815602837
+"Lady Gaga","Lady Gaga - Just Dance",Oct 2015,1,0.0654450261780105
+"Lady Gaga","Lady Gaga - Just Dance",Nov 2015,1,0.0599520383693046
+"Lady Gaga","Lady Gaga - Just Dance",Dec 2015,1,0.159744408945687
+"Lady Gaga","Lady Gaga - Just Dance",Jan 2016,1,0.120048019207683
+"Lady Gaga","Lady Gaga - Just Dance",Feb 2016,3,0.646551724137931
+"Lady Gaga","Lady Gaga - Just Dance",Mar 2016,1,0.140646976090014
+"Lady Gaga","Lady Gaga - Just Dance",Apr 2016,3,0.254452926208651
+"Lady Gaga","Lady Gaga - Just Dance",May 2016,4,0.224089635854342
+"Lady Gaga","Lady Gaga - Just Dance",Jun 2016,4,0.458715596330275
+"Lady Gaga","Lady Gaga - Just Dance",Jul 2016,0,0
+"Lady Gaga","Lady Gaga - Just Dance",Aug 2016,2,0.207900207900208
+"Lady Gaga","Lady Gaga - Just Dance",Sep 2016,16,1.28307939053729
+"Lady Gaga","Lady Gaga - Just Dance",Oct 2016,19,1.52610441767068
+"Lady Gaga","Lady Gaga - Just Dance",Nov 2016,2,0.203045685279188
+"Lady Gaga","Lady Gaga - Just Dance",Dec 2016,0,0
+"Lady Gaga","Lady Gaga - Just Dance",Mar 2017,3,0.178359096313912
+"Lady Gaga","Lady Gaga - Just Dance",Apr 2017,4,0.233508464681845
+"Lady Gaga","Lady Gaga - Just Dance",May 2017,3,0.189873417721519
+"Lady Gaga","Lady Gaga - Just Dance",Jun 2017,2,0.158982511923688
+"Lady Gaga","Lady Gaga - Just Dance",Jul 2017,4,0.401203610832498
+"Lady Gaga","Lady Gaga - Just Dance",Aug 2017,2,0.323624595469256
+"Lady Gaga","Lady Gaga - Just Dance",Sep 2017,1,0.12970168612192
+"Lady Gaga","Lady Gaga - Just Dance",Oct 2017,1,0.115340253748558
+"Lady Gaga","Lady Gaga - Just Dance",Nov 2017,0,0
+"Lady Gaga","Lady Gaga - Just Dance",Dec 2017,3,0.190114068441065
+"Lady Gaga","Lady Gaga - Just Dance",Jan 2018,6,0.243111831442464
+"Lady Gaga","Lady Gaga - Just Dance",Feb 2018,71,3.09908336970755
+"Lady Gaga","Lady Gaga - Just Dance",Mar 2018,22,0.795084929526563
+"Lady Gaga","Lady Gaga - Just Dance",Apr 2018,3,0.123152709359606
+"Lady Gaga","Lady Gaga - Just Dance",May 2018,2,0.0885347498893316
+"Lady Gaga","Lady Gaga - Just Dance",Jun 2018,51,2.16652506372133
+"Lady Gaga","Lady Gaga - Just Dance",Jul 2018,30,1.28369704749679
+"Lady Gaga","Lady Gaga - Just Dance",Aug 2018,29,1.18222584590298
+"Lady Gaga","Lady Gaga - Just Dance",Sep 2018,19,0.831146106736658
+"Lady Gaga","Lady Gaga - Just Dance",Oct 2018,4,0.185873605947955
+"Lady Gaga","Lady Gaga - Just Dance",Nov 2018,10,0.521648408972353
+"Lady Gaga","Lady Gaga - Just Dance",Dec 2018,22,1.07160253287871
+"Lady Gaga","Lady Gaga - Just Dance",Jan 2019,12,0.765794511805999
+"Lady Gaga","Lady Gaga - Just Dance",Feb 2019,4,0.2460024600246
+"Lady Gaga","Lady Gaga - Just Dance",Mar 2019,4,0.243605359317905
+"Lady Gaga","Lady Gaga - Just Dance",Apr 2019,15,0.824175824175824
+"Lady Gaga","Lady Gaga - Just Dance",May 2019,29,1.71496156120639
+"Lady Gaga","Lady Gaga - Just Dance",Jun 2019,22,1.47651006711409
+"Lady Gaga","Lady Gaga - Just Dance",Jul 2019,20,1.38600138600139
+"Lady Gaga","Lady Gaga - Just Dance",Aug 2019,1,0.0938967136150235
+"Lady Gaga","Lady Gaga - Just Dance",Sep 2019,10,1.03734439834025
+"Lady Gaga","Lady Gaga - Just Dance",Oct 2019,19,1.34751773049645
+"Lady Gaga","Lady Gaga - Poker Face",Oct 2015,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Nov 2015,2,0.119904076738609
+"Lady Gaga","Lady Gaga - Poker Face",Dec 2015,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Jan 2016,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Feb 2016,3,0.646551724137931
+"Lady Gaga","Lady Gaga - Poker Face",Mar 2016,2,0.281293952180028
+"Lady Gaga","Lady Gaga - Poker Face",Apr 2016,1,0.0848176420695505
+"Lady Gaga","Lady Gaga - Poker Face",May 2016,3,0.168067226890756
+"Lady Gaga","Lady Gaga - Poker Face",Jun 2016,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Jul 2016,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Aug 2016,1,0.103950103950104
+"Lady Gaga","Lady Gaga - Poker Face",Sep 2016,5,0.400962309542903
+"Lady Gaga","Lady Gaga - Poker Face",Oct 2016,2,0.160642570281124
+"Lady Gaga","Lady Gaga - Poker Face",Nov 2016,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Dec 2016,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Mar 2017,8,0.475624256837099
+"Lady Gaga","Lady Gaga - Poker Face",Apr 2017,5,0.291885580852306
+"Lady Gaga","Lady Gaga - Poker Face",May 2017,5,0.316455696202532
+"Lady Gaga","Lady Gaga - Poker Face",Jun 2017,1,0.0794912559618442
+"Lady Gaga","Lady Gaga - Poker Face",Jul 2017,1,0.100300902708124
+"Lady Gaga","Lady Gaga - Poker Face",Aug 2017,3,0.485436893203883
+"Lady Gaga","Lady Gaga - Poker Face",Sep 2017,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Oct 2017,1,0.115340253748558
+"Lady Gaga","Lady Gaga - Poker Face",Nov 2017,0,0
+"Lady Gaga","Lady Gaga - Poker Face",Dec 2017,4,0.253485424588086
+"Lady Gaga","Lady Gaga - Poker Face",Jan 2018,23,0.93192868719611
+"Lady Gaga","Lady Gaga - Poker Face",Feb 2018,39,1.70231340026189
+"Lady Gaga","Lady Gaga - Poker Face",Mar 2018,25,0.903505601734731
+"Lady Gaga","Lady Gaga - Poker Face",Apr 2018,8,0.328407224958949
+"Lady Gaga","Lady Gaga - Poker Face",May 2018,43,1.90349712262063
+"Lady Gaga","Lady Gaga - Poker Face",Jun 2018,38,1.6142735768904
+"Lady Gaga","Lady Gaga - Poker Face",Jul 2018,22,0.94137783483098
+"Lady Gaga","Lady Gaga - Poker Face",Aug 2018,25,1.01916021198532
+"Lady Gaga","Lady Gaga - Poker Face",Sep 2018,2,0.0874890638670166
+"Lady Gaga","Lady Gaga - Poker Face",Oct 2018,1,0.0464684014869888
+"Lady Gaga","Lady Gaga - Poker Face",Nov 2018,13,0.678142931664058
+"Lady Gaga","Lady Gaga - Poker Face",Dec 2018,23,1.12031173891866
+"Lady Gaga","Lady Gaga - Poker Face",Jan 2019,17,1.08487555839183
+"Lady Gaga","Lady Gaga - Poker Face",Feb 2019,1,0.0615006150061501
+"Lady Gaga","Lady Gaga - Poker Face",Mar 2019,2,0.121802679658952
+"Lady Gaga","Lady Gaga - Poker Face",Apr 2019,32,1.75824175824176
+"Lady Gaga","Lady Gaga - Poker Face",May 2019,25,1.47841513897102
+"Lady Gaga","Lady Gaga - Poker Face",Jun 2019,18,1.20805369127517
+"Lady Gaga","Lady Gaga - Poker Face",Jul 2019,18,1.24740124740125
+"Lady Gaga","Lady Gaga - Poker Face",Aug 2019,1,0.0938967136150235
+"Lady Gaga","Lady Gaga - Poker Face",Sep 2019,3,0.311203319502075
+"Lady Gaga","Lady Gaga - Poker Face",Oct 2019,2,0.141843971631206
+"Lady Gaga","Lady Gaga - The Cure",Oct 2015,0,0
+"Lady Gaga","Lady Gaga - The Cure",Nov 2015,0,0
+"Lady Gaga","Lady Gaga - The Cure",Dec 2015,0,0
+"Lady Gaga","Lady Gaga - The Cure",Jan 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Feb 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Mar 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Apr 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",May 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Jun 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Jul 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Aug 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Sep 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Oct 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Nov 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Dec 2016,0,0
+"Lady Gaga","Lady Gaga - The Cure",Mar 2017,0,0
+"Lady Gaga","Lady Gaga - The Cure",Apr 2017,198,11.5586690017513
+"Lady Gaga","Lady Gaga - The Cure",May 2017,30,1.89873417721519
+"Lady Gaga","Lady Gaga - The Cure",Jun 2017,40,3.17965023847377
+"Lady Gaga","Lady Gaga - The Cure",Jul 2017,2,0.200601805416249
+"Lady Gaga","Lady Gaga - The Cure",Aug 2017,3,0.485436893203883
+"Lady Gaga","Lady Gaga - The Cure",Sep 2017,5,0.648508430609598
+"Lady Gaga","Lady Gaga - The Cure",Oct 2017,0,0
+"Lady Gaga","Lady Gaga - The Cure",Nov 2017,24,1.67597765363128
+"Lady Gaga","Lady Gaga - The Cure",Dec 2017,20,1.26742712294043
+"Lady Gaga","Lady Gaga - The Cure",Jan 2018,1,0.0405186385737439
+"Lady Gaga","Lady Gaga - The Cure",Feb 2018,34,1.48406809253601
+"Lady Gaga","Lady Gaga - The Cure",Mar 2018,11,0.397542464763282
+"Lady Gaga","Lady Gaga - The Cure",Apr 2018,2,0.0821018062397373
+"Lady Gaga","Lady Gaga - The Cure",May 2018,27,1.19521912350598
+"Lady Gaga","Lady Gaga - The Cure",Jun 2018,6,0.254885301614274
+"Lady Gaga","Lady Gaga - The Cure",Jul 2018,3,0.128369704749679
+"Lady Gaga","Lady Gaga - The Cure",Aug 2018,3,0.122299225438239
+"Lady Gaga","Lady Gaga - The Cure",Sep 2018,36,1.5748031496063
+"Lady Gaga","Lady Gaga - The Cure",Oct 2018,4,0.185873605947955
+"Lady Gaga","Lady Gaga - The Cure",Nov 2018,3,0.156494522691706
+"Lady Gaga","Lady Gaga - The Cure",Dec 2018,2,0.0974184120798831
+"Lady Gaga","Lady Gaga - The Cure",Jan 2019,2,0.127632418634333
+"Lady Gaga","Lady Gaga - The Cure",Feb 2019,0,0
+"Lady Gaga","Lady Gaga - The Cure",Mar 2019,4,0.243605359317905
+"Lady Gaga","Lady Gaga - The Cure",Apr 2019,4,0.21978021978022
+"Lady Gaga","Lady Gaga - The Cure",May 2019,16,0.946185688941455
+"Lady Gaga","Lady Gaga - The Cure",Jun 2019,13,0.87248322147651
+"Lady Gaga","Lady Gaga - The Cure",Jul 2019,0,0
+"Lady Gaga","Lady Gaga - The Cure",Aug 2019,1,0.0938967136150235
+"Lady Gaga","Lady Gaga - The Cure",Sep 2019,0,0
+"Lady Gaga","Lady Gaga - The Cure",Oct 2019,2,0.141843971631206
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Oct 2015,3,0.196335078534031
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Nov 2015,44,2.6378896882494
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Dec 2015,7,1.11821086261981
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jan 2016,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Feb 2016,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Mar 2016,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Apr 2016,1,0.0848176420695505
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",May 2016,15,0.840336134453782
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jun 2016,1,0.114678899082569
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jul 2016,3,0.503355704697987
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Aug 2016,1,0.103950103950104
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Sep 2016,8,0.641539695268645
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Oct 2016,20,1.60642570281124
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Nov 2016,25,2.53807106598985
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Dec 2016,19,1.26162018592297
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Mar 2017,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Apr 2017,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",May 2017,1,0.0632911392405063
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jun 2017,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jul 2017,8,0.802407221664995
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Aug 2017,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Sep 2017,1,0.12970168612192
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Oct 2017,11,1.26874279123414
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Nov 2017,24,1.67597765363128
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Dec 2017,29,1.83776932826362
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jan 2018,1,0.0405186385737439
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Feb 2018,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Mar 2018,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Apr 2018,2,0.0821018062397373
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",May 2018,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jun 2018,1,0.0424808836023789
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jul 2018,27,1.15532734274711
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Aug 2018,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Sep 2018,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Oct 2018,3,0.139405204460967
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Nov 2018,28,1.46061554512259
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Dec 2018,22,1.07160253287871
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jan 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Feb 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Mar 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Apr 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",May 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jun 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Jul 2019,6,0.415800415800416
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Aug 2019,0,0
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Sep 2019,2,0.20746887966805
+"Mariah Carey","Mariah Carey - All I Want for Christmas Is You",Oct 2019,2,0.141843971631206
+"Sia","Sia - Cheap Thrills",Oct 2015,0,0
+"Sia","Sia - Cheap Thrills",Nov 2015,0,0
+"Sia","Sia - Cheap Thrills",Dec 2015,0,0
+"Sia","Sia - Cheap Thrills",Jan 2016,2,0.240096038415366
+"Sia","Sia - Cheap Thrills",Feb 2016,7,1.50862068965517
+"Sia","Sia - Cheap Thrills",Mar 2016,25,3.51617440225035
+"Sia","Sia - Cheap Thrills",Apr 2016,17,1.44189991518236
+"Sia","Sia - Cheap Thrills",May 2016,7,0.392156862745098
+"Sia","Sia - Cheap Thrills",Jun 2016,1,0.114678899082569
+"Sia","Sia - Cheap Thrills",Jul 2016,13,2.18120805369128
+"Sia","Sia - Cheap Thrills",Aug 2016,19,1.97505197505198
+"Sia","Sia - Cheap Thrills",Sep 2016,33,2.64635124298316
+"Sia","Sia - Cheap Thrills",Oct 2016,36,2.89156626506024
+"Sia","Sia - Cheap Thrills",Nov 2016,22,2.23350253807107
+"Sia","Sia - Cheap Thrills",Dec 2016,33,2.19123505976096
+"Sia","Sia - Cheap Thrills",Mar 2017,8,0.475624256837099
+"Sia","Sia - Cheap Thrills",Apr 2017,5,0.291885580852306
+"Sia","Sia - Cheap Thrills",May 2017,5,0.316455696202532
+"Sia","Sia - Cheap Thrills",Jun 2017,13,1.03338632750397
+"Sia","Sia - Cheap Thrills",Jul 2017,1,0.100300902708124
+"Sia","Sia - Cheap Thrills",Aug 2017,1,0.161812297734628
+"Sia","Sia - Cheap Thrills",Sep 2017,3,0.389105058365759
+"Sia","Sia - Cheap Thrills",Oct 2017,2,0.230680507497116
+"Sia","Sia - Cheap Thrills",Nov 2017,0,0
+"Sia","Sia - Cheap Thrills",Dec 2017,7,0.443599493029151
+"Sia","Sia - Cheap Thrills",Jan 2018,26,1.05348460291734
+"Sia","Sia - Cheap Thrills",Feb 2018,13,0.567437800087298
+"Sia","Sia - Cheap Thrills",Mar 2018,10,0.361402240693892
+"Sia","Sia - Cheap Thrills",Apr 2018,11,0.451559934318555
+"Sia","Sia - Cheap Thrills",May 2018,0,0
+"Sia","Sia - Cheap Thrills",Jun 2018,3,0.127442650807137
+"Sia","Sia - Cheap Thrills",Jul 2018,19,0.813008130081301
+"Sia","Sia - Cheap Thrills",Aug 2018,12,0.489196901752956
+"Sia","Sia - Cheap Thrills",Sep 2018,2,0.0874890638670166
+"Sia","Sia - Cheap Thrills",Oct 2018,2,0.0929368029739777
+"Sia","Sia - Cheap Thrills",Nov 2018,0,0
+"Sia","Sia - Cheap Thrills",Dec 2018,24,1.1690209449586
+"Sia","Sia - Cheap Thrills",Jan 2019,10,0.638162093171666
+"Sia","Sia - Cheap Thrills",Feb 2019,4,0.2460024600246
+"Sia","Sia - Cheap Thrills",Mar 2019,2,0.121802679658952
+"Sia","Sia - Cheap Thrills",Apr 2019,1,0.0549450549450549
+"Sia","Sia - Cheap Thrills",May 2019,0,0
+"Sia","Sia - Cheap Thrills",Jun 2019,0,0
+"Sia","Sia - Cheap Thrills",Jul 2019,1,0.0693000693000693
+"Sia","Sia - Cheap Thrills",Aug 2019,6,0.563380281690141
+"Sia","Sia - Cheap Thrills",Sep 2019,0,0
+"Sia","Sia - Cheap Thrills",Oct 2019,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Oct 2015,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Nov 2015,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Dec 2015,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jan 2016,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Feb 2016,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Mar 2016,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Apr 2016,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",May 2016,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jun 2016,46,5.27522935779817
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jul 2016,12,2.01342281879195
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Aug 2016,21,2.18295218295218
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Sep 2016,31,2.485966319166
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Oct 2016,35,2.81124497991968
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Nov 2016,14,1.42131979695431
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Dec 2016,22,1.46082337317397
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Mar 2017,22,1.30796670630202
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Apr 2017,7,0.408639813193228
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",May 2017,2,0.126582278481013
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jun 2017,13,1.03338632750397
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jul 2017,2,0.200601805416249
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Aug 2017,1,0.161812297734628
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Sep 2017,2,0.259403372243839
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Oct 2017,9,1.03806228373702
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Nov 2017,4,0.279329608938547
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Dec 2017,3,0.190114068441065
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jan 2018,15,0.607779578606159
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Feb 2018,12,0.523788738542121
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Mar 2018,3,0.108420672208168
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Apr 2018,8,0.328407224958949
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",May 2018,46,2.03629924745463
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jun 2018,3,0.127442650807137
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jul 2018,36,1.54043645699615
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Aug 2018,27,1.10069302894415
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Sep 2018,1,0.0437445319335083
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Oct 2018,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Nov 2018,1,0.0521648408972353
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Dec 2018,18,0.876765708718948
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jan 2019,19,1.21250797702616
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Feb 2019,1,0.0615006150061501
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Mar 2019,3,0.182704019488429
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Apr 2019,5,0.274725274725275
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",May 2019,2,0.118273211117682
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jun 2019,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Jul 2019,0,0
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Aug 2019,17,1.5962441314554
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Sep 2019,8,0.829875518672199
+"The Chainsmokers","The Chainsmokers - Don't Let Me Down",Oct 2019,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Oct 2015,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Nov 2015,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Dec 2015,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jan 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Feb 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Mar 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Apr 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",May 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jun 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jul 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Aug 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Sep 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Oct 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Nov 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Dec 2016,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Mar 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Apr 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",May 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jun 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jul 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Aug 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Sep 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Oct 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Nov 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Dec 2017,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jan 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Feb 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Mar 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Apr 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",May 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jun 2018,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Jul 2018,182,7.7877620881472
+"The Chainsmokers","The Chainsmokers - Side Effects",Aug 2018,59,2.40521810028536
+"The Chainsmokers","The Chainsmokers - Side Effects",Sep 2018,20,0.874890638670166
+"The Chainsmokers","The Chainsmokers - Side Effects",Oct 2018,4,0.185873605947955
+"The Chainsmokers","The Chainsmokers - Side Effects",Nov 2018,2,0.104329681794471
+"The Chainsmokers","The Chainsmokers - Side Effects",Dec 2018,25,1.21773015099854
+"The Chainsmokers","The Chainsmokers - Side Effects",Jan 2019,4,0.255264837268666
+"The Chainsmokers","The Chainsmokers - Side Effects",Feb 2019,5,0.30750307503075
+"The Chainsmokers","The Chainsmokers - Side Effects",Mar 2019,2,0.121802679658952
+"The Chainsmokers","The Chainsmokers - Side Effects",Apr 2019,1,0.0549450549450549
+"The Chainsmokers","The Chainsmokers - Side Effects",May 2019,1,0.0591366055588409
+"The Chainsmokers","The Chainsmokers - Side Effects",Jun 2019,2,0.134228187919463
+"The Chainsmokers","The Chainsmokers - Side Effects",Jul 2019,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Aug 2019,3,0.28169014084507
+"The Chainsmokers","The Chainsmokers - Side Effects",Sep 2019,0,0
+"The Chainsmokers","The Chainsmokers - Side Effects",Oct 2019,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Oct 2015,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Nov 2015,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Dec 2015,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jan 2016,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Feb 2016,30,6.46551724137931
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Mar 2016,6,0.843881856540084
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Apr 2016,6,0.508905852417303
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",May 2016,3,0.168067226890756
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jun 2016,3,0.344036697247706
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jul 2016,4,0.671140939597315
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Aug 2016,13,1.35135135135135
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Sep 2016,7,0.561347233360064
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Oct 2016,2,0.160642570281124
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Nov 2016,3,0.304568527918782
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Dec 2016,36,2.39043824701195
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Mar 2017,2,0.118906064209275
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Apr 2017,4,0.233508464681845
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",May 2017,2,0.126582278481013
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jun 2017,50,3.97456279809221
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jul 2017,7,0.702106318956871
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Aug 2017,3,0.485436893203883
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Sep 2017,2,0.259403372243839
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Oct 2017,2,0.230680507497116
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Nov 2017,0,0
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Dec 2017,11,0.697084917617237
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jan 2018,59,2.39059967585089
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Feb 2018,70,3.05543430816237
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Mar 2018,15,0.542103361040838
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Apr 2018,70,2.8735632183908
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",May 2018,41,1.8149623727313
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jun 2018,35,1.48683092608326
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jul 2018,33,1.41206675224647
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Aug 2018,18,0.733795352629433
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Sep 2018,18,0.78740157480315
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Oct 2018,24,1.11524163568773
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Nov 2018,15,0.782472613458529
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Dec 2018,9,0.438382854359474
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jan 2019,3,0.1914486279515
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Feb 2019,22,1.3530135301353
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Mar 2019,26,1.58343483556638
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Apr 2019,19,1.04395604395604
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",May 2019,2,0.118273211117682
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jun 2019,3,0.201342281879195
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Jul 2019,21,1.45530145530146
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Aug 2019,11,1.03286384976526
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Sep 2019,1,0.103734439834025
+"The Knocks","The Knocks - Love Me Like That (feat. Carly Rae Jepsen)",Oct 2019,1,0.0709219858156028
