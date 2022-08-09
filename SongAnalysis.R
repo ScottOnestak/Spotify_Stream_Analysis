@@ -1,5 +1,6 @@
 #title: Song Analysis
 #author: Scott Onestak
+#updated: August 2022
 
 library(dplyr)
 library(jsonlite)
@@ -17,24 +18,29 @@ colnames(songs_raw) = c('Artist','Album','Track','Timestamp')
 #Cleaning
 songs = songs_raw %>% filter(Timestamp != '')
 
+#Distinct Tracks
+distinct_tracks = as.data.frame(unique(songs$Track))
+colnames(distinct_tracks) = c("Track")
+distinct_tracks = distinct_tracks %>% arrange(Track)
+
 #Grouping Same Songs Together
 songs$Track[songs$Track =="starstrukk (feat. katyperry)"] = "Starstrukk (feat. Katy Perry)"
 songs$Track[songs$Track == "The Chipmunk Song (Christmas Don't Be Late) - Remastered" | 
               songs$Track == "The Chipmunk Song (Christmas Don't Be Late) - Remastered 1999" ] = "The Chipmunk Song (Christmas Don't Be Late)"
 songs$Track[songs$Track == "Be Our Guest - From Beauty and the Beast/Soundtrack" | 
               songs$Track == "Beauty and the Beast - From Beauty and the Beast/Soundtrack Version" ] = "Be Our Guest - From Beauty and the Beast"
-songs$Track[songs$Track == "Cups (Pitch Perfect�???Ts �???oWhen I�???Tm Gone�???�) - Pop Version" |
-              songs$Track == "Cups (Pitch Perfect�???Ts �???oWhen I�???Tm Gone�???�)"] = "Cups (Pitch Perfect's 'When I'm Gone')"
-songs$Track[songs$Track == "You�???Tll Never Know"] = "You'll Never Know"
+songs$Track[songs$Track == "Cups (Pitch Perfectâ???Ts â???oWhen Iâ???Tm Goneâ???) - Pop Version" |
+              songs$Track == "Cups (Pitch Perfectâ???Ts â???oWhen Iâ???Tm Goneâ???)"] = "Cups (Pitch Perfect's 'When I'm Gone')"
+songs$Track[songs$Track == "Youâ???Tll Never Know"] = "You'll Never Know"
 songs$Track[songs$Track == "I Could Be The One (Avicii Vs. Nicky Romero) - Nicktim / Radio Edit" |
               songs$Track == "I Could Be The One [Avicii vs Nicky Romero] - Nicktim - Radio Edit" |
               songs$Track == "I Could Be The One [Avicii vs Nicky Romero] - Nicktim / Radio Edit"] =
   "I Could Be The One (Avicii Vs. Nicky Romero) - Radio Edit"
-songs$Artist[songs$Artist == "Axwell �> Ingrosso" |
+songs$Artist[songs$Artist == "Axwell Î> Ingrosso" |
                songs$Artist == "Axwell / Ingrosso"] = "Axwell /\ Ingrosso"
 songs$Track[songs$Track == "The Way I Are (Dance with Somebody) [feat. Lil Wayne]"] = "The Way I Are (Dance with Somebody)"
 songs$Track[songs$Track == "Heaven Is A Place On Earth - 2009 Digital Remaster"] = "Heaven Is A Place on Earth"
-songs$Artist[songs$Artist == "Beyoncé"] = "Beyonce"
+songs$Artist[songs$Artist == "BeyoncÃ©"] = "Beyonce"
 songs$Track[songs$Track == "Mony Mony - Downtown Mix / 24-Bit Digitally Remastered 2001"] = "Mony Mony - 24-Bit Digitally Remastered 01"
 songs$Track[songs$Track == "Call Me - Digitally Remastered 98"] = "Call Me"
 songs$Artist[songs$Artist == "Bobby 'Boris' Pickett"] = "Bobby Boris Pickett & The Crypt-Kickers"
@@ -45,19 +51,19 @@ songs$Track[songs$Track == "Gold (Jason Nevins Rhythmic Radio) Remix"] = "Gold -
 songs$Track[songs$Track == "Ready or Not - feat. Lecrae"] = "Ready or Not"
 songs$Track[songs$Track == "Santa Claus Is Comin' to Town - C.W. Post College Greenvale NY - December 1975"] = "Santa Claus Is Comin' To Town - Single Version"
 songs$Track[songs$Track == "A Holly Jolly Christmas - Single Version"] = "A Holly Jolly Christmas"
-songs$Artist[songs$Artist == "Céline Dion"] = "Celine Dion"
+songs$Artist[songs$Artist == "CÃ©line Dion"] = "Celine Dion"
 songs$Track[songs$Track == "Ashes - from the Deadpool 2 Motion Picture Soundtrack" |
               songs$Track == "Ashes - from Deadpool 2 Motion Picture Soundtrack"] = "Ashes - from Deadpool 2"
 songs$Track[songs$Track == "Because You Loved Me (Theme from Up Close and Personal)"] = "Because You Loved Me"
 songs$Track[songs$Track == "My Heart Will Go On - Love Theme From Titanic"] = "My Heart Will Go On"
 songs$Track[songs$Track == "I Need Your Love (feat. Ellie Goulding)"] = "I Need Your Love"
 songs$Track[songs$Track == "Outside (feat. Ellie Goulding)"] = "Outside"
-songs$Track[songs$Track == "E�???�MO�???�TION"] = "Emotion"
-songs$Track[songs$Track == "I Didn�???Tt Just Come Here To Dance"] = "I Didn't Just Come Here To Dance"
-songs$Track[songs$Track == "Let�???Ts Get Lost"] = "Let's Get Lost"
-songs$Track[songs$Track == "Tonight I�???Tm Getting Over You"] = "Tonight I'm Getting Over You"
-songs$Track[songs$Track == "Tonight I�???Tm Getting Over You - Reid Stefan Remix"] = "Tonight I'm Getting Over You - Reid Stefan Remix"
-songs$Track[songs$Track == "Tonight I�???Tm Getting Over You - Remix"] = "Tonight I'm Getting Over You - Remix"
+songs$Track[songs$Track == "Eâ???¢MOâ???¢TION"] = "Emotion"
+songs$Track[songs$Track == "I Didnâ???Tt Just Come Here To Dance"] = "I Didn't Just Come Here To Dance"
+songs$Track[songs$Track == "Letâ???Ts Get Lost"] = "Let's Get Lost"
+songs$Track[songs$Track == "Tonight Iâ???Tm Getting Over You"] = "Tonight I'm Getting Over You"
+songs$Track[songs$Track == "Tonight Iâ???Tm Getting Over You - Reid Stefan Remix"] = "Tonight I'm Getting Over You - Reid Stefan Remix"
+songs$Track[songs$Track == "Tonight Iâ???Tm Getting Over You - Remix"] = "Tonight I'm Getting Over You - Remix"
 songs$Artist[songs$Artist == "Carly Rae Jepsen | www.soundfox.co"] = "Carly Rae Jepsen"
 songs$Track[songs$Track == "Circle Of Life - From The Lion King/Soundtrack" |
               songs$Track == "Circle of Life"] = "Circle of Life - From The Lion King"
@@ -66,36 +72,36 @@ songs$Track[songs$Track == "Make Your Own Kind Of Music - Remastered - Single Ve
 songs$Track[songs$Track == "Sex (Cheat Codes X Kris Kross Amsterdam)"] = "Sex"
 songs$Track[songs$Track == "Reflection - From Mulan / Pop Version" |
               songs$Track == "Reflection - Pop Version"] = "Reflection"
-songs$Track[songs$Track == "We Remain - From �???oThe Hunger Games: Catching Fire�???�/ Soundtrack"] = "We Remain - From 'The Hunger Games: Catching Fire' Soundtrack"
-songs$Track[songs$Track == "Can�???Tt Help Falling In Love - The Voice Performance"] = "Can't Help Falling In Love - The Voice Performance"
-songs$Track[songs$Track == "Hold On We�???Tre Going Home - The Voice Performance"] = "Hold On We're Going Home - The Voice Performance"
-songs$Track[songs$Track == "I Won�???Tt Give Up - The Voice Performance"] = "I Won't Give Up"
+songs$Track[songs$Track == "We Remain - From â???oThe Hunger Games: Catching Fireâ???/ Soundtrack"] = "We Remain - From 'The Hunger Games: Catching Fire' Soundtrack"
+songs$Track[songs$Track == "Canâ???Tt Help Falling In Love - The Voice Performance"] = "Can't Help Falling In Love - The Voice Performance"
+songs$Track[songs$Track == "Hold On Weâ???Tre Going Home - The Voice Performance"] = "Hold On We're Going Home - The Voice Performance"
+songs$Track[songs$Track == "I Wonâ???Tt Give Up - The Voice Performance"] = "I Won't Give Up"
 songs$Track[songs$Track == "When You Wish Upon a Star - From Pinocchio"] = "When You Wish Upon a Star"
 songs$Track[songs$Track == "Dream Ghost (feat. Michael Hyatt Amber Riley & Ricki Lake)"] = "Dream Ghost"
-songs$Track[songs$Track == "Greg�???Ts Drinking Song"] = "Greg's Drinking Song"
-songs$Track[songs$Track == "I�???Tm A Good Person" |
+songs$Track[songs$Track == "Gregâ???Ts Drinking Song"] = "Greg's Drinking Song"
+songs$Track[songs$Track == "Iâ???Tm A Good Person" |
               songs$Track == "I'm a Good Person (feat. Rachel Bloom)"] = "I'm A Good Person"
-songs$Artist[songs$Artist == "�'е�???ка Се�???д�Z�???ка"] = "Verka Serduchka"
+songs$Artist[songs$Artist == "Ð'ÐµÑ???ÐºÐ° Ð¡ÐµÑ???Ð´ÑZÑ???ÐºÐ°"] = "Verka Serduchka"
 songs$Track[songs$Track == "Hey Mama (feat. Nicki Minaj & Afrojack)"] = "Hey Mama (feat. Nicki Minaj Bebe Rexha & Afrojack)"
 songs$Track[songs$Track == "Titanium"] = "Titanium (feat. Sia)"
 songs$Track[songs$Track == "When Love Takes Over (feat. Kelly Rowland) - feat. Kelly Rowland"] = "When Love Takes Over (feat. Kelly Rowland)"
 songs$Track[songs$Track == "Where Them Girls At - feat. Nicki Minaj & Flo Rida"] = "Where Them Girls At (feat. Nicki Minaj & Flo Rida)"
 songs$Track[songs$Track == "Pour Some Sugar On Me - Remastered 2017"] = "You Spin Me Round (Like a Record)"
-songs$Track[songs$Track == "Listen To Your Heart (Edmée's Unplugged Vocal)"] = "Listen To Your Heart (Edmee's Unplugged Vocal)"
-songs$Track[songs$Track == "Cake By The Ocean - �,��f��f��f��f��f��,��f��,��f��f�"] = "Cake by the Ocean"
+songs$Track[songs$Track == "Listen To Your Heart (EdmÃ©e's Unplugged Vocal)"] = "Listen To Your Heart (Edmee's Unplugged Vocal)"
+songs$Track[songs$Track == "Cake By The Ocean - ã,¯ãfªãf¼ãf³ãf»ãf´ã,¡ãf¼ã,¸ãf§ãf³"] = "Cake by the Ocean"
 songs$Track[songs$Track == "Stereo Love Featuring Vika Jigulina - Radio Edit"] = "Stereo Love - Radio Edit"
 songs$Track[songs$Track == "Hanging On - Edit"] = "Hanging On"
 songs$Track[songs$Track == "Still Falling For You - From Bridget Jones's Baby Original Motion Picture Soundtrack"] = "Still Falling For You - From Bridget Jones's Baby"
 songs$Track[songs$Track == "Can You Feel The Love Tonight - End Title / From The Lion King"] = "Can You Feel the Love Tonight"
-songs$Track[songs$Track == "When I�???Tm Alone"] = "When I'm Alone"
+songs$Track[songs$Track == "When Iâ???Tm Alone"] = "When I'm Alone"
 songs$Track[songs$Track == "There You'll Be - Remastered Version"] = "There You'll Be - Remastered"
 songs$Track[songs$Track == "Work from Home (feat. Ty Dolla $ign)" |
               songs$Track == "Work from Home"] = "Work From Home"
 songs$Track[songs$Track == "100 Years: Music Video"] = "100 Years"
 songs$Track[songs$Track == "Right Round - US"] = "Right Round"
 songs$Track[songs$Track == "Say It"] = "Say It (feat. Tove Lo)"
-songs$Track[songs$Track == "We Are Young (feat. Janelle Monáe) - feat. Janelle Monae" |
-              songs$Track == "We Are Young (feat. Janelle Monáe)"] = "We Are Young (feat. Janelle Monae)"
+songs$Track[songs$Track == "We Are Young (feat. Janelle MonÃ¡e) - feat. Janelle Monae" |
+              songs$Track == "We Are Young (feat. Janelle MonÃ¡e)"] = "We Are Young (feat. Janelle Monae)"
 songs$Track[songs$Track == "Saving Light"] = "Saving Light (feat. Haliene)"
 songs$Track[songs$Track == "Feel Good (feat. Daya)"] = "Feel Good"
 songs$Track[songs$Track == "I Got Nerve - From Hannah Montana/Soundtrack Version"] = "I Got Nerve"
@@ -106,7 +112,7 @@ songs$Track[songs$Track == "Christ Is Enough - Live"] = "Christ Is Enough"
 songs$Artist[songs$Artist == "Hixxy"] = "Gareth Emery"
 songs$Track[songs$Track == "Saving Light (Hixxy Remix) [feat. HALIENE]"] = "Saving Light - Hixxy Remix"
 songs$Track[songs$Track == "Black Widow (feat. Rita Ora) - Clean Edit"] = "Black Widow"
-songs$Artist[songs$Artist == "Jason Derülo"] = "Jason Derulo"
+songs$Artist[songs$Artist == "Jason DerÃ¼lo"] = "Jason Derulo"
 songs$Track[songs$Track == "Flashlight - From Pitch Perfect 2 Soundtrack"] = "Flashlight - From Pitch Perfect 2"
 songs$Track[songs$Track == "Part Of Your World - From The Little Mermaid/ Soundtrack Version"] = "Part of Your World - From The Little Mermaid / Soundtrack Version"
 songs$Track[songs$Track == "Happy Xmas (War Is Over) - Remastered"] = "Happy Xmas (War Is Over) - 2010 Digital Remaster"
@@ -114,23 +120,23 @@ songs$Artist[songs$Artist == "John Martyn"] = "John Martin"
 songs$Track[songs$Track == "St. Elmos Fire [Man In Motion]"] = "St. Elmo's Fire (Man in Motion)"
 songs$Track[songs$Track == "It's Beginning To Look Like Christmas"] = "It's Beginning to Look a Lot Like Christmas"
 songs$Track[songs$Track == "Too Little Too Late - Radio Version"] = "Too Little Too Late"
-songs$Artist[songs$Artist == "José Feliciano"] = "Jose Feliciano"
+songs$Artist[songs$Artist == "JosÃ© Feliciano"] = "Jose Feliciano"
 songs$Track[songs$Track == "Can You Feel The Love Tonight - From The Lion King/Soundtrack Version"] = "Can You Feel the Love Tonight"
 songs$Track[songs$Track == "Angels We Have Heard On High (with Brian McKnight)"] = "Angels We Have Heard On High - Duet With Brian Mcknight"
 songs$Track[songs$Track == "O Come All Ye Faithful (With The Mormon Tabernacle Choir under the direction of Craig Jessop) - with The Mormon Tabernacle Choir under the direction of Craig Jessop Album Version" | 
               songs$Track == "O Come All Ye Faithful - with The Mormon Tabernacle Choir under the direction of Craig Jessop"] = "O Come All Ye Faithful (with The Mormon Tabernacle Choir under the direction of Craig Jessop)"
-songs$Track[songs$Track == "The First Noël - duet with Faith Hill" | 
-              songs$Track == "The First Noël (with Faith Hill) - duet with Faith Hill Album Version"] = "The First Noel - Duet With Faith Hill"
+songs$Track[songs$Track == "The First NoÃ«l - duet with Faith Hill" | 
+              songs$Track == "The First NoÃ«l (with Faith Hill) - duet with Faith Hill Album Version"] = "The First Noel - Duet With Faith Hill"
 songs$Track[songs$Track == "California Gurls - feat. Snoop Dogg"] = "California Gurls (feat. Snoop Dogg)"
 songs$Track[songs$Track == "Dark Horse (feat. Juicy J)"] = "Dark Horse"
 songs$Track[songs$Track == "E.T. - feat. Kanye West"] = "	E.T."
-songs$Track[songs$Track == "Heartbeat Song - Dave Audé Radio Mix"] = "Heartbeat Song - Dave Aude Radio Mix"
+songs$Track[songs$Track == "Heartbeat Song - Dave AudÃ© Radio Mix"] = "Heartbeat Song - Dave Aude Radio Mix"
 songs$Track[songs$Track == "Carry Me (feat. Julia Michaels)"] = "Carry Me"
-songs$Track[songs$Track == "It Ain�???Tt Me (with Selena Gomez)"] = "It Ain't Me"
-songs$Track[songs$Track == "Schei�Ye"] = "Scheibe"
+songs$Track[songs$Track == "It Ainâ???Tt Me (with Selena Gomez)"] = "It Ain't Me"
+songs$Track[songs$Track == "ScheiÃYe"] = "Scheibe"
 songs$Track[songs$Track == "Shallow - Radio Edit"] = "Shallow"
-songs$Track[songs$Track == "Telephone (feat. Beyoncé)"] = "Telephone (feat. Beyonce)"
-songs$Track[songs$Track == "Yoü and I"] = "You and I"
+songs$Track[songs$Track == "Telephone (feat. BeyoncÃ©)"] = "Telephone (feat. Beyonce)"
+songs$Track[songs$Track == "YoÃ¼ and I"] = "You and I"
 songs$Track[songs$Track == "Summertime Sadness (Lana Del Rey Vs. Cedric Gervais) - Cedric Gervais Remix" |
               songs$Track == "Summertime Sadness [Lana Del Rey vs. Cedric Gervais] - Cedric Gervais Remix"] = "Summertime Sadness (Lana Del Rey Vs. Cedric Gervais) - Cedric Gervais Remix / Radio Edit"
 songs$Track[songs$Track == "A Whole New World - From Aladdin/ Soundtrack Version"] = "A Whole New World"
@@ -147,29 +153,29 @@ songs$Track[songs$Track == "I Won't Let You Walk Away (feat. Madison Beer) - Rad
 songs$Artist[songs$Artist == "Marina & the Diamonds"] = "Marina"
 songs$Track[songs$Track == "She Will Be Loved - Radio Mix"] = "She Will Be Loved"
 songs$Artist[songs$Artist == "MGM Studio Orchestra"] = "MGM Studio Chorus"
-songs$Artist[songs$Artist == "Molly Sandén"] = "Molly Sanden"
+songs$Artist[songs$Artist == "Molly SandÃ©n"] = "Molly Sanden"
 songs$Track[songs$Track == "O Tannenbaum - Remastered 1999"] = "O Tannenbaum"
 songs$Track[songs$Track == "Hakuna Matata - From The Lion King/Soundtrack"] = "Hakuna Matata"
 songs$Artist[songs$Artist == "Owl City & Carly Rae Jepsen"] = "Owl City"
-songs$Track[songs$Track == "You�???Tre Not Alone"] = "You're Not Alone"
+songs$Track[songs$Track == "Youâ???Tre Not Alone"] = "You're Not Alone"
 songs$Track[songs$Track == "Can We Pretend (feat. Cash Cash)"] = "Can We Pretend"
-songs$Track[songs$Track == "There�???Ts A Honey"] = "There's A Honey"
+songs$Track[songs$Track == "Thereâ???Ts A Honey"] = "There's A Honey"
 songs$Track[songs$Track == "Hit Me With Your Best Shot - 1999 Digital Remaster"] = "Hit Me With Your Best Shot"
-songs$Track[songs$Track == "You'll Be In My Heart (Phil Version) - �???Z�,��f��,��f��???��,^�,S" |
+songs$Track[songs$Track == "You'll Be In My Heart (Phil Version) - ã???Zã,¿ãf¼ã,¶ãf³ã???ã,^ã,S" |
               songs$Track == "You'll Be In My Heart - From Tarzan/Soundtrack Version" |
               songs$Track == "You Will Be In My Heart"] = "You'll Be In My Heart"
-songs$Track[songs$Track == "Qué Sera Sera"] = "Que Sera Sera"
-songs$Artist[songs$Artist == "Raven-Symoné"] = "Raven-Symone"
+songs$Track[songs$Track == "QuÃ© Sera Sera"] = "Que Sera Sera"
+songs$Artist[songs$Artist == "Raven-SymonÃ©"] = "Raven-Symone"
 songs$Track[songs$Track == "We Found Love (Album Version) [Feat. Calvin Harris]"] = "We Found Love (feat. Calvin Harris)"
-songs$Track[songs$Track == "Go the Distance - �???Z�f~�f��,��f��,��???��,^�,S" |
+songs$Track[songs$Track == "Go the Distance - ã???Zãf~ãf©ã,¯ãf¬ã,¹ã???ã,^ã,S" |
               songs$Track == "Go the Distance - From Hercules / Soundtrack Version" |
               songs$Track == "Go The Distance - From Hercules/Soundtrack"] = "Go The Distance"
 songs$Track[songs$Track == "Under the Sea - From The Little Mermaid / Soundtrack Version" |
               songs$Track == "Under the Sea - From The Little Mermaid"] = "Under The Sea - From The Little Mermaid/ Soundtrack Version"
 songs$Track[songs$Track == "When She Loved Me - From Toy Story 2/Soundtrack Version" |
               songs$Track == "When She Loved Me - From Toy Story 2"] = "When She Loved Me"
-songs$Track[songs$Track == "Back To You - From 13 Reasons Why �???" Season 2 Soundtrack"] = "Back To You"
-songs$Track[songs$Track == "Don�???Tt Leave"] = "Don't Leave"
+songs$Track[songs$Track == 'Back To You - From 13 Reasons Why â???" Season 2 Soundtrack'] = "Back To You"
+songs$Track[songs$Track == "Donâ???Tt Leave"] = "Don't Leave"
 songs$Track[songs$Track == "First Time (feat. Dylan Matthew)"] = "First Time"
 songs$Track[songs$Track == "Easy Love - Original Mix"] = "Easy Love"
 songs$Track[songs$Track == "Sweet Lovin' - Original Mix" |
@@ -177,37 +183,39 @@ songs$Track[songs$Track == "Sweet Lovin' - Original Mix" |
 songs$Track[songs$Track == "All My Friends (feat. Tinashe & Chance The Rapper)"] = "All My Friends"
 songs$Track[songs$Track == "Live Love Learn (feat. Peg Parnevik)"] = "Live Love Learn"
 songs$Track[songs$Track == "Wannabe - Radio Edit"] = "Wannabe"
-songs$Track[songs$Track == "I Won't Say (I'm In Love) - �???Z�f~�f��,��f��,��???��,^�,S" |
+songs$Track[songs$Track == "I Won't Say (I'm In Love) - ã???Zãf~ãf©ã,¯ãf¬ã,¹ã???ã,^ã,S" |
               songs$Track == "I Won't Say (I'm In Love) - From Hercules"] = "I Won't Say (I'm In Love)"
 songs$Track[songs$Track == "Don't You Worry Child (Radio Edit) [feat. John Martin]" |
               songs$Track == "Don't You Worry Child (Radio Edit)"] = "Don't You Worry Child - Radio Edit"
 songs$Track[songs$Track == "...Ready for It?"] = "... Ready For It?"
-songs$Track[songs$Track == "Bellas Finals: Price Tag/Don�???Tt You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"] = "Bellas Finals: Price Tag/Don't You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"
-songs$Track[songs$Track == "Cups (�???oWhen I�???Tm Gone�???�) - Campfire Version"] = "Cups ('When I'm Gone') - Campfire Version"
-songs$Track[songs$Track == "Riff Off: Mickey/Like A Virgin/Hit Me With Your Best Shot/S&M/Let�???Ts Talk About Sex/I�???Tll Make Love To You/Feels Like The First Time/No Diggity"] = "Riff Off: Mickey/Like A Virgin/Hit Me With Your Best Shot/S&M/Let's Talk About Sex/I'll Make Love To You/Feels Like The First Time/No Diggity"
-songs$Track[songs$Track == "Do You Mean (with Ty Dolla $ign & bülow)"] = "Do You Mean"
+songs$Track[songs$Track == "Bellas Finals: Price Tag/Donâ???Tt You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"] = "Bellas Finals: Price Tag/Don't You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"
+songs$Track[songs$Track == "Cups (â???oWhen Iâ???Tm Goneâ???) - Campfire Version"] = "Cups ('When I'm Gone') - Campfire Version"
+songs$Track[songs$Track == "Cups (Pitch Perfectâ€™s â€œWhen Iâ€™m Goneâ€)"] = "Cups ('When I'm Gone')"
+songs$Track[songs$Track == "Cups (Pitch Perfectâ€™s â€œWhen Iâ€™m Goneâ€) - Pop Version"] = "Cups ('When I'm Gone')"
+songs$Track[songs$Track == "Riff Off: Mickey/Like A Virgin/Hit Me With Your Best Shot/S&M/Letâ???Ts Talk About Sex/Iâ???Tll Make Love To You/Feels Like The First Time/No Diggity"] = "Riff Off: Mickey/Like A Virgin/Hit Me With Your Best Shot/S&M/Let's Talk About Sex/I'll Make Love To You/Feels Like The First Time/No Diggity"
+songs$Track[songs$Track == "Do You Mean (with Ty Dolla $ign & bÃ¼low)"] = "Do You Mean"
 songs$Track[songs$Track == "Side Effects (feat. Emily Warren)"] = "Side Effects"
 songs$Track[songs$Track == "Takeaway"] = "Takeaway (with ILLENIUM & Lennon Stella)"
 songs$Track[songs$Track == "Our Lips Are Sealed - Single Version"] = "Our Lips Are Sealed"
 songs$Track[songs$Track == "We Got The Beat - Single Mix"] = "We Got the Beat"
-songs$Artist[songs$Artist == "Tiësto"] = "Tiesto"
-songs$Track[songs$Track == "I�???Tm Me"] = "I'm Me"
-songs$Track[songs$Track == "Another Shot�???��???��???�"] = "Another Shot"
-songs$Track[songs$Track == "We�???Tre The Same"] = "We're the Same"
+songs$Artist[songs$Artist == "TiÃ«sto"] = "Tiesto"
+songs$Track[songs$Track == "Iâ???Tm Me"] = "I'm Me"
+songs$Track[songs$Track == "Another Shotâ???¬â???¬â???¬"] = "Another Shot"
+songs$Track[songs$Track == "Weâ???Tre The Same"] = "We're the Same"
 songs$Track[songs$Track == "	I Have Nothing - Remastered"] = "I Have Nothing"
 songs$Track[songs$Track == "The Star Spangled Banner (feat. The Florida Orchestra) - Live from Super Bowl XXV"] = "The Star Spangled Banner - Live from Super Bowl XXV"
 songs$Track[songs$Track == "Clarity - feat. Foxes"] = "Clarity"
-songs$Track[songs$Track == "Happy Now (with Elley Duhé)"] = "Happy Now"
+songs$Track[songs$Track == "Happy Now (with Elley DuhÃ©)"] = "Happy Now"
 songs$Track[songs$Track == "I Want You to Know (feat. Selena Gomez)"] = "I Want You to Know"
 songs$Artist[songs$Artist == "D.H.T."] = "DHT"
 songs$Track[songs$Track == "Listen to Your Heart (featuring Edmee) - Furious F. EZ Radio Edit"] = "Listen To Your Heart (Furious F. EZ Radio Edit)"
 songs$Track[songs$Track == "You Are Loved (Don't Give Up) - Don't Give Up Album Version"] = "You Are Loved (Don't Give Up)"
 songs$Artist[songs$Artist == "Joshua Coleman"] = "Fifth Harmony"
 songs$Track[songs$Track == " I Won't Say (I'm In Love)"] = "I Won't Say (I'm In Love)"
-songs$Track[songs$Track == "Friday Night�???��???��???�"] = "Friday Night"
+songs$Track[songs$Track == "Friday Nightâ???¬â???¬â???¬"] = "Friday Night"
 songs$Track[songs$Track == "I Have Nothing - Remastered"] = "I Have Nothing"
 songs$Track[songs$Track == "Ashes - from Deadpool 2"] = "Ashes"
-songs$Artist[songs$Artist == "Emeli Sandé"] = "Emeli Sande"
+songs$Artist[songs$Artist == "Emeli SandÃ©"] = "Emeli Sande"
 songs$Track[songs$Track == "Anywhere For You"] = "Anywhere For You - Radio Edit"
 songs$Track[songs$Track == "You Keep Me Hangin' On"] = "You Keep Me Hangin On"
 songs$Artist[songs$Artist == "Bethel Music"] = "Kristene DiMarco"
@@ -215,6 +223,83 @@ songs$Artist[songs$Artist == "Mama Cass"] = "Cass Elliot"
 songs$Track[songs$Track == "Jump - 2015 Remastered Version"] = "Jump"
 songs$Track[songs$Track == "doN'T StArT nOw"] = "Don't Start Now"
 songs$Artist[songs$Artist == "RedOne"] = "Red One"
+songs$Track[songs$Track == "Maybe Youâ€™re the Problem"] = "Maybe You're the Problem"
+songs$Artist[songs$Artist == "Marina and the Diamonds"] = "Marina"
+songs$Track[songs$Track == "NÃ¥n annan nu"] = "Nan annan nu"
+songs$Track[songs$Track == "Vi ska aldrig gÃ¥ hem"] = "Vi ska aldrig ga hem"
+songs$Track[songs$Track == "StÃ¶rre"] = "Storre"
+songs$Track[songs$Track == "When Iâ€™m Gone (with Katy Perry)"] = "When I'm Gone (with Katy Perry)"
+songs$Track[songs$Track == "Youâ€™ll Never Know"] = "You'll Never Know"
+songs$Track[songs$Track == "One Way Or Another - Live"] = "One Way or Another"
+songs$Track[songs$Track == "Work B**ch"] = "Work Bitch"
+songs$Track[songs$Track == "This Is What You Came For (feat. Rihanna)"] = "This Is What You Came For"
+songs$Track[songs$Track == "I Didnâ€™t Just Come Here To Dance"] = "I Didn't Just Come Here To Dance"
+songs$Track[songs$Track == "Letâ€™s Get Lost"] = "Let's Get Lost"
+songs$Track[songs$Track == "Tonight Iâ€™m Getting Over You"] = "Tonight I'm Getting Over You"
+songs$Track[songs$Track == "Tonight Iâ€™m Getting Over You - Remix"] = "Tonight I'm Getting Over You - Remix"
+songs$Artist[songs$Artist == "Carolina GaitÃ¡n - La Gaita"] = "Carolina Gaitan - La Gaita"
+songs$Track[songs$Track == "Canâ€™t Help Falling In Love - The Voice Performance"] = "Can't Help Falling In Love - The Voice Performance"
+songs$Track[songs$Track == "Hold On Weâ€™re Going Home - The Voice Performance"] = "Hold On We're Going Home - The Voice Performance"
+songs$Track[songs$Track == "I Wonâ€™t Give Up - The Voice Performance"] = "I Won't Give Up - The Voice Performance"
+songs$Artist[songs$Artist == "Ð’ÐµÑ€ÐºÐ° Ð¡ÐµÑ€Ð´ÑŽÑ‡ÐºÐ°"] = "Verka Serduchka"
+songs$Track[songs$Track == "Listen To Your Heart - Furious F. EZ Radio edit"] = "Listen To Your Heart (Furious F. EZ Radio Edit)"
+songs$Track[songs$Track == "Heaven (featuring Do)"] = "Heaven"
+songs$Track[songs$Track == "Cake By The Ocean - ã‚¯ãƒªãƒ¼ãƒ³ãƒ»ãƒ´ã‚¡ãƒ¼ã‚¸ãƒ§ãƒ³"] = "Cake by the Ocean"
+songs$Track[songs$Track == "If It Ainâ€™t Me"] = "If It Ain't Me"
+songs$Track[songs$Track == "Wildflowers - From â€œTeen Spiritâ€ Soundtrack"] = "Wildflowers"
+songs$Track[songs$Track == "Lights - Single Version"] = "Lights"
+songs$Track[songs$Track == "Call On Me - Radio Mix"] = "Call On Me - Radio Edit"
+songs$Track[songs$Track == "California Gurls (feat. Snoop Dogg)"] = "California Gurls"
+songs$Track[songs$Track == "Santa Canâ€™t You Hear Me"] = "Santa Can't You Hear Me"
+songs$Track[songs$Track == "i donâ€™t wanna dieâ€¦"] = "i don't wanna die"
+songs$Track[songs$Track == "Tell Me Itâ€™s A Nightmare"] = "Tell Me It's A Nightmare"
+songs$Track[songs$Track == "Turn Off the Light (feat. Elvira Mistress of the Dark)"] = "Turn Off The Light"
+songs$Track[songs$Track == "You Keep Me Hanging On"] = "You Keep Me Hangin On"
+songs$Track[songs$Track == "It Ainâ€™t Me (with Selena Gomez)"] = "It Ain't Me (with Selena Gomez)"
+songs$Track[songs$Track == "ScheiÃŸe"] = "Scheibe"
+songs$Track[songs$Track == "Summertime Sadness (Lana Del Rey vs. Cedric Gervais) - Cedric Gervais Remix"] = "Summertime Sadness (Lana Del Rey Vs. Cedric Gervais) - Cedric Gervais Remix / Radio Edit"
+songs$Track[songs$Track == "I Wonâ€™t Let You Walk Away - Radio Edit"] = "I Won't Let You Walk Away - Radio Edit"
+songs$Track[songs$Track == "Dag fÃ¶r dag"] = "Dag for dag"
+songs$Track[songs$Track == "Det bÃ¤sta kanske inte hÃ¤nt Ã¤n"] = "Det basta kanske inte hant an"
+songs$Track[songs$Track == "Va det dÃ¥?"] = "Va det da?"
+songs$Track[songs$Track == "Vi ska aldrig gÃ¥ hem - Nause & Allertz Remix"] = "Vi ska aldrig ga hem - Nause & Allertz Remix"
+songs$Track[songs$Track == "Youâ€™re Not Alone"] = "You're Not Alone"
+songs$Track[songs$Track == "Feel This Moment (feat. Christina Aguilera)"] = "Feel This Moment"
+songs$Track[songs$Track == "Timber (feat. Ke$ha)"] = "Timber"
+songs$Track[songs$Track == "R.I.P. (feat. Tinie Tempah)"] = "R.I.P."
+songs$Track[songs$Track == "Back to You - From 13 Reasons Why â€“ Season 2 Soundtrack"] = "Back to You"
+songs$Track[songs$Track == "Donâ€™t Leave"] = "Don't Leave"
+songs$Track[songs$Track == "Hips Don't Lie (feat. Wyclef Jean)"] = "Hips Don't Lie"
+songs$Track[songs$Track == "The Greatest (feat. Kendrick Lamar)"] = "The Greatest"
+songs$Track[songs$Track == "All My Friends (feat. Tinashe & Chance the Rapper)"] = "All My Friends"
+songs$Track[songs$Track == "If Youâ€™re Too Shy (Let Me Know) - Edit"] = "If You're Too Shy (Let Me Know) - Edit"
+songs$Track[songs$Track == "Bellas Finals: Price Tag/Donâ€™t You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"] = "Bellas Finals: Price Tag/Don't You (Forget About Me)/Give Me Everything/Just The Way You Are/Party In The U.S.A./Turn The Beat Around"
+songs$Track[songs$Track == "Cups (â€œWhen Iâ€™m Goneâ€) - Campfire Version"] = "Cups (When I'm Gone) - Campfire Version"
+songs$Track[songs$Track == "Don't Let Me Down (feat. Daya)"] = "Don't Let Me Down"
+songs$Track[songs$Track == "Takeaway (feat. Lennon Stella) - Pilton Remix"] = "Takeaway - Pilton Remix"
+songs$Track[songs$Track == "Take My Breath - single version"] = "Take My Breath"
+songs$Track[songs$Track == "Friday Nightâ€¬â€¬â€¬"] = "Friday Night"
+songs$Track[songs$Track == "Weâ€™re The Same"] = "We're The Same"
+songs$Artist[songs$Artist == "GATTÃœSO"] = "GATTUSO"
+songs$Track[songs$Track == "Santa Claus Is Comin' to Town - Live at C.W. Post College Greenvale NY - December 1975"] = "Santa Claus Is Comin' To Town - Single Version"
+songs$Track[songs$Track == "<demons>"] = "demons"
+songs$Track[songs$Track == "About Love - From The Netflix Film â€œTo All The Boys: P.S. I Still Love Youâ€\u009d"] = "About Love"
+songs$Track[songs$Track == "The Stand Off (I Want You!) [feat. Hayley May]"] = "The Stand Off (I Want You!)"
+songs$Track[songs$Track == "Iâ€™m Me"] = "I'm Me"
+songs$Track[songs$Track == "Right Now - GATTÃœSO Remix"] = "Right Now - GATTUSO Remix"
+songs$Track[songs$Track == "Rain On Me - Purple Disco Machine Remix - Edit"] = "Rain On Me - Purple Disco Machine Remix"
+songs$Artist[songs$Track == "You Spin Me Round (Like a Record)" & songs$Artist=="Def Leppard"] = "Dead or Alive"
+songs$Track[songs$Track == "Super Natural (feat. Carly Rae Jepsen)"] = "Super Natural"
+songs$Artist[songs$Artist == "Black Eyed Peas"] = "The Black Eyed Peas"
+songs$Artist[songs$Artist == "Harley Bird"] = "Jim Yosef"
+songs$Track[songs$Track == "Uptown Funk (feat. Bruno Mars)"] = "Uptown Funk"
+songs$Track[songs$Track == "Christmas Eve / Sarajevo 12/24 - Instrumental"] = "Christmas Eve/ Sarajevo"
+songs$Track[songs$Track == "Wildstar (feat. Foxes)"] = "Wildstar"
+songs$Track[songs$Track == "Troublemaker (feat. Flo Rida)"] = "Troublemaker"
+songs$Artist[songs$Track == "You're a Mean One Mr. Grinch" & songs$Artist=="Burl Ives"] = "Thurl Ravenscroft"
+songs$Track[songs$Track == "You're a Mean One Mr. Grinch"] = "You're A Mean One Mr. Grinch"
+songs$Artist[songs$Artist == "Ke$ha"] = "Kesha"
+songs$Track[songs$Track == "Jump - 2015 Remaster"] = "Jump"
 
 #Changing Search Song Title
 songs$Track[songs$Track == "Respect - Remastered"] = "Respect"
@@ -238,7 +323,9 @@ qualifying = distincts %>%
   filter(Artist != "Rockie Gold") %>% #Comedy
   filter(Track != "I2I") %>% #No Longer Available
   filter(Track != "We're the Same") %>% #Can't Find It
-  filter(Artist != "Crazy Ex-Girlfriend Cast") #Comedy
+  filter(Artist != "Crazy Ex-Girlfriend Cast") %>% #Comedy
+  filter(Artist != "Anderson") %>% #Causing Problems... Christmas Song - May not be available
+  filter(Artist != "Kathleen Madigan") #Comedy
 
 qsongs = songs %>% 
   inner_join(.,qualifying,by=c("Artist","Track")) %>% 
@@ -344,18 +431,18 @@ song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Need%20Your%20Love%20(with%2
 song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Nobody%20Compares%20to%20You%20(feat.%20Katie%20Pearlman)%20%20"] = "Gryffin%20Nobody%20Compares%20to%20You"
 song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20OMG%20(with%20Carly%20Rae%20Jepsen)%20%20"] = "Gryffin%20OMG"
 song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20OMG%20(with%20Carly%20Rae%20Jepsen)%20-%20Anki%20Remix%20%20"] = "Gryffin%20OMG%20Anki%20Remix"
-song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Tie%20Me%20Down%20(with%20Elley%20Duhé)%20%20"] = "Gryffin%20Tie%20Me%20Down"
+song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20Tie%20Me%20Down%20(with%20Elley%20DuhÃ©)%20%20"] = "Gryffin%20Tie%20Me%20Down"
 song_lookup$Lookup[song_lookup$Lookup == "Gryffin%20You%20Remind%20Me%20(feat.%20Stanaj)%20%20"] = "Gryffin%20You%20Remind%20Me"
-song_lookup$Lookup[song_lookup$Lookup == "Elle%20Fanning%20Wildflowers%20-%20From%20�???oTeen%20Spirit�???�%20Soundtrack%20%20"] = "Elle%20Fanning%20Wildflowers"
+song_lookup$Lookup[song_lookup$Lookup == "Elle%20Fanning%20Wildflowers%20-%20From%20â???oTeen%20Spiritâ???%20Soundtrack%20%20"] = "Elle%20Fanning%20Wildflowers"
 song_lookup$Lookup[song_lookup$Lookup == "Lana%20Del%20Rey%20Summertime%20Sadness%20(Lana%20Del%20Rey%20Vs.%20Cedric%20Gervais)%20-%20Cedric%20Gervais%20Remix%20/%20Radio%20Edit%20%20"] = "Lana%20Del%20Rey%20Summertime%20Sadness%20Cedric%20Gervais%20Remix"
 
 #USE LOOKUP FIELD TO HIT SPOTIFY API SERVER
 # Can get OAuth_Token at: https://developer.spotify.com/console/get-search-item/?q=Carly%20Rae%20Jepsen%20Run%20Away%20With%20Me&type=track&market=&limit=1&offset=
 
-OAuth_Token = "BQD7_WH7gKy-45Mu_rUSzoeiojNspQQsF5-PswCn00NwAlQmuc18vxhhYQ4uFsL2gyFWCoHhUr3qDVNUI-eEgxHO5utS3Ljrak7Q4Ioqzg-S-pUEEbJykTScyqXsoXmtoPovN-oig6PtJ3xKOypCJ5VoeAL0kQ"
+OAuth_Token = "BQA4oKB8sua2ImOPHpv-pYxQCkGhdbJF2qerXR2IDJhpeG4tp4mWQ8poFxarfRZ9m8muXF7OFmr7oxB_YZQAMKDF5NMhPh31bDafgLb0gj3H7IoP8nzFGoFjwQqX-9WRCeY2RkskZvY4V67rF5u4rHtYMl31uGtcClmBiKZYlxQZNVCSAzw"
 
-for(i in seq(1:dim(song_lookup)[1])){
-  
+for(i in seq(from=1,to=dim(song_lookup)[1],by=1)){
+  cat(i,"\n",sep="")
   theLookup = song_lookup[i,"Lookup"]
   temp = glue('\'curl -X "GET" "https://api.spotify.com/v1/search?q={theLookup}&type=track&limit=1" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {OAuth_Token}"\'')
   song_lookup[i,"id"] = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))$tracks$items$id
@@ -380,8 +467,8 @@ song_lookup[song_lookup$Artist=="Mako" & song_lookup$Track=="I Won't Let You Wal
 song_lookup[song_lookup$Artist=="Molly Sanden" & song_lookup$Track=="Like No One's Watching","id"] = "0seWbF1zqWCa0dkMupdd0S"
 song_lookup[song_lookup$Artist=="The Barden Bellas" & song_lookup$Track=="Party In The U.S.A.","id"] = "7c2KF18pPpaN8Hy5MiNNWs"
 song_lookup[song_lookup$Artist=="Cardiknox" & song_lookup$Track=="On My Way","id"] = "5spSDPY097Y2PwXQYIFyZb"
-song_lookup[song_lookup$Artist=="Selena Gomez & The Scene" & song_lookup$Track=="Naturally","id"] = "1YaVmBh7EAeR54FIjuFcb5"
-song_lookup[song_lookup$Artist=="Selena Gomez & The Scene" & song_lookup$Track=="Hit the Lights","id"] = "6ciLLh4TkPYDUfNxn2Z0KO"
+song_lookup[song_lookup$Artist=="Selena Gomez & the Scene" & song_lookup$Track=="Naturally","id"] = "1YaVmBh7EAeR54FIjuFcb5"
+song_lookup[song_lookup$Artist=="Selena Gomez & the Scene" & song_lookup$Track=="Hit the Lights","id"] = "6ciLLh4TkPYDUfNxn2Z0KO"
 song_lookup[song_lookup$Artist=="Elmo & Patsy" & song_lookup$Track=="Grandma Got Run Over By A Reindeer","id"] = "49iHYFjT5yO6WEw6KerX9o"
 song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Beautiful Disaster","id"] = "6bcnBvXEsaqFxO5jkgwPwR"
 song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Gone","id"] = "5Canmwvufsc7bMM3v2c286"
@@ -392,6 +479,15 @@ song_lookup[song_lookup$Artist=="Sia" & song_lookup$Track=="Move Your Body","id"
 song_lookup[song_lookup$Artist=="Ryn Weaver" & song_lookup$Track=="The Fool","id"] = "5VF6OStYFWd5QTpxTvDXCU"
 song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Dope","id"] = "37yshWNelgzYqQunLz4hEL"
 song_lookup[song_lookup$Artist=="Stevie Wonder" & song_lookup$Track=="What Christmas Means to Me","id"] = "3h1EREJfCwyv6cG7CGak5d"
+song_lookup[song_lookup$Artist=="Lady Gaga" & song_lookup$Track=="Chromatica I","id"] = "3CGZ7wfk4skmuyQgua1C1K"
+song_lookup[song_lookup$Artist=="Owl City" & song_lookup$Track=="Good Time - Wideboys Remix [Club]","id"] = "2LflnXoxOqnQGnC1GoYpaZ"
+song_lookup[song_lookup$Artist=="Gryffin" & song_lookup$Track=="OMG (with Carly Rae Jepsen) - Anki Remix","id"] = "4BXXIMSAkSfXaDHmSudKZw"
+song_lookup[song_lookup$Artist=="Kelly Clarkson" & song_lookup$Track=="Respect - Original Version","id"] = "4sIEifoZXsJOVRYDPaNDKp"
+song_lookup[song_lookup$Artist=="Lucas & Steve" & song_lookup$Track=="All Cried Out","id"] = "4QgOLpoO7pzgcVn89H4VtP"
+song_lookup[song_lookup$Artist=="Lucas & Steve" & song_lookup$Track=="I Want It All","id"] = "3oSCJeOl0XjcpNcigO9vj7"
+song_lookup[song_lookup$Artist=="The Knocks" & song_lookup$Track=="Love Me Like That (feat. Carly Rae Jepsen) - The Knocks 55.5 VIP Mix","id"] = "0hhO1Hn3lzMYInmVhyNOMa"
+
+
 
 attributes_lookup = song_lookup
 
@@ -418,7 +514,8 @@ attributes_lookup$tempo = NA
 attributes_lookup$duration_ms = NA
 attributes_lookup$time_signature = NA
 
-for(i in seq(1:dim(song_lookup)[1])){
+for(i in seq(from=1,to=dim(song_lookup)[1],by=1)){
+  cat(i,"\n",sep="")
   theLookup = attributes_lookup[i,"id"]
   temp = glue('\'curl -X "GET" "https://api.spotify.com/v1/audio-features/{theLookup}" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {OAuth_Token}"\'')
   holder = fromJSON(system(substr(temp,2,nchar(temp)-1),inter=T,ignore.stderr = T))
@@ -448,33 +545,58 @@ norm$mode = as.numeric(as.character(norm$mode))
 
 plot(norm[,c(6:16)],pch=20)
 
-pcs = princomp(norm[,c(6:16)])
+pcs = prcomp(norm[,c(6:16)])
 plot(pcs)
 plot(pcs, type='l')
 summary(pcs)
 
-pcs2 = prcomp(norm[c(6:16)])
-comp <- data.frame(pcs2$x[,1:10])
+#Look at diminishing marginal returns of PCs
+plot_pcs = as.data.frame(pcs$sdev) %>%
+            rename(stdev = `pcs$sdev`) %>%
+            mutate(PC = row_number(),
+                   var = stdev^2)
+plot_pcs$prop_of_var = plot_pcs$var / sum(plot_pcs$var)
+plot_pcs$cuml_prop_of_var = NA
+plot_pcs$cuml_var = NA
+for(i in seq(from=1,to=dim(plot_pcs)[1],by=1)){
+  if(i==1){
+    plot_pcs[i,"cuml_prop_of_var"] = plot_pcs[i,"prop_of_var"]
+    plot_pcs[i,"cuml_var"] = plot_pcs[i,"var"]
+  } else {
+    plot_pcs[i,"cuml_prop_of_var"] = plot_pcs[i-1,"cuml_prop_of_var"] + plot_pcs[i,"prop_of_var"]
+    plot_pcs[i,"cuml_var"] = plot_pcs[i-1,"cuml_var"] + plot_pcs[i,"var"]
+  }
+}
+plot_pcs$var_per_comp = plot_pcs$cuml_var / plot_pcs$PC
+plot_pcs$prop_of_var_per_comp = plot_pcs$cuml_prop_of_var / plot_pcs$PC
+
+plot(plot_pcs$cuml_prop_of_var,type="l")
+plot(plot_pcs$var_per_comp,type="l")
+
+#Low dimensionality... so keeping all PCs
+#Plot Principal Components
+comp = data.frame(pcs$x[,1:10])
 plot(comp, pch=16)
 
 set.seed(412)
-km = matrix(nrow=10,ncol=2)
-for(i in seq(1:10)){
+km = matrix(nrow=40,ncol=3)
+for(i in seq(1:40)){
   kmeans = kmeans(comp,centers = i,iter.max = 1000,nstart=25)
   km[i,1] = i
   km[i,2] = kmeans$tot.withinss
+  km[i,3] = kmeans$tot.withinss / kmeans$totss
 }
 km = as.data.frame(km)
-colnames(km) = c("Clusters","TotWithinSS")
-plot(km$Clusters,km$TotWithinSS,type = "b")
+colnames(km) = c("Clusters","TotWithinSS","Prct_TSS")
+plot(km$Clusters,km$Prct_TSS,type = "b")
 
-#choose 8
+#choose 8... really starts to flatten out after that point
 kmeans = kmeans(comp,centers = 8,iter.max = 1000,nstart=25)
 norm$cluster = kmeans$cluster
 
 
 #Cluster Plots
-palette(c("blue","green","skyblue","purple","orange","red","gold"))
+palette(c("blue","green","skyblue","purple","orange","red","maroon1","gold"))
 plot(norm[,c(6:16)],col=norm$cluster,pch=16)
 
 #Less Busy - Only select songs with 50+ plays
@@ -486,50 +608,68 @@ attrs$cluster = as.factor(norm$cluster)
 write.csv(attrs,"song_data.csv",row.names = F)
 
 #Density Plots by Cluster
+png(filename = "Plots/Summary/Danceability.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=danceability,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Danceability") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Energy.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=energy,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Energy") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Loudness.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=loudness,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Loudness") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Speechiness.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=speechiness,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Speechiness") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Acousticness.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=acousticness,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Acousticness") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Instrumentalness.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=instrumentalness,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Instrumentalness") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Liveness.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=liveness,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Liveness") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Valence.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=valence,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Valence") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
+png(filename = "Plots/Summary/Tempo.png",width = 1920,height = 1080)
 ggplot(attrs, aes(x=cluster, y=tempo,col=cluster)) + 
   geom_boxplot() + 
-  scale_color_manual(values=c("deepskyblue","darkorange","firebrick2","blue4","darkorchid3","goldenrod1","green3","brown")) +
+  scale_color_manual(values=c("blue","green","skyblue","purple","orange","red","maroon1","gold")) +
   ggtitle("Tempo") + theme(plot.title = element_text(hjust = 0.5))
+dev.off()
 
 #Re-Attach data to qsongs dataset and create time variables
 song_final = qsongs %>% left_join(.,attrs,by=c("Artist","Track"))
@@ -597,20 +737,56 @@ song_final[song_final$monthyear=="Jul 2019" |
 song_final[song_final$monthyear=="Oct 2019" |
              song_final$monthyear=="Nov 2019" |
              song_final$monthyear=="Dec 2019","quarters"] = "2019Q4"
+song_final[song_final$monthyear=="Jan 2020" |
+             song_final$monthyear=="Feb 2020" |
+             song_final$monthyear=="Mar 2020","quarters"] = "2020Q1"
+song_final[song_final$monthyear=="Apr 2020" |
+             song_final$monthyear=="May 2020" |
+             song_final$monthyear=="Jun 2020","quarters"] = "2020Q2"
+song_final[song_final$monthyear=="Jul 2020" |
+             song_final$monthyear=="Aug 2020" |
+             song_final$monthyear=="Sep 2020","quarters"] = "2020Q3"
+song_final[song_final$monthyear=="Oct 2020" |
+             song_final$monthyear=="Nov 2020" |
+             song_final$monthyear=="Dec 2020","quarters"] = "2020Q4"
+song_final[song_final$monthyear=="Jan 2021" |
+             song_final$monthyear=="Feb 2021" |
+             song_final$monthyear=="Mar 2021","quarters"] = "2021Q1"
+song_final[song_final$monthyear=="Apr 2021" |
+             song_final$monthyear=="May 2021" |
+             song_final$monthyear=="Jun 2021","quarters"] = "2021Q2"
+song_final[song_final$monthyear=="Jul 2021" |
+             song_final$monthyear=="Aug 2021" |
+             song_final$monthyear=="Sep 2021","quarters"] = "2021Q3"
+song_final[song_final$monthyear=="Oct 2021" |
+             song_final$monthyear=="Nov 2021" |
+             song_final$monthyear=="Dec 2021","quarters"] = "2021Q4"
+song_final[song_final$monthyear=="Jan 2022" |
+             song_final$monthyear=="Feb 2022" |
+             song_final$monthyear=="Mar 2022","quarters"] = "2022Q1"
+song_final[song_final$monthyear=="Apr 2022" |
+             song_final$monthyear=="May 2022" |
+             song_final$monthyear=="Jun 2022","quarters"] = "2022Q2"
+song_final[song_final$monthyear=="Jul 2022" |
+             song_final$monthyear=="Aug 2022" |
+             song_final$monthyear=="Sep 2022","quarters"] = "2022Q3"
+song_final[song_final$monthyear=="Oct 2022" |
+             song_final$monthyear=="Nov 2022" |
+             song_final$monthyear=="Dec 2022","quarters"] = "2022Q4"
 song_final$monthyear = as.yearmon(paste(song_final$month,substr(song_final$year,3,4),sep="-"),"%b-%y")
 song_final$count = 1
 
 song_final$cluster = as.character(song_final$cluster)
 
 for(i in seq(from=1,to=dim(song_final)[1],by=1)){
-  if (song_final[i,"cluster"] == 1) { song_final[i,"cluster"] = "1: Instrumental Songs"}
-  else if (song_final[i,"cluster"] == 2) { song_final[i,"cluster"] = "6: Energy Pop"}
-  else if (song_final[i,"cluster"] == 3) { song_final[i,"cluster"] = "7: Dance Songs"}
+  if (song_final[i,"cluster"] == 1) { song_final[i,"cluster"] = "7: Dance Songs"}
+  else if (song_final[i,"cluster"] == 2) { song_final[i,"cluster"] = '3: "Speak" Pop'}
+  else if (song_final[i,"cluster"] == 3) { song_final[i,"cluster"] = "5: Live Songs"}
   else if (song_final[i,"cluster"] == 4) { song_final[i,"cluster"] = '2: "The Feels"'}
-  else if (song_final[i,"cluster"] == 5) { song_final[i,"cluster"] = "4: Sad Bops"}
-  else if (song_final[i,"cluster"] == 6) { song_final[i,"cluster"] = "5: Live Songs"}
-  else if (song_final[i,"cluster"] == 7) { song_final[i,"cluster"] = "8: Anthem Songs"}
-  else if (song_final[i,"cluster"] == 8) { song_final[i,"cluster"] = '3: "Speak" Pop'}
+  else if (song_final[i,"cluster"] == 5) { song_final[i,"cluster"] = "1: Instrumental Songs"}
+  else if (song_final[i,"cluster"] == 6) { song_final[i,"cluster"] = "6: Energy Pop"}
+  else if (song_final[i,"cluster"] == 7) { song_final[i,"cluster"] = "4: Sad Bops"}
+  else if (song_final[i,"cluster"] == 8) { song_final[i,"cluster"] = "8: Anthem Songs"}
 }
 
 write.csv(song_final,"song_final.csv",row.names = F)
@@ -622,22 +798,22 @@ cluster_counts = as.data.frame(matrix(NA,nrow=8,ncol=4))
 colnames(cluster_counts) = c("clusternum","cluster","songs","totalsongs")
 for(i in seq(1:8)){
   cluster_counts[i,"clusternum"] = i
-  if (cluster_counts[i,"clusternum"] == 1) { cluster_counts[i,"cluster"] = "1: Instrumental Songs"}
-  else if (cluster_counts[i,"clusternum"] == 2) { cluster_counts[i,"cluster"] = "6: Energy Pop"}
-  else if (cluster_counts[i,"clusternum"] == 3) { cluster_counts[i,"cluster"] = "7: Dance Songs"}
+  if (cluster_counts[i,"clusternum"] == 1) { cluster_counts[i,"cluster"] = "7: Dance Songs"}
+  else if (cluster_counts[i,"clusternum"] == 2) { cluster_counts[i,"cluster"] = '3: "Speak" Pop'}
+  else if (cluster_counts[i,"clusternum"] == 3) { cluster_counts[i,"cluster"] = "5: Live Songs"}
   else if (cluster_counts[i,"clusternum"] == 4) { cluster_counts[i,"cluster"] = '2: "The Feels"'}
-  else if (cluster_counts[i,"clusternum"] == 5) { cluster_counts[i,"cluster"] = "4: Sad Bops"}
-  else if (cluster_counts[i,"clusternum"] == 6) { cluster_counts[i,"cluster"] = "5: Live Songs"}
-  else if (cluster_counts[i,"clusternum"] == 7) { cluster_counts[i,"cluster"] = "8: Anthem Songs"}
-  else if (cluster_counts[i,"clusternum"] == 8) { cluster_counts[i,"cluster"] = '3: "Speak" Pop'}
+  else if (cluster_counts[i,"clusternum"] == 5) { cluster_counts[i,"cluster"] = "1: Instrumental Songs"}
+  else if (cluster_counts[i,"clusternum"] == 6) { cluster_counts[i,"cluster"] = "6: Energy Pop"}
+  else if (cluster_counts[i,"clusternum"] == 7) { cluster_counts[i,"cluster"] = "4: Sad Bops"}
+  else if (cluster_counts[i,"clusternum"] == 8) { cluster_counts[i,"cluster"] = "8: Anthem Songs"}
   cluster_counts[i,"songs"] = dim(attrs[attrs$cluster==i,"Track"])[1]
-  cluster_counts[i,"totalsongs"] = 1437
+  cluster_counts[i,"totalsongs"] = 1864
 }
 cluster_counts = cluster_counts[,-c(1)]
 
 listening_trends = song_final %>%
   filter(is.na(quarters) == F) %>%
-  filter(monthyear != "Nov 2019")
+  filter(monthyear != "Aug 2022")
 
 #total listening
 total_listening = listening_trends %>%
